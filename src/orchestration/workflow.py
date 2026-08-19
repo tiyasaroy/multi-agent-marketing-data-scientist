@@ -4,11 +4,7 @@ from src.agents.critic_agent import CriticAgent
 from src.api.schemas import InvestigationRequest
 from src.reporting.executive_report import build_executive_report
 from src.tools.analytics_tools import AnalyticsToolRegistry
-from src.planning.providers import (
-    DeterministicPlanningProvider,
-    PlanningProvider,
-    validate_plan_for_request,
-)
+from src.planning.providers import PlanningProvider, planning_provider_from_env, validate_plan_for_request
 
 from .state import WorkflowResponse, WorkflowState
 
@@ -19,7 +15,7 @@ class EvidenceValidationError(RuntimeError):
 
 class InvestigationWorkflow:
     def __init__(self, planning_provider: PlanningProvider = None) -> None:
-        self.planning_provider = planning_provider or DeterministicPlanningProvider()
+        self.planning_provider = planning_provider or planning_provider_from_env()
         self.tools = AnalyticsToolRegistry()
         self.critic = CriticAgent()
 

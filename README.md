@@ -89,3 +89,27 @@ deterministic.
 Use `python scripts/compare_planners.py` for a baseline smoke comparison, or provide
 `--replay plans.json` to evaluate previously captured structured LLM plans without making paid API
 calls. The resulting report compares plan agreement, workflow coverage, and evidence validity.
+
+### Ollama
+
+Ollama can provide local structured plans through its `/api/chat` endpoint. Install and start Ollama,
+then download a model appropriate for the machine:
+
+```bash
+ollama serve
+ollama pull qwen3:8b
+```
+
+Enable it for the API while retaining deterministic analytics execution:
+
+```bash
+PLANNING_PROVIDER=ollama OLLAMA_MODEL=qwen3:8b uvicorn src.api.main:app --reload
+```
+
+`OLLAMA_HOST` defaults to `http://127.0.0.1:11434`, and `OLLAMA_TIMEOUT_SECONDS` defaults to `120`.
+Set `OLLAMA_DETERMINISTIC_FALLBACK=true` to fall back only when the Ollama service is unavailable;
+invalid model output is still rejected. Run a full comparison with:
+
+```bash
+python scripts/compare_ollama_planner.py --model qwen3:8b
+```

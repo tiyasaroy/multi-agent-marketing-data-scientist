@@ -3,8 +3,11 @@
 from __future__ import annotations
 
 import json
+import os
+import urllib.error
+import urllib.request
 from dataclasses import dataclass
-from typing import Any, Callable, Mapping, Protocol
+from typing import Any, Callable, Mapping, Optional, Protocol
 
 from src.agents.manager_agent import ManagerAgent
 from src.api.schemas import InvestigationRequest
@@ -13,6 +16,10 @@ from src.orchestration.state import InvestigationPlan
 
 class PlanValidationError(ValueError):
     """Raised when a provider changes immutable request facts."""
+
+
+class PlanningProviderUnavailableError(ConnectionError):
+    """Raised when an optional planning service cannot be reached."""
 
 
 class PlanningProvider(Protocol):
@@ -131,3 +138,89 @@ class ReplayPlanningProvider:
             raise PlanValidationError(f"No replay plan for question: {request.question}")
         plan = InvestigationPlan.model_validate(self.plans_by_question[request.question])
         return validate_plan_for_request(plan, request)
+
+
+OllamaTransport = Callable[[str, Mapping[str, Any], float], Mapping[str, Any]]
+
+
+def _ollama_http_transport(url: str, payload: Mapping[str, Any], timeout: float) -> Mapping[str, Any]:
+    request = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        raise PlanningProviderUnavailableError(f"Ollama is unavailable at {url}: {exc}") from exc
+
+
+@dataclass
+class OllamaPlanningProvider:
+    """Use a local Ollama model for schema-constrained planning only."""
+
+    model: str = "qwen3:8b"
+    host: str = "http://127.0.0.1:11434"
+    timeout_seconds: float = 120.0
+    fallback: Optional[PlanningProvider] = None
+    transport: OllamaTransport = _ollama_http_transport
+
+    @property
+    def name(self) -> str:
+        return f"ollama:{self.model}"
+
+    def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
+        schema = InvestigationPlan.model_json_schema()
+        user_content = json.dumps({
+            "request": request.model_dump(mode="json"),
+            "instruction": "Classify the question and return the execution plan. Copy question and dates exactly.",
+            "allowed_question_type_tools": TOOL_BY_QUESTION_TYPE,
+            "allowed_metrics_by_question_type": {
+                key: sorted(values) for key, values in METRICS_BY_QUESTION_TYPE.items()
+            },
+        }, sort_keys=True)
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": StructuredLLMPlanningProvider.SYSTEM_POLICY},
+                {"role": "user", "content": user_content},
+            ],
+            "stream": False,
+            "format": schema,
+            "options": {"temperature": 0},
+        }
+        try:
+            response = self.transport(
+                f"{self.host.rstrip('/')}/api/chat", payload, self.timeout_seconds
+            )
+        except PlanningProviderUnavailableError:
+            if self.fallback is not None:
+                return self.fallback.create_plan(request)
+            raise
+        try:
+            content = response["message"]["content"]
+            raw_plan = json.loads(content)
+            plan = InvestigationPlan.model_validate(raw_plan)
+        except Exception as exc:
+            raise PlanValidationError(f"Ollama returned an invalid structured plan: {exc}") from exc
+        return validate_plan_for_request(plan, request)
+
+
+def planning_provider_from_env() -> PlanningProvider:
+    """Build the configured planner; deterministic remains the safe default."""
+    provider = os.getenv("PLANNING_PROVIDER", "deterministic").strip().casefold()
+    if provider == "deterministic":
+        return DeterministicPlanningProvider()
+    if provider != "ollama":
+        raise ValueError("PLANNING_PROVIDER must be 'deterministic' or 'ollama'")
+    fallback_enabled = os.getenv("OLLAMA_DETERMINISTIC_FALLBACK", "false").casefold() in {
+        "1", "true", "yes",
+    }
+    return OllamaPlanningProvider(
+        model=os.getenv("OLLAMA_MODEL", "qwen3:8b"),
+        host=os.getenv("OLLAMA_HOST", "http://127.0.0.1:11434"),
+        timeout_seconds=float(os.getenv("OLLAMA_TIMEOUT_SECONDS", "120")),
+        fallback=DeterministicPlanningProvider() if fallback_enabled else None,
+    )
