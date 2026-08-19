@@ -59,7 +59,7 @@ because they can be reproduced from the committed data.
 
 ## API
 
-After starting Uvicorn, open `http://127.0.0.1:8000/` for the Signal Desk web dashboard or
+After starting Uvicorn, open `http://127.0.0.1:8000/` for the Marketing Detective web dashboard or
 `http://127.0.0.1:8000/docs` for interactive API documentation.
 Available endpoints include `GET /health`, `GET /metrics`, `GET /incidents`,
 `POST /investigations/revenue`, and `POST /investigations/ask`.

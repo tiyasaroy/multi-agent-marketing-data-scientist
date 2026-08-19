@@ -22,7 +22,7 @@ def test_health_reports_loaded_database():
 def test_dashboard_and_static_assets_are_served():
     response = client.get("/")
     assert response.status_code == 200
-    assert "Signal Desk" in response.text
+    assert "Marketing Detective" in response.text
     assert 'id="investigationForm"' in response.text
     stylesheet = client.get("/static/styles.css")
     assert stylesheet.status_code == 200

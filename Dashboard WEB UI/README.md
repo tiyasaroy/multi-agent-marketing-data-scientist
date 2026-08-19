@@ -1,6 +1,6 @@
-# Signal Desk Dashboard Web UI
+# Marketing Detective Dashboard Web UI
 
-Signal Desk is the browser interface for the Multi-Agent Marketing Data Scientist. It runs inside
+Marketing Detective is the browser interface for the Multi-Agent Marketing Data Scientist. It runs inside
 the existing FastAPI application and displays real, evidence-validated investigation results from
 DuckDB.
 
