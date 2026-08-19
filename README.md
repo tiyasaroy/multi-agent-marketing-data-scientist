@@ -19,6 +19,7 @@ This initial foundation includes:
 - scoped traffic analysis across channel, device, country, and landing page;
 - deterministic campaign-attribution completeness and missing-ID analysis;
 - deterministic negative-review rate and keyword-topic analysis;
+- treatment-versus-control experiment lift, confidence interval, significance, and power analysis;
 - a seven-case ground-truth evaluation benchmark with coverage and evidence-integrity metrics; and
 - automated tests for KPI correctness and the known checkout incident.
 
@@ -70,7 +71,7 @@ KPI, decomposition, funnel, and related-anomaly query and are included in eviden
 
 `scripts/run_evaluation.py` evaluates the workflow against seven injected scenario families. The
 report intentionally counts unsupported questions as coverage gaps. Revenue and campaign
-performance, traffic, attribution-quality, and review-sentiment cases are supported. Experimentation
-remains the next planned capability.
+performance, traffic, attribution-quality, review-sentiment, and controlled experiment questions
+are supported.
 The initial results and case-level analysis are documented in
 [`docs/evaluation_baseline.md`](docs/evaluation_baseline.md).

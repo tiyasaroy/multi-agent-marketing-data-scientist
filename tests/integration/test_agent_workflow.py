@@ -126,6 +126,24 @@ def test_review_question_uses_sentiment_tool_and_validated_report():
     assert response.json()["evidence"]["metric"] == "negative_review_rate"
 
 
+def test_experiment_question_uses_lift_tool_and_reports_power_warning():
+    experiment_request = InvestigationRequest(
+        question="Did the Checkout reassurance copy experiment improve conversion rate?",
+        current_start=date(2026, 7, 1), current_end=date(2026, 8, 1),
+        previous_start=date(2026, 5, 31), previous_end=date(2026, 7, 1),
+    )
+    result = InvestigationWorkflow().run(experiment_request)
+    assert result.plan.question_type == "experiment_analysis"
+    assert result.plan.scope.experiment == "Checkout reassurance copy"
+    assert result.executed_tools == ["run_experiment_investigation"]
+    assert result.critic_review.approved is True
+    assert any("below the 80% power threshold" in item for item in result.executive_report.limitations)
+
+    response = TestClient(app).post("/investigations/ask", json=experiment_request.model_dump(mode="json"))
+    assert response.status_code == 200
+    assert response.json()["evidence"]["ranked_candidates"][0]["evidence"]["low_power_warning"] is True
+
+
 def test_scoped_and_global_evidence_ids_are_distinct():
     global_result = InvestigationWorkflow().run(request())
     scoped_result = InvestigationWorkflow().run(

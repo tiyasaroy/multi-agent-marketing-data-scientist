@@ -14,6 +14,8 @@ def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
         return _build_attribution_report(evidence)
     if evidence.question_type == "sentiment_analysis":
         return _build_sentiment_report(evidence)
+    if evidence.question_type == "experiment_analysis":
+        return _build_experiment_report(evidence)
     revenue = evidence.kpis["revenue"]
     conversion_rate = evidence.kpis["conversion_rate"]
     primary = evidence.ranked_candidates[0]
@@ -227,4 +229,49 @@ def _build_sentiment_report(evidence: InvestigationReport) -> ExecutiveReport:
         ),
         contributing_factors=[], recommendations=recommendations,
         limitations=["Topic labels use an explicit keyword lexicon and do not infer intent or causality."],
+    )
+
+
+def _build_experiment_report(evidence: InvestigationReport) -> ExecutiveReport:
+    conversion = evidence.kpis["conversion_rate"]
+    revenue = evidence.kpis["revenue_per_user"]
+    candidate = evidence.ranked_candidates[0]
+    details = candidate.evidence
+    significant = details["statistically_significant"]
+    decision = "statistically significant" if significant else "not statistically significant"
+    recommendation = (
+        "Consider rollout only after validating operational guardrails and practical impact."
+        if significant else
+        "Collect more observations before making a rollout decision."
+    )
+    return ExecutiveReport(
+        title=f"Experiment analysis ({details['experiment_name']})",
+        summary=[
+            EvidenceClaim(
+                claim_id="experiment_conversion_lift",
+                text=(f"Treatment conversion rate was {conversion.current:.1%} versus "
+                      f"{conversion.previous:.1%} for control, a {conversion.absolute_change:.1%} "
+                      f"absolute lift that was {decision}."),
+                evidence_ids=[candidate.evidence_id],
+            ),
+            EvidenceClaim(
+                claim_id="experiment_revenue_lift",
+                text=f"Treatment revenue per user changed by {revenue.percent_change:.1%} versus control.",
+                evidence_ids=[revenue.evidence_id],
+            ),
+        ],
+        primary_driver=EvidenceClaim(
+            claim_id="primary_driver", text="The analyzed experiment variant was treatment.",
+            evidence_ids=[candidate.evidence_id],
+        ),
+        contributing_factors=[],
+        recommendations=[EvidenceClaim(
+            claim_id="experiment_decision", text=recommendation, evidence_ids=[candidate.evidence_id]
+        )],
+        limitations=[
+            f"Observed power was {details['observed_power']:.1%}; "
+            + ("the result is below the 80% power threshold." if details["low_power_warning"]
+               else "the result meets the 80% power threshold."),
+            "Experiment estimates apply to the randomized population and observed exposure window.",
+        ],
     )

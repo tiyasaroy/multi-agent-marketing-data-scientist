@@ -23,6 +23,7 @@ class InvestigationScope(WorkflowModel):
     channel: Optional[str] = None
     campaign: Optional[str] = None
     customer_segment: Optional[str] = None
+    experiment: Optional[str] = None
 
     def active_filters(self) -> dict[str, str]:
         return {
@@ -36,6 +37,7 @@ class InvestigationPlan(WorkflowModel):
         "root_cause_analysis", "campaign_performance_analysis", "traffic_analysis",
         "data_quality_analysis",
         "sentiment_analysis",
+        "experiment_analysis",
     ]
     primary_metric: Literal[
         "revenue", "cpc", "ctr", "cpa", "roas", "conversion_rate", "sessions", "users",

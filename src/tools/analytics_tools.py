@@ -7,6 +7,7 @@ from src.analytics.campaign_performance import investigate_campaign_performance
 from src.analytics.traffic_analysis import investigate_traffic_change
 from src.analytics.attribution_quality import investigate_attribution_quality
 from src.analytics.review_sentiment import investigate_review_sentiment
+from src.analytics.experiment_analysis import investigate_experiment
 from src.api.schemas import InvestigationReport
 from src.database.connection import connect
 from src.orchestration.state import InvestigationPlan
@@ -26,6 +27,7 @@ class AnalyticsToolRegistry:
             "run_traffic_investigation": self._run_traffic_investigation,
             "run_attribution_quality_investigation": self._run_attribution_quality_investigation,
             "run_review_sentiment_investigation": self._run_review_sentiment_investigation,
+            "run_experiment_investigation": self._run_experiment_investigation,
         }
 
     @property
@@ -87,5 +89,14 @@ class AnalyticsToolRegistry:
                 connection, plan.current_period.start, plan.current_period.end_exclusive,
                 plan.comparison_period.start, plan.comparison_period.end_exclusive,
                 scope=plan.scope.active_filters(),
+            )
+        return InvestigationReport.model_validate(result)
+
+    @staticmethod
+    def _run_experiment_investigation(plan: InvestigationPlan) -> InvestigationReport:
+        with connect(read_only=True) as connection:
+            result = investigate_experiment(
+                connection, plan.current_period.start, plan.current_period.end_exclusive,
+                experiment_name=plan.scope.experiment,
             )
         return InvestigationReport.model_validate(result)

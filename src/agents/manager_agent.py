@@ -15,6 +15,7 @@ SCOPE_VALUES = {
         "Organic_Content", "Email_Nurture", "Referral_Program", "Direct_Brand",
     ),
     "customer_segment": ("New", "Occasional", "Loyal", "High Value"),
+    "experiment": ("Checkout reassurance copy",),
 }
 
 
@@ -42,6 +43,17 @@ class ManagerAgent:
     def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
         question = request.question.casefold()
         scope = _extract_scope(request.question)
+        if "experiment" in question or "a/b" in question or "ab test" in question or scope.experiment:
+            return InvestigationPlan(
+                question=request.question,
+                question_type="experiment_analysis",
+                primary_metric="conversion_rate",
+                current_period=PlanPeriod(start=request.current_start, end_exclusive=request.current_end),
+                comparison_period=PlanPeriod(start=request.previous_start, end_exclusive=request.previous_end),
+                scope=scope,
+                investigations=["variant_comparison", "conversion_lift", "revenue_lift", "power_check"],
+                tools=["run_experiment_investigation"],
+            )
         if "review" in question or "sentiment" in question:
             return InvestigationPlan(
                 question=request.question,
