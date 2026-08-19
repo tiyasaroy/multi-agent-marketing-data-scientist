@@ -1,0 +1,93 @@
+[
+  {
+    "case_id": "android_checkout_regression",
+    "question": "Why did revenue decline from July 20 to July 26?",
+    "current_start": "2026-07-20",
+    "current_end": "2026-07-27",
+    "previous_start": "2026-07-13",
+    "previous_end": "2026-07-20",
+    "expected_question_type": "root_cause_analysis",
+    "expected_primary_driver": {"dimension": "device", "segment": "Android"},
+    "expected_top_drivers": [{"dimension": "device", "segment": "Android"}],
+    "expected_funnel_transition": "checkout_started -> payment_started",
+    "expected_root_cause_contains": "Android payment SDK regression"
+  },
+  {
+    "case_id": "google_ads_cpc_increase",
+    "question": "Why did Google Ads CPC increase in the first half of June?",
+    "current_start": "2026-06-01",
+    "current_end": "2026-06-15",
+    "previous_start": "2026-05-18",
+    "previous_end": "2026-06-01",
+    "expected_question_type": "campaign_performance_analysis",
+    "expected_primary_driver": {"dimension": "channel", "segment": "Google Ads"},
+    "expected_top_drivers": [{"dimension": "channel", "segment": "Google Ads"}],
+    "expected_funnel_transition": null,
+    "expected_root_cause_contains": "Competitor bidding pressure"
+  },
+  {
+    "case_id": "organic_traffic_decline",
+    "question": "Why did organic sessions decline in the second half of June?",
+    "current_start": "2026-06-15",
+    "current_end": "2026-07-01",
+    "previous_start": "2026-05-30",
+    "previous_end": "2026-06-15",
+    "expected_question_type": "traffic_analysis",
+    "expected_primary_driver": {"dimension": "channel", "segment": "Organic Search"},
+    "expected_top_drivers": [{"dimension": "channel", "segment": "Organic Search"}],
+    "expected_funnel_transition": null,
+    "expected_root_cause_contains": "Search ranking change"
+  },
+  {
+    "case_id": "attribution_tracking_failure",
+    "question": "Why did campaign attribution completeness decline from May 10 to May 16?",
+    "current_start": "2026-05-10",
+    "current_end": "2026-05-17",
+    "previous_start": "2026-05-03",
+    "previous_end": "2026-05-10",
+    "expected_question_type": "data_quality_analysis",
+    "expected_primary_driver": {"dimension": "campaign", "segment": "Unattributed"},
+    "expected_top_drivers": [{"dimension": "campaign", "segment": "Unattributed"}],
+    "expected_funnel_transition": null,
+    "expected_root_cause_contains": "Campaign attribution tracking failure"
+  },
+  {
+    "case_id": "negative_review_spike",
+    "question": "Why did negative app reviews increase after July 20?",
+    "current_start": "2026-07-20",
+    "current_end": "2026-08-01",
+    "previous_start": "2026-07-08",
+    "previous_end": "2026-07-20",
+    "expected_question_type": "sentiment_analysis",
+    "expected_primary_driver": {"dimension": "topic", "segment": "payment/crash/login/refund"},
+    "expected_top_drivers": [{"dimension": "topic", "segment": "payment/crash/login/refund"}],
+    "expected_funnel_transition": null,
+    "expected_root_cause_contains": "Android checkout regression"
+  },
+  {
+    "case_id": "meta_campaign_success",
+    "question": "Did the Meta Summer Lift campaign improve conversion rate in July?",
+    "current_start": "2026-07-01",
+    "current_end": "2026-08-01",
+    "previous_start": "2026-05-31",
+    "previous_end": "2026-07-01",
+    "expected_question_type": "campaign_performance_analysis",
+    "expected_primary_driver": {"dimension": "campaign", "segment": "Meta_Summer_Lift"},
+    "expected_top_drivers": [{"dimension": "campaign", "segment": "Meta_Summer_Lift"}],
+    "expected_funnel_transition": null,
+    "expected_root_cause_contains": "High-performing Meta creative"
+  },
+  {
+    "case_id": "india_revenue_decline",
+    "question": "Why did revenue decline in India from July 20 to July 26?",
+    "current_start": "2026-07-20",
+    "current_end": "2026-07-27",
+    "previous_start": "2026-07-13",
+    "previous_end": "2026-07-20",
+    "expected_question_type": "root_cause_analysis",
+    "expected_primary_driver": {"dimension": "country", "segment": "India"},
+    "expected_top_drivers": [{"dimension": "country", "segment": "India"}],
+    "expected_funnel_transition": "checkout_started -> payment_started",
+    "expected_root_cause_contains": "Payment completion failure concentrated in India"
+  }
+]

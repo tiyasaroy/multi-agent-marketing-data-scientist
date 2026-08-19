@@ -14,6 +14,7 @@ This initial foundation includes:
 - sequential funnel-drop analysis and ranked evidence candidates; and
 - a FastAPI service with validated Pydantic request and evidence contracts; and
 - a deterministic Manager, controlled tool registry, executive reporter, and evidence Critic; and
+- a seven-case ground-truth evaluation benchmark with coverage and evidence-integrity metrics; and
 - automated tests for KPI correctness and the known checkout incident.
 
 ## Quick start
@@ -26,6 +27,7 @@ python scripts/generate_data.py
 python scripts/initialize_database.py
 python scripts/run_kpi_example.py
 python scripts/run_root_cause_analysis.py
+python scripts/run_evaluation.py
 python -m pytest -q
 uvicorn src.api.main:app --reload
 ```
@@ -56,3 +58,11 @@ Available endpoints include `GET /health`, `GET /metrics`, `GET /incidents`,
 The `/investigations/ask` workflow is API-key-free: the Manager creates a validated plan, an
 allowlisted read-only tool executes the analysis, the reporter attaches evidence IDs to every claim,
 and the Critic rejects unsupported references before a response is returned.
+
+## Evaluation
+
+`scripts/run_evaluation.py` evaluates the workflow against seven injected scenario families. The
+report intentionally counts unsupported questions as coverage gaps, making it possible to measure
+improvements as campaign, traffic, attribution, sentiment, and experimentation tools are added.
+The initial results and case-level analysis are documented in
+[`docs/evaluation_baseline.md`](docs/evaluation_baseline.md).
