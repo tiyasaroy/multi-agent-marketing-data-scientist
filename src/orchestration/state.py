@@ -32,8 +32,10 @@ class InvestigationScope(WorkflowModel):
 
 class InvestigationPlan(WorkflowModel):
     question: str
-    question_type: Literal["root_cause_analysis", "campaign_performance_analysis"]
-    primary_metric: Literal["revenue", "cpc", "ctr", "cpa", "roas", "conversion_rate"]
+    question_type: Literal["root_cause_analysis", "campaign_performance_analysis", "traffic_analysis"]
+    primary_metric: Literal[
+        "revenue", "cpc", "ctr", "cpa", "roas", "conversion_rate", "sessions", "users"
+    ]
     current_period: PlanPeriod
     comparison_period: PlanPeriod
     scope: InvestigationScope = Field(default_factory=InvestigationScope)

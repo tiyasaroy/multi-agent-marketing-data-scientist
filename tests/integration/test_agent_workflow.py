@@ -70,6 +70,26 @@ def test_campaign_question_uses_campaign_tool_and_validated_report():
     assert result.critic_review.approved is True
 
 
+def test_organic_traffic_question_uses_traffic_tool_and_validated_report():
+    traffic_request = InvestigationRequest(
+        question="Why did organic sessions decline in the second half of June?",
+        current_start=date(2026, 6, 15), current_end=date(2026, 7, 1),
+        previous_start=date(2026, 5, 30), previous_end=date(2026, 6, 15),
+    )
+    result = InvestigationWorkflow().run(traffic_request)
+    assert result.plan.question_type == "traffic_analysis"
+    assert result.plan.scope.channel == "Organic Search"
+    assert result.executed_tools == ["run_traffic_investigation"]
+    assert result.executive_report.primary_driver.text.endswith("channel=Organic Search.")
+    assert result.critic_review.approved is True
+
+    response = TestClient(app).post(
+        "/investigations/ask", json=traffic_request.model_dump(mode="json")
+    )
+    assert response.status_code == 200
+    assert response.json()["evidence"]["metric"] == "sessions"
+
+
 def test_scoped_and_global_evidence_ids_are_distinct():
     global_result = InvestigationWorkflow().run(request())
     scoped_result = InvestigationWorkflow().run(

@@ -8,6 +8,8 @@ def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
     """Create prose only from validated calculated evidence."""
     if evidence.question_type == "campaign_performance_analysis":
         return _build_campaign_report(evidence)
+    if evidence.question_type == "traffic_analysis":
+        return _build_traffic_report(evidence)
     revenue = evidence.kpis["revenue"]
     conversion_rate = evidence.kpis["conversion_rate"]
     primary = evidence.ranked_candidates[0]
@@ -110,4 +112,38 @@ def _build_campaign_report(evidence: InvestigationReport) -> ExecutiveReport:
         contributing_factors=[], recommendations=recommendations,
         limitations=["Campaign KPI comparisons are observational and do not establish causality.",
                      f"Applied campaign scope: {scope_label or 'none'}."],
+    )
+
+
+def _build_traffic_report(evidence: InvestigationReport) -> ExecutiveReport:
+    metric = evidence.kpis[evidence.metric]
+    primary = evidence.ranked_candidates[0]
+    incident = evidence.related_incidents[0] if evidence.related_incidents else None
+    scope_label = ", ".join(f"{key}={value}" for key, value in evidence.applied_scope.items())
+    recommendations = [EvidenceClaim(
+        claim_id="traffic_recommendation",
+        text=f"Review acquisition and landing-page performance for {primary.dimension}={primary.segment}.",
+        evidence_ids=[primary.evidence_id],
+    )]
+    if incident:
+        recommendations.append(EvidenceClaim(
+            claim_id="traffic_incident",
+            text=f"Investigate the documented cause: {incident.root_cause}.",
+            evidence_ids=[incident.evidence_id],
+        ))
+    return ExecutiveReport(
+        title=f"Traffic investigation ({scope_label or 'all traffic'})",
+        summary=[EvidenceClaim(
+            claim_id="traffic_metric_change",
+            text=f"{evidence.metric.title()} changed by {metric.percent_change:.1%} versus the previous period.",
+            evidence_ids=[metric.evidence_id],
+        )],
+        primary_driver=EvidenceClaim(
+            claim_id="primary_driver",
+            text=f"The leading traffic driver was {primary.dimension}={primary.segment}.",
+            evidence_ids=[primary.evidence_id],
+        ),
+        contributing_factors=[], recommendations=recommendations,
+        limitations=["Traffic comparisons are observational and do not establish causality.",
+                     f"Applied traffic scope: {scope_label or 'none'}."],
     )

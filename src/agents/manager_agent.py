@@ -27,6 +27,8 @@ def _extract_scope(question: str) -> InvestigationScope:
             if re.search(rf"(?<!\w){re.escape(candidate)}(?!\w)", normalized):
                 matches[dimension] = value
                 break
+    if "channel" not in matches and re.search(r"(?<!\w)organic(?!\w)", normalized):
+        matches["channel"] = "Organic Search"
     return InvestigationScope(**matches)
 
 
@@ -40,6 +42,17 @@ class ManagerAgent:
     def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
         question = request.question.casefold()
         scope = _extract_scope(request.question)
+        if "session" in question or "traffic" in question:
+            return InvestigationPlan(
+                question=request.question,
+                question_type="traffic_analysis",
+                primary_metric="sessions" if "session" in question or "traffic" in question else "users",
+                current_period=PlanPeriod(start=request.current_start, end_exclusive=request.current_end),
+                comparison_period=PlanPeriod(start=request.previous_start, end_exclusive=request.previous_end),
+                scope=scope,
+                investigations=["traffic_kpi_comparison", "traffic_driver_analysis", "incident_retrieval"],
+                tools=["run_traffic_investigation"],
+            )
         campaign_metric = next(
             (metric for token, metric in (
                 ("cpc", "cpc"), ("cost per click", "cpc"), ("ctr", "ctr"),
