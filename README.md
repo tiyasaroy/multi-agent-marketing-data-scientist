@@ -10,6 +10,8 @@ This initial foundation includes:
 - a DuckDB analytical schema and repeatable data loader;
 - canonical revenue and conversion KPI calculations;
 - current-period versus previous-period comparisons; and
+- root-cause decomposition by device, country, channel, campaign, and customer segment;
+- sequential funnel-drop analysis and ranked evidence candidates; and
 - automated tests for KPI correctness and the known checkout incident.
 
 ## Quick start
@@ -21,6 +23,7 @@ pip install -r requirements.txt
 python scripts/generate_data.py
 python scripts/initialize_database.py
 python scripts/run_kpi_example.py
+python scripts/run_root_cause_analysis.py
 python -m pytest -q
 ```
 
@@ -35,7 +38,8 @@ expected to produce a material decline in conversion rate and revenue while sess
 stable. Ground-truth scenario definitions are available in
 `data/synthetic/anomaly_ground_truth.csv` for future agent evaluation.
 
-## Next milestone
+## Root-cause example
 
-The next development phase is a deterministic root-cause decomposition engine that ranks changes by
-device, country, channel, and campaign before LLM-based orchestration is introduced.
+`scripts/run_root_cause_analysis.py` compares 2026-07-20–26 with the preceding week and writes a
+structured evidence report to `data/processed/root_cause_report.json`. Generated reports remain local
+because they can be reproduced from the committed data.

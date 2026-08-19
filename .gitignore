@@ -5,3 +5,4 @@ __pycache__/
 .pytest_cache/
 data/processed/*.duckdb
 data/processed/*.wal
+data/processed/*.json
