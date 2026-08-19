@@ -110,6 +110,7 @@ class InvestigationReport(StrictModel):
     metric: str
     current_period: Period
     previous_period: Period
+    applied_scope: Dict[str, str] = Field(default_factory=dict)
     kpis: Dict[str, MetricComparison]
     decompositions: Dict[str, List[DimensionEvidence]]
     overall_funnel: List[FunnelEvidence]

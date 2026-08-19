@@ -5,15 +5,16 @@ from __future__ import annotations
 import math
 import hashlib
 from datetime import date
-from typing import Any
+from typing import Any, Mapping
 
 import duckdb
+
+from .scope import scope_clause, scope_identity
 
 FUNNEL_STEPS = [
     "landing_page", "product_view", "add_to_cart", "checkout_started",
     "payment_started", "purchase_completed",
 ]
-FILTERS = {"device": "s.device", "country": "s.country", "channel": "s.traffic_source"}
 
 
 def _p_value(success_a: int, total_a: int, success_b: int, total_b: int) -> float | None:
@@ -31,24 +32,18 @@ def _counts(
     connection: duckdb.DuckDBPyConnection,
     start: date,
     end: date,
-    filter_dimension: str | None,
-    filter_value: str | None,
+    scope: Mapping[str, str] | None,
 ) -> dict[str, int]:
-    filter_sql = ""
-    parameters: list[Any] = [start, end]
-    if filter_dimension is not None:
-        if filter_dimension not in FILTERS:
-            raise ValueError(f"Unsupported funnel filter: {filter_dimension!r}")
-        if filter_value is None:
-            raise ValueError("filter_value is required when filter_dimension is provided")
-        filter_sql = f" AND {FILTERS[filter_dimension]} = ?"
-        parameters.append(filter_value)
+    filter_sql, filter_values = scope_clause(scope)
+    parameters: list[Any] = [start, end, *filter_values]
     rows = connection.execute(
         f"""
         SELECT fe.event_name, COUNT(DISTINCT fe.session_id) AS sessions
         FROM funnel_events fe
-        JOIN sessions s USING (session_id)
-        WHERE s.timestamp >= ? AND s.timestamp < ? {filter_sql}
+        JOIN sessions sf USING (session_id)
+        JOIN customers cu ON sf.customer_id = cu.customer_id
+        LEFT JOIN campaigns c ON sf.campaign_id = c.campaign_id
+        WHERE sf.timestamp >= ? AND sf.timestamp < ? {filter_sql}
         GROUP BY fe.event_name
         """,
         parameters,
@@ -65,10 +60,16 @@ def compare_funnels(
     *,
     filter_dimension: str | None = None,
     filter_value: str | None = None,
+    scope: Mapping[str, str] | None = None,
 ) -> list[dict[str, Any]]:
     """Compare sequential funnel transition rates between two periods."""
-    current = _counts(connection, current_start, current_end, filter_dimension, filter_value)
-    previous = _counts(connection, previous_start, previous_end, filter_dimension, filter_value)
+    effective_scope = dict(scope or {})
+    if filter_dimension is not None:
+        if filter_value is None:
+            raise ValueError("filter_value is required when filter_dimension is provided")
+        effective_scope[filter_dimension] = filter_value
+    current = _counts(connection, current_start, current_end, effective_scope)
+    previous = _counts(connection, previous_start, previous_end, effective_scope)
     transitions = []
     for from_step, to_step in zip(FUNNEL_STEPS, FUNNEL_STEPS[1:]):
         current_from, current_to = current.get(from_step, 0), current.get(to_step, 0)
@@ -80,6 +81,7 @@ def compare_funnels(
             "funnel", from_step, to_step, filter_dimension or "all", filter_value or "all",
             current_start.isoformat(), current_end.isoformat(),
             previous_start.isoformat(), previous_end.isoformat(),
+            scope_identity(effective_scope),
         ])
         transitions.append({
             "evidence_id": f"fun_{hashlib.sha256(evidence_key.encode()).hexdigest()[:12]}",

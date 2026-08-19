@@ -5,9 +5,11 @@ from __future__ import annotations
 import math
 import hashlib
 from datetime import date
-from typing import Any
+from typing import Any, Mapping
 
 import duckdb
+
+from .scope import scope_clause, scope_identity
 
 DIMENSIONS = {
     "device": "sf.device",
@@ -38,11 +40,14 @@ def decompose_metric(
     current_end: date,
     previous_start: date,
     previous_end: date,
+    *,
+    scope: Mapping[str, str] | None = None,
 ) -> list[dict[str, Any]]:
     """Decompose revenue change by an approved business dimension."""
     if dimension not in DIMENSIONS:
         raise ValueError(f"Unsupported dimension {dimension!r}; choose from {sorted(DIMENSIONS)}")
     expression = DIMENSIONS[dimension]
+    filter_sql, filter_parameters = scope_clause(scope)
     query = f"""
         WITH grouped AS (
             SELECT
@@ -57,8 +62,8 @@ def decompose_metric(
             FROM session_facts sf
             JOIN customers cu USING (customer_id)
             LEFT JOIN campaigns c ON sf.campaign_id = c.campaign_id
-            WHERE (sf.timestamp >= ? AND sf.timestamp < ?)
-               OR (sf.timestamp >= ? AND sf.timestamp < ?)
+            WHERE ((sf.timestamp >= ? AND sf.timestamp < ?)
+               OR (sf.timestamp >= ? AND sf.timestamp < ?)){filter_sql}
             GROUP BY segment, period
         )
         SELECT
@@ -72,7 +77,8 @@ def decompose_metric(
         FROM grouped
         GROUP BY segment
     """
-    parameters = [current_start, current_end, previous_start, previous_end] * 2
+    parameters = [current_start, current_end, previous_start, previous_end,
+                  current_start, current_end, previous_start, previous_end, *filter_parameters]
     result = connection.execute(query, parameters)
     columns = [item[0] for item in result.description]
     raw_rows = [dict(zip(columns, row)) for row in result.fetchall()]
@@ -92,6 +98,7 @@ def decompose_metric(
             "dimension", dimension, str(row["segment"]),
             current_start.isoformat(), current_end.isoformat(),
             previous_start.isoformat(), previous_end.isoformat(),
+            scope_identity(scope),
         ])
         rows.append({
             "evidence_id": f"dim_{hashlib.sha256(evidence_key.encode()).hexdigest()[:12]}",

@@ -25,6 +25,44 @@ def test_manager_creates_validated_revenue_plan():
     assert plan.question_type == "root_cause_analysis"
     assert plan.primary_metric == "revenue"
     assert plan.tools == ["run_revenue_investigation"]
+    assert plan.scope.active_filters() == {}
+
+
+def test_manager_extracts_country_scope_and_workflow_applies_it():
+    scoped_request = request("Why did revenue decline in India during the incident week?")
+    plan = ManagerAgent().create_plan(scoped_request)
+    assert plan.scope.country == "India"
+
+    result = InvestigationWorkflow().run(scoped_request)
+    assert result.evidence.applied_scope == {"country": "India"}
+    assert result.evidence.ranked_candidates[0].dimension == "country"
+    assert result.evidence.ranked_candidates[0].segment == "India"
+    assert "country=India" in result.executive_report.title
+    assert any("Payment completion failure concentrated in India" in row.root_cause
+               for row in result.evidence.related_incidents)
+
+
+@pytest.mark.parametrize(
+    ("question", "dimension", "value"),
+    [
+        ("Why did revenue decline for Android?", "device", "Android"),
+        ("Why did revenue decline from Google Ads?", "channel", "Google Ads"),
+        ("Why did revenue decline for Meta Summer Lift?", "campaign", "Meta_Summer_Lift"),
+        ("Why did revenue decline among High Value customers?", "customer_segment", "High Value"),
+    ],
+)
+def test_manager_extracts_each_supported_scope_dimension(question, dimension, value):
+    plan = ManagerAgent().create_plan(request(question))
+    assert plan.scope.active_filters() == {dimension: value}
+
+
+def test_scoped_and_global_evidence_ids_are_distinct():
+    global_result = InvestigationWorkflow().run(request())
+    scoped_result = InvestigationWorkflow().run(
+        request("Why did revenue decline in India during the incident week?")
+    )
+    assert global_result.evidence.kpis["revenue"].evidence_id != scoped_result.evidence.kpis["revenue"].evidence_id
+    assert global_result.evidence.ranked_candidates[0].evidence_id != scoped_result.evidence.ranked_candidates[0].evidence_id
 
 
 def test_registry_rejects_unregistered_tools():

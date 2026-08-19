@@ -14,6 +14,7 @@ This initial foundation includes:
 - sequential funnel-drop analysis and ranked evidence candidates; and
 - a FastAPI service with validated Pydantic request and evidence contracts; and
 - a deterministic Manager, controlled tool registry, executive reporter, and evidence Critic; and
+- validated country, device, channel, campaign, and customer-segment scopes for revenue investigations;
 - a seven-case ground-truth evaluation benchmark with coverage and evidence-integrity metrics; and
 - automated tests for KPI correctness and the known checkout incident.
 
@@ -58,6 +59,8 @@ Available endpoints include `GET /health`, `GET /metrics`, `GET /incidents`,
 The `/investigations/ask` workflow is API-key-free: the Manager creates a validated plan, an
 allowlisted read-only tool executes the analysis, the reporter attaches evidence IDs to every claim,
 and the Critic rejects unsupported references before a response is returned.
+Explicit scope values in a question (for example, `revenue decline in India`) are applied to every
+KPI, decomposition, funnel, and related-anomaly query and are included in evidence identity.
 
 ## Evaluation
 

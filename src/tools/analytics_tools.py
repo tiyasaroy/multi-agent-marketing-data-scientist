@@ -38,5 +38,6 @@ class AnalyticsToolRegistry:
                 plan.current_period.end_exclusive,
                 plan.comparison_period.start,
                 plan.comparison_period.end_exclusive,
+                scope=plan.scope.active_filters(),
             )
         return InvestigationReport.model_validate(result)

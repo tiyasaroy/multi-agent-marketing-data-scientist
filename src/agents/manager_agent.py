@@ -1,7 +1,33 @@
 """Rule-based baseline Manager Agent for investigation planning."""
 
+import re
+
 from src.api.schemas import InvestigationRequest
-from src.orchestration.state import InvestigationPlan, PlanPeriod
+from src.orchestration.state import InvestigationPlan, InvestigationScope, PlanPeriod
+
+
+SCOPE_VALUES = {
+    "country": ("India", "United States", "United Kingdom", "Canada", "Australia"),
+    "device": ("Android", "iOS", "Desktop"),
+    "channel": ("Google Ads", "Meta Ads", "Organic Search", "Email", "Referral", "Direct"),
+    "campaign": (
+        "Always_On_Search", "Brand_Search", "Meta_Prospecting", "Meta_Summer_Lift",
+        "Organic_Content", "Email_Nurture", "Referral_Program", "Direct_Brand",
+    ),
+    "customer_segment": ("New", "Occasional", "Loyal", "High Value"),
+}
+
+
+def _extract_scope(question: str) -> InvestigationScope:
+    normalized = re.sub(r"[_\-]+", " ", question).casefold()
+    matches = {}
+    for dimension, values in SCOPE_VALUES.items():
+        for value in values:
+            candidate = value.replace("_", " ").casefold()
+            if re.search(rf"(?<!\w){re.escape(candidate)}(?!\w)", normalized):
+                matches[dimension] = value
+                break
+    return InvestigationScope(**matches)
 
 
 class UnsupportedQuestionError(ValueError):
@@ -22,6 +48,7 @@ class ManagerAgent:
             primary_metric="revenue",
             current_period=PlanPeriod(start=request.current_start, end_exclusive=request.current_end),
             comparison_period=PlanPeriod(start=request.previous_start, end_exclusive=request.previous_end),
+            scope=_extract_scope(request.question),
             investigations=[
                 "kpi_comparison", "dimension_decomposition", "funnel_analysis",
                 "statistical_validation", "incident_retrieval",

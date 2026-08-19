@@ -15,6 +15,9 @@ def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
     ]
     funnel = funnel_candidates[0] if funnel_candidates else None
     incident = evidence.related_incidents[0] if evidence.related_incidents else None
+    scope_label = ", ".join(
+        f"{dimension}={value}" for dimension, value in evidence.applied_scope.items()
+    )
 
     contributing = []
     if funnel is not None:
@@ -43,7 +46,7 @@ def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
         ))
 
     return ExecutiveReport(
-        title="Revenue decline investigation",
+        title=(f"Revenue decline investigation ({scope_label})" if scope_label else "Revenue decline investigation"),
         summary=[
             EvidenceClaim(
                 claim_id="revenue_change",
@@ -65,6 +68,10 @@ def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
         recommendations=recommendations,
         limitations=[
             "Contribution and funnel evidence identify likely drivers, not experimental causality.",
-            "This baseline supports revenue root-cause questions with explicit comparison dates only.",
+            (
+                f"All evidence in this report is filtered to {scope_label}."
+                if scope_label else
+                "This report uses global data because no explicit scope was requested."
+            ),
         ],
     )

@@ -17,12 +17,26 @@ class PlanPeriod(WorkflowModel):
     end_exclusive: date
 
 
+class InvestigationScope(WorkflowModel):
+    country: Optional[str] = None
+    device: Optional[str] = None
+    channel: Optional[str] = None
+    campaign: Optional[str] = None
+    customer_segment: Optional[str] = None
+
+    def active_filters(self) -> dict[str, str]:
+        return {
+            name: value for name, value in self.model_dump().items() if value is not None
+        }
+
+
 class InvestigationPlan(WorkflowModel):
     question: str
     question_type: Literal["root_cause_analysis"]
     primary_metric: Literal["revenue"]
     current_period: PlanPeriod
     comparison_period: PlanPeriod
+    scope: InvestigationScope = Field(default_factory=InvestigationScope)
     investigations: List[str]
     tools: List[str]
 
