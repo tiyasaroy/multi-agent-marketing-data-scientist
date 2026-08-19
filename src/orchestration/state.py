@@ -35,10 +35,12 @@ class InvestigationPlan(WorkflowModel):
     question_type: Literal[
         "root_cause_analysis", "campaign_performance_analysis", "traffic_analysis",
         "data_quality_analysis",
+        "sentiment_analysis",
     ]
     primary_metric: Literal[
         "revenue", "cpc", "ctr", "cpa", "roas", "conversion_rate", "sessions", "users",
         "attribution_completeness",
+        "negative_review_rate",
     ]
     current_period: PlanPeriod
     comparison_period: PlanPeriod

@@ -12,6 +12,8 @@ def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
         return _build_traffic_report(evidence)
     if evidence.question_type == "data_quality_analysis":
         return _build_attribution_report(evidence)
+    if evidence.question_type == "sentiment_analysis":
+        return _build_sentiment_report(evidence)
     revenue = evidence.kpis["revenue"]
     conversion_rate = evidence.kpis["conversion_rate"]
     primary = evidence.ranked_candidates[0]
@@ -193,4 +195,36 @@ def _build_attribution_report(evidence: InvestigationReport) -> ExecutiveReport:
         ),
         contributing_factors=[], recommendations=recommendations,
         limitations=["Missing campaign IDs identify an instrumentation gap but not the point of failure."],
+    )
+
+
+def _build_sentiment_report(evidence: InvestigationReport) -> ExecutiveReport:
+    negative_rate = evidence.kpis["negative_review_rate"]
+    primary = evidence.ranked_candidates[0]
+    incident = evidence.related_incidents[0] if evidence.related_incidents else None
+    recommendations = [EvidenceClaim(
+        claim_id="review_recommendation",
+        text=f"Prioritize product diagnostics and support review for topic={primary.segment}.",
+        evidence_ids=[primary.evidence_id],
+    )]
+    if incident:
+        recommendations.append(EvidenceClaim(
+            claim_id="review_incident",
+            text=f"Investigate the documented cause: {incident.root_cause}.",
+            evidence_ids=[incident.evidence_id],
+        ))
+    return ExecutiveReport(
+        title="Negative app-review investigation",
+        summary=[EvidenceClaim(
+            claim_id="negative_review_rate_change",
+            text=f"The negative-review rate changed by {negative_rate.percent_change:.1%}.",
+            evidence_ids=[negative_rate.evidence_id],
+        )],
+        primary_driver=EvidenceClaim(
+            claim_id="primary_driver",
+            text=f"The leading review topic was {primary.segment}.",
+            evidence_ids=[primary.evidence_id],
+        ),
+        contributing_factors=[], recommendations=recommendations,
+        limitations=["Topic labels use an explicit keyword lexicon and do not infer intent or causality."],
     )

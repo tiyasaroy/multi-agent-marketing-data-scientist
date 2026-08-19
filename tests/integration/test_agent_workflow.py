@@ -109,6 +109,23 @@ def test_attribution_question_uses_quality_tool_and_validated_report():
     assert response.json()["evidence"]["metric"] == "attribution_completeness"
 
 
+def test_review_question_uses_sentiment_tool_and_validated_report():
+    review_request = InvestigationRequest(
+        question="Why did negative app reviews increase after July 20?",
+        current_start=date(2026, 7, 20), current_end=date(2026, 8, 1),
+        previous_start=date(2026, 7, 8), previous_end=date(2026, 7, 20),
+    )
+    result = InvestigationWorkflow().run(review_request)
+    assert result.plan.question_type == "sentiment_analysis"
+    assert result.executed_tools == ["run_review_sentiment_investigation"]
+    assert result.executive_report.primary_driver.text.endswith("payment/crash/login/refund.")
+    assert result.critic_review.approved is True
+
+    response = TestClient(app).post("/investigations/ask", json=review_request.model_dump(mode="json"))
+    assert response.status_code == 200
+    assert response.json()["evidence"]["metric"] == "negative_review_rate"
+
+
 def test_scoped_and_global_evidence_ids_are_distinct():
     global_result = InvestigationWorkflow().run(request())
     scoped_result = InvestigationWorkflow().run(

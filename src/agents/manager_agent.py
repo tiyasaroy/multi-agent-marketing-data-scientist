@@ -42,6 +42,17 @@ class ManagerAgent:
     def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
         question = request.question.casefold()
         scope = _extract_scope(request.question)
+        if "review" in question or "sentiment" in question:
+            return InvestigationPlan(
+                question=request.question,
+                question_type="sentiment_analysis",
+                primary_metric="negative_review_rate",
+                current_period=PlanPeriod(start=request.current_start, end_exclusive=request.current_end),
+                comparison_period=PlanPeriod(start=request.previous_start, end_exclusive=request.previous_end),
+                scope=scope,
+                investigations=["review_sentiment_comparison", "negative_topic_analysis", "incident_retrieval"],
+                tools=["run_review_sentiment_investigation"],
+            )
         if "attribution" in question or "unattributed" in question:
             return InvestigationPlan(
                 question=request.question,
