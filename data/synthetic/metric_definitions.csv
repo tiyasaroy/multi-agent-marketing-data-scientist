@@ -1,0 +1,8 @@
+metric_name,definition,formula,required_columns,allowed_dimensions,business_context,owner
+revenue,Sum of recognized purchase revenue,SUM(conversions.revenue),conversions.revenue,"country,device,channel,campaign,product",Official project KPI,Finance Analytics
+conversion_rate,Share of sessions producing a purchase,purchase sessions / sessions,sessions.session_id; conversions.session_id,"country,device,channel,campaign",Official project KPI,Growth Analytics
+average_order_value,Average revenue per purchase,revenue / conversions,conversions.revenue; conversions.conversion_id,"country,device,channel,campaign,product",Official project KPI,Finance Analytics
+ctr,Share of impressions resulting in clicks,clicks / impressions,daily_campaign_metrics.clicks; daily_campaign_metrics.impressions,"campaign,channel,date",Official project KPI,Performance Marketing
+cpc,Average advertising cost per click,spend / clicks,daily_campaign_metrics.spend; daily_campaign_metrics.clicks,"campaign,channel,date",Official project KPI,Performance Marketing
+roas,Revenue returned per unit of advertising spend,revenue / spend,daily_campaign_metrics.revenue; daily_campaign_metrics.spend,"campaign,channel,date",Official project KPI,Performance Marketing
+checkout_completion_rate,Share of checkout starts ending in purchase,purchase_completed / checkout_started,funnel_events.event_name,"country,device,channel,date",Official project KPI,Product Analytics

@@ -1,0 +1,9 @@
+campaign_id,campaign_name,platform,channel,start_date,end_date,budget,spend,impressions,clicks,conversions,revenue
+cmp_001,Always_On_Search,Google Ads,Google Ads,2026-02-01,2026-07-31,75000.00,42206.20,799794,28211,1070,80687.30
+cmp_002,Brand_Search,Google Ads,Google Ads,2026-02-01,2026-07-31,42000.00,42937.96,814027,28721,1047,78177.06
+cmp_003,Meta_Prospecting,Meta Ads,Meta Ads,2026-02-01,2026-07-31,60000.00,30868.17,809146,28227,1004,74156.46
+cmp_004,Meta_Summer_Lift,Meta Ads,Meta Ads,2026-02-01,2026-07-31,70000.00,31581.55,820545,28738,1072,81099.16
+cmp_005,Organic_Content,Organic Search,Organic Search,2026-02-01,2026-07-31,8000.00,2856.24,800316,14425,480,35438.36
+cmp_006,Lifecycle_Email,Email,Email,2026-02-01,2026-07-31,9000.00,2942.15,819518,14718,482,35577.07
+cmp_007,Partner_Referral,Referral,Referral,2026-02-01,2026-07-31,12000.00,2806.91,802853,14059,481,35588.55
+cmp_008,Direct_Unattributed,Direct,Direct,2026-02-01,2026-07-31,0.00,2825.91,826227,14100,478,35657.47

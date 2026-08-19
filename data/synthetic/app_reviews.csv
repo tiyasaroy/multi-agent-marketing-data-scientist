@@ -1,0 +1,701 @@
+review_id,timestamp,rating,review_text,app_version,device,country
+rev_0000001,2026-04-05T05:00:00,4,Easy to use and fast,6.3.2,Desktop,United States
+rev_0000002,2026-04-01T01:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000003,2026-07-25T14:00:00,4,Great offers and smooth checkout,6.4.0,Desktop,India
+rev_0000004,2026-05-08T12:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000005,2026-02-08T14:00:00,5,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000006,2026-05-28T06:00:00,5,Easy to use and fast,6.3.2,iOS,United Kingdom
+rev_0000007,2026-06-06T14:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,India
+rev_0000008,2026-05-07T22:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000009,2026-02-21T20:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000010,2026-07-17T13:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000011,2026-05-31T05:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000012,2026-05-15T06:00:00,5,Easy to use and fast,6.3.2,iOS,India
+rev_0000013,2026-02-12T14:00:00,5,Love the new design,6.3.2,iOS,United States
+rev_0000014,2026-04-15T17:00:00,1,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000015,2026-06-03T08:00:00,5,Easy to use and fast,6.3.2,iOS,United Kingdom
+rev_0000016,2026-05-15T17:00:00,1,App crash during checkout,6.3.2,Android,United States
+rev_0000017,2026-04-29T09:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000018,2026-06-09T13:00:00,4,Love the new design,6.3.2,iOS,Germany
+rev_0000019,2026-05-22T07:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000020,2026-05-23T10:00:00,4,Love the new design,6.3.2,iOS,United Kingdom
+rev_0000021,2026-04-08T17:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000022,2026-06-11T21:00:00,5,Great offers and smooth checkout,6.3.2,iOS,United Kingdom
+rev_0000023,2026-07-27T06:00:00,5,Great offers and smooth checkout,6.4.0,Android,United States
+rev_0000024,2026-03-15T18:00:00,4,Easy to use and fast,6.3.2,Android,Germany
+rev_0000025,2026-05-10T05:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000026,2026-04-07T04:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000027,2026-03-05T09:00:00,2,Refund is delayed,6.3.2,Android,United States
+rev_0000028,2026-03-29T17:00:00,5,Easy to use and fast,6.3.2,iOS,United States
+rev_0000029,2026-02-18T04:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000030,2026-06-16T22:00:00,5,Easy to use and fast,6.3.2,Android,Germany
+rev_0000031,2026-03-07T22:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000032,2026-02-20T03:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000033,2026-06-04T23:00:00,1,Login is slow,6.3.2,Desktop,United Kingdom
+rev_0000034,2026-06-21T06:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000035,2026-06-23T12:00:00,2,Login is slow,6.3.2,Android,India
+rev_0000036,2026-07-20T15:00:00,5,Great offers and smooth checkout,6.4.0,Android,India
+rev_0000037,2026-05-04T02:00:00,5,Love the new design,6.3.2,Desktop,United Kingdom
+rev_0000038,2026-06-23T02:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000039,2026-07-03T08:00:00,4,Great offers and smooth checkout,6.3.2,Desktop,India
+rev_0000040,2026-02-15T07:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000041,2026-03-13T20:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000042,2026-02-05T05:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000043,2026-04-28T05:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000044,2026-03-16T05:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000045,2026-04-13T11:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000046,2026-04-17T19:00:00,5,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000047,2026-07-06T07:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000048,2026-07-16T05:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000049,2026-04-03T13:00:00,2,Payment keeps failing on Android,6.3.2,Desktop,Singapore
+rev_0000050,2026-03-01T12:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000051,2026-02-24T18:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000052,2026-04-06T13:00:00,5,Easy to use and fast,6.3.2,iOS,United States
+rev_0000053,2026-06-30T21:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000054,2026-05-15T09:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000055,2026-04-22T15:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000056,2026-02-18T13:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000057,2026-03-04T10:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000058,2026-04-13T18:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000059,2026-05-15T03:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000060,2026-04-09T16:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000061,2026-04-17T02:00:00,5,Love the new design,6.3.2,iOS,India
+rev_0000062,2026-05-06T17:00:00,5,Love the new design,6.3.2,Android,Germany
+rev_0000063,2026-04-08T21:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000064,2026-04-06T04:00:00,5,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000065,2026-06-19T03:00:00,4,Love the new design,6.3.2,Desktop,United States
+rev_0000066,2026-04-06T18:00:00,4,Love the new design,6.3.2,Desktop,India
+rev_0000067,2026-07-26T03:00:00,1,Payment keeps failing on Android,6.4.0,iOS,United Kingdom
+rev_0000068,2026-04-21T01:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000069,2026-05-31T09:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000070,2026-02-23T23:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000071,2026-07-13T11:00:00,4,Love the new design,6.3.2,iOS,United States
+rev_0000072,2026-04-18T09:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000073,2026-05-04T06:00:00,5,Easy to use and fast,6.3.2,iOS,United Kingdom
+rev_0000074,2026-07-24T03:00:00,1,Payment keeps failing on Android,6.4.0,Android,India
+rev_0000075,2026-05-14T11:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000076,2026-03-18T09:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000077,2026-03-01T13:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000078,2026-05-02T22:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000079,2026-04-21T08:00:00,5,Love the new design,6.3.2,iOS,United Kingdom
+rev_0000080,2026-04-24T02:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000081,2026-05-08T03:00:00,4,Easy to use and fast,6.3.2,Android,Germany
+rev_0000082,2026-05-16T18:00:00,5,Easy to use and fast,6.3.2,Android,Singapore
+rev_0000083,2026-03-28T13:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000084,2026-06-11T00:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000085,2026-04-26T17:00:00,2,Payment keeps failing on Android,6.3.2,Desktop,India
+rev_0000086,2026-06-27T12:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000087,2026-05-02T20:00:00,5,Great offers and smooth checkout,6.3.2,iOS,United Kingdom
+rev_0000088,2026-06-18T04:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000089,2026-03-29T19:00:00,2,Refund is delayed,6.3.2,Desktop,United States
+rev_0000090,2026-03-27T17:00:00,2,Login is slow,6.3.2,Android,Germany
+rev_0000091,2026-06-09T20:00:00,5,Love the new design,6.3.2,Desktop,United Kingdom
+rev_0000092,2026-05-26T18:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000093,2026-07-19T10:00:00,5,Love the new design,6.3.2,iOS,India
+rev_0000094,2026-06-15T05:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000095,2026-05-18T02:00:00,5,Love the new design,6.3.2,iOS,United Kingdom
+rev_0000096,2026-06-13T19:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000097,2026-06-07T17:00:00,4,Love the new design,6.3.2,iOS,Germany
+rev_0000098,2026-06-18T15:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000099,2026-03-05T19:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000100,2026-04-13T20:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000101,2026-03-07T17:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000102,2026-06-23T13:00:00,5,Love the new design,6.3.2,Android,Singapore
+rev_0000103,2026-04-26T01:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000104,2026-04-07T01:00:00,5,Love the new design,6.3.2,iOS,United States
+rev_0000105,2026-05-03T10:00:00,2,App crash during checkout,6.3.2,iOS,United States
+rev_0000106,2026-04-22T04:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000107,2026-07-28T18:00:00,4,Love the new design,6.4.0,Android,India
+rev_0000108,2026-07-04T01:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000109,2026-06-02T21:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000110,2026-07-11T04:00:00,2,Login is slow,6.3.2,Desktop,India
+rev_0000111,2026-03-24T09:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000112,2026-05-26T02:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000113,2026-07-24T10:00:00,2,Payment keeps failing on Android,6.4.0,Android,India
+rev_0000114,2026-05-29T05:00:00,4,Easy to use and fast,6.3.2,Android,Germany
+rev_0000115,2026-06-12T05:00:00,1,Login is slow,6.3.2,iOS,Germany
+rev_0000116,2026-05-06T02:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000117,2026-07-11T23:00:00,5,Easy to use and fast,6.3.2,Android,Singapore
+rev_0000118,2026-07-19T01:00:00,1,Payment keeps failing on Android,6.3.2,Desktop,India
+rev_0000119,2026-02-19T03:00:00,2,Login is slow,6.3.2,Desktop,India
+rev_0000120,2026-04-07T09:00:00,5,Love the new design,6.3.2,Desktop,United States
+rev_0000121,2026-04-29T11:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000122,2026-02-16T11:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000123,2026-07-20T14:00:00,5,Love the new design,6.4.0,iOS,United Kingdom
+rev_0000124,2026-05-28T13:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000125,2026-05-20T14:00:00,2,Payment keeps failing on Android,6.3.2,Android,United States
+rev_0000126,2026-03-12T20:00:00,5,Love the new design,6.3.2,Android,Singapore
+rev_0000127,2026-03-20T11:00:00,2,Refund is delayed,6.3.2,Android,United States
+rev_0000128,2026-06-19T21:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000129,2026-05-23T23:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000130,2026-02-27T16:00:00,1,Login is slow,6.3.2,iOS,United Kingdom
+rev_0000131,2026-06-02T12:00:00,2,Login is slow,6.3.2,Android,Germany
+rev_0000132,2026-04-01T21:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000133,2026-03-06T14:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000134,2026-04-28T08:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000135,2026-05-11T06:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000136,2026-07-17T04:00:00,5,Love the new design,6.3.2,Android,Germany
+rev_0000137,2026-03-09T13:00:00,2,Refund is delayed,6.3.2,Android,United Kingdom
+rev_0000138,2026-07-10T07:00:00,5,Easy to use and fast,6.3.2,Desktop,Singapore
+rev_0000139,2026-07-23T18:00:00,2,Payment keeps failing on Android,6.4.0,iOS,United States
+rev_0000140,2026-07-15T15:00:00,5,Love the new design,6.3.2,iOS,United States
+rev_0000141,2026-04-24T13:00:00,4,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000142,2026-07-31T01:00:00,5,Easy to use and fast,6.4.0,iOS,India
+rev_0000143,2026-03-01T06:00:00,5,Easy to use and fast,6.3.2,Desktop,India
+rev_0000144,2026-04-22T13:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000145,2026-04-26T00:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000146,2026-06-30T08:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000147,2026-02-03T04:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000148,2026-02-03T13:00:00,5,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000149,2026-03-21T06:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000150,2026-07-17T04:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000151,2026-06-27T13:00:00,2,Login is slow,6.3.2,Desktop,India
+rev_0000152,2026-07-31T12:00:00,4,Great offers and smooth checkout,6.4.0,iOS,Germany
+rev_0000153,2026-06-10T22:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000154,2026-07-17T10:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000155,2026-03-27T05:00:00,4,Love the new design,6.3.2,iOS,United States
+rev_0000156,2026-02-25T23:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000157,2026-05-08T05:00:00,5,Easy to use and fast,6.3.2,iOS,Germany
+rev_0000158,2026-05-27T10:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000159,2026-04-14T04:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000160,2026-03-02T22:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000161,2026-05-11T12:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000162,2026-02-28T17:00:00,5,Great offers and smooth checkout,6.3.2,iOS,United States
+rev_0000163,2026-02-16T23:00:00,4,Great offers and smooth checkout,6.3.2,iOS,United States
+rev_0000164,2026-06-09T21:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000165,2026-02-01T05:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000166,2026-03-04T11:00:00,1,Payment keeps failing on Android,6.3.2,iOS,India
+rev_0000167,2026-06-26T01:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000168,2026-05-07T10:00:00,1,Login is slow,6.3.2,Android,India
+rev_0000169,2026-03-06T05:00:00,4,Love the new design,6.3.2,Android,United Kingdom
+rev_0000170,2026-04-12T20:00:00,5,Love the new design,6.3.2,iOS,United Kingdom
+rev_0000171,2026-02-07T03:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000172,2026-05-25T22:00:00,4,Love the new design,6.3.2,iOS,United States
+rev_0000173,2026-04-01T15:00:00,4,Love the new design,6.3.2,Android,Germany
+rev_0000174,2026-03-02T18:00:00,2,Payment keeps failing on Android,6.3.2,Desktop,Germany
+rev_0000175,2026-02-07T13:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000176,2026-06-09T04:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000177,2026-07-05T06:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000178,2026-06-12T19:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000179,2026-04-08T13:00:00,4,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000180,2026-07-10T09:00:00,4,Love the new design,6.3.2,Android,Singapore
+rev_0000181,2026-03-09T12:00:00,2,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000182,2026-02-12T15:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000183,2026-04-02T12:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000184,2026-04-19T23:00:00,4,Easy to use and fast,6.3.2,iOS,United States
+rev_0000185,2026-05-01T06:00:00,5,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000186,2026-05-20T04:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000187,2026-04-25T07:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000188,2026-02-28T18:00:00,1,App crash during checkout,6.3.2,Android,India
+rev_0000189,2026-06-17T01:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,United States
+rev_0000190,2026-04-01T09:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000191,2026-03-13T18:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000192,2026-07-15T14:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000193,2026-04-13T06:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000194,2026-02-13T21:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000195,2026-03-02T00:00:00,5,Love the new design,6.3.2,Android,Germany
+rev_0000196,2026-05-10T14:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000197,2026-05-26T10:00:00,5,Easy to use and fast,6.3.2,iOS,United States
+rev_0000198,2026-05-18T13:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000199,2026-06-05T08:00:00,4,Love the new design,6.3.2,Android,Singapore
+rev_0000200,2026-05-28T03:00:00,1,Login is slow,6.3.2,Android,Singapore
+rev_0000201,2026-03-31T18:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000202,2026-03-04T03:00:00,4,Love the new design,6.3.2,Desktop,India
+rev_0000203,2026-04-06T19:00:00,4,Great offers and smooth checkout,6.3.2,iOS,Singapore
+rev_0000204,2026-03-15T01:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000205,2026-02-17T16:00:00,4,Easy to use and fast,6.3.2,Desktop,United States
+rev_0000206,2026-02-09T06:00:00,4,Easy to use and fast,6.3.2,iOS,United States
+rev_0000207,2026-02-16T10:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000208,2026-07-03T04:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000209,2026-02-25T10:00:00,2,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000210,2026-04-27T21:00:00,5,Great offers and smooth checkout,6.3.2,iOS,United Kingdom
+rev_0000211,2026-07-12T13:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000212,2026-05-21T03:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000213,2026-03-05T22:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000214,2026-04-12T08:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000215,2026-07-15T14:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000216,2026-06-27T08:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000217,2026-06-12T18:00:00,2,App crash during checkout,6.3.2,Android,Germany
+rev_0000218,2026-03-13T19:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000219,2026-07-06T22:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000220,2026-05-22T17:00:00,1,App crash during checkout,6.3.2,Android,United States
+rev_0000221,2026-06-09T09:00:00,5,Great offers and smooth checkout,6.3.2,iOS,United Kingdom
+rev_0000222,2026-03-03T12:00:00,2,Refund is delayed,6.3.2,Android,India
+rev_0000223,2026-02-06T19:00:00,5,Easy to use and fast,6.3.2,Android,Germany
+rev_0000224,2026-07-31T21:00:00,5,Easy to use and fast,6.4.0,Android,United States
+rev_0000225,2026-05-02T12:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000226,2026-04-08T05:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000227,2026-03-09T14:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000228,2026-02-05T16:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000229,2026-06-02T02:00:00,2,App crash during checkout,6.3.2,Android,United States
+rev_0000230,2026-07-30T22:00:00,1,Refund is delayed,6.4.0,Android,United Kingdom
+rev_0000231,2026-06-05T08:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000232,2026-07-28T14:00:00,1,App crash during checkout,6.4.0,Android,Germany
+rev_0000233,2026-02-25T05:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000234,2026-03-07T01:00:00,2,App crash during checkout,6.3.2,Android,United States
+rev_0000235,2026-05-25T02:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000236,2026-02-08T21:00:00,2,Refund is delayed,6.3.2,Desktop,United Kingdom
+rev_0000237,2026-03-13T20:00:00,5,Easy to use and fast,6.3.2,iOS,India
+rev_0000238,2026-07-04T12:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000239,2026-07-21T03:00:00,2,App crash during checkout,6.4.0,iOS,United States
+rev_0000240,2026-06-14T09:00:00,5,Easy to use and fast,6.3.2,iOS,United States
+rev_0000241,2026-07-05T18:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000242,2026-02-26T15:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000243,2026-03-28T05:00:00,1,Refund is delayed,6.3.2,iOS,India
+rev_0000244,2026-03-03T03:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000245,2026-06-06T07:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000246,2026-06-30T05:00:00,5,Easy to use and fast,6.3.2,iOS,Germany
+rev_0000247,2026-07-12T04:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000248,2026-04-05T23:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000249,2026-04-24T10:00:00,5,Love the new design,6.3.2,iOS,India
+rev_0000250,2026-06-16T09:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000251,2026-07-01T12:00:00,5,Easy to use and fast,6.3.2,iOS,United Kingdom
+rev_0000252,2026-05-27T08:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000253,2026-06-07T08:00:00,1,Refund is delayed,6.3.2,Android,India
+rev_0000254,2026-05-12T13:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000255,2026-06-13T14:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000256,2026-03-02T17:00:00,1,App crash during checkout,6.3.2,Android,United Kingdom
+rev_0000257,2026-07-14T16:00:00,4,Love the new design,6.3.2,Desktop,United Kingdom
+rev_0000258,2026-03-13T03:00:00,4,Easy to use and fast,6.3.2,iOS,Germany
+rev_0000259,2026-04-17T18:00:00,5,Love the new design,6.3.2,Desktop,India
+rev_0000260,2026-05-20T03:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000261,2026-02-23T07:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000262,2026-07-12T02:00:00,4,Easy to use and fast,6.3.2,iOS,United States
+rev_0000263,2026-07-09T20:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000264,2026-06-26T07:00:00,2,Login is slow,6.3.2,Android,India
+rev_0000265,2026-04-19T06:00:00,5,Love the new design,6.3.2,iOS,India
+rev_0000266,2026-03-18T07:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000267,2026-02-04T20:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000268,2026-07-11T08:00:00,5,Great offers and smooth checkout,6.3.2,iOS,Germany
+rev_0000269,2026-02-18T19:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000270,2026-07-26T01:00:00,1,Payment keeps failing on Android,6.4.0,Android,India
+rev_0000271,2026-02-27T02:00:00,4,Love the new design,6.3.2,iOS,Germany
+rev_0000272,2026-05-20T07:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000273,2026-04-19T15:00:00,5,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000274,2026-05-08T14:00:00,1,Login is slow,6.3.2,Android,United States
+rev_0000275,2026-05-28T19:00:00,5,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000276,2026-05-02T21:00:00,2,Payment keeps failing on Android,6.3.2,Android,Germany
+rev_0000277,2026-03-16T05:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000278,2026-05-27T09:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000279,2026-05-31T22:00:00,2,Login is slow,6.3.2,Android,India
+rev_0000280,2026-03-16T00:00:00,5,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000281,2026-06-11T17:00:00,5,Easy to use and fast,6.3.2,iOS,United States
+rev_0000282,2026-07-23T14:00:00,2,Login is slow,6.4.0,Desktop,India
+rev_0000283,2026-06-05T08:00:00,5,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000284,2026-03-01T20:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000285,2026-07-31T23:00:00,2,Payment keeps failing on Android,6.4.0,Desktop,India
+rev_0000286,2026-06-25T20:00:00,1,Refund is delayed,6.3.2,iOS,Germany
+rev_0000287,2026-05-21T01:00:00,1,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000288,2026-03-15T19:00:00,1,App crash during checkout,6.3.2,Android,India
+rev_0000289,2026-02-28T22:00:00,4,Easy to use and fast,6.3.2,iOS,India
+rev_0000290,2026-05-23T14:00:00,5,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000291,2026-05-11T17:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000292,2026-04-28T11:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000293,2026-03-09T02:00:00,5,Easy to use and fast,6.3.2,Android,Germany
+rev_0000294,2026-07-26T00:00:00,5,Love the new design,6.4.0,Android,United States
+rev_0000295,2026-07-29T19:00:00,5,Great offers and smooth checkout,6.4.0,Android,United States
+rev_0000296,2026-07-25T21:00:00,1,Login is slow,6.4.0,iOS,United States
+rev_0000297,2026-03-21T06:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000298,2026-02-09T02:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000299,2026-06-18T15:00:00,2,Login is slow,6.3.2,Android,United Kingdom
+rev_0000300,2026-07-08T03:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000301,2026-07-08T08:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000302,2026-02-18T09:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000303,2026-05-14T02:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000304,2026-05-22T15:00:00,1,Refund is delayed,6.3.2,Android,United Kingdom
+rev_0000305,2026-05-15T13:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000306,2026-07-17T15:00:00,1,Payment keeps failing on Android,6.3.2,Android,United States
+rev_0000307,2026-06-13T13:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000308,2026-03-18T21:00:00,2,Refund is delayed,6.3.2,Android,India
+rev_0000309,2026-05-25T06:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000310,2026-07-31T18:00:00,1,Refund is delayed,6.4.0,Desktop,United States
+rev_0000311,2026-03-29T15:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000312,2026-07-12T19:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000313,2026-03-17T00:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000314,2026-04-19T04:00:00,4,Great offers and smooth checkout,6.3.2,iOS,United States
+rev_0000315,2026-02-11T02:00:00,1,Refund is delayed,6.3.2,Android,Singapore
+rev_0000316,2026-02-26T19:00:00,5,Love the new design,6.3.2,iOS,United Kingdom
+rev_0000317,2026-06-16T12:00:00,1,Refund is delayed,6.3.2,Android,United Kingdom
+rev_0000318,2026-06-24T13:00:00,2,Payment keeps failing on Android,6.3.2,iOS,United States
+rev_0000319,2026-02-28T15:00:00,4,Love the new design,6.3.2,Desktop,United Kingdom
+rev_0000320,2026-03-01T12:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000321,2026-07-04T10:00:00,4,Easy to use and fast,6.3.2,Desktop,India
+rev_0000322,2026-07-27T01:00:00,2,App crash during checkout,6.4.0,Android,United Kingdom
+rev_0000323,2026-06-13T17:00:00,5,Love the new design,6.3.2,Desktop,United Kingdom
+rev_0000324,2026-03-16T08:00:00,4,Love the new design,6.3.2,Android,Singapore
+rev_0000325,2026-04-25T22:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000326,2026-07-30T23:00:00,5,Love the new design,6.4.0,Android,India
+rev_0000327,2026-05-16T15:00:00,2,Refund is delayed,6.3.2,iOS,United States
+rev_0000328,2026-06-01T15:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000329,2026-05-26T04:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000330,2026-05-08T01:00:00,1,App crash during checkout,6.3.2,Android,United States
+rev_0000331,2026-02-16T23:00:00,5,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000332,2026-06-01T19:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000333,2026-04-06T07:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000334,2026-02-01T03:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000335,2026-06-09T02:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000336,2026-06-18T22:00:00,4,Easy to use and fast,6.3.2,iOS,India
+rev_0000337,2026-05-10T17:00:00,4,Easy to use and fast,6.3.2,Desktop,Singapore
+rev_0000338,2026-07-24T02:00:00,4,Great offers and smooth checkout,6.4.0,iOS,United States
+rev_0000339,2026-06-28T20:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000340,2026-02-17T20:00:00,5,Easy to use and fast,6.3.2,Desktop,Germany
+rev_0000341,2026-03-18T05:00:00,5,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000342,2026-07-20T16:00:00,1,Payment keeps failing on Android,6.4.0,Android,United Kingdom
+rev_0000343,2026-07-20T19:00:00,5,Love the new design,6.4.0,iOS,United Kingdom
+rev_0000344,2026-03-29T03:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,United States
+rev_0000345,2026-03-22T08:00:00,2,Refund is delayed,6.3.2,Desktop,India
+rev_0000346,2026-05-27T06:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000347,2026-06-17T17:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000348,2026-03-25T23:00:00,1,Login is slow,6.3.2,Desktop,India
+rev_0000349,2026-05-14T11:00:00,5,Love the new design,6.3.2,iOS,India
+rev_0000350,2026-07-12T08:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000351,2026-04-17T02:00:00,4,Love the new design,6.3.2,iOS,United States
+rev_0000352,2026-05-09T15:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000353,2026-03-29T07:00:00,5,Easy to use and fast,6.3.2,Desktop,India
+rev_0000354,2026-04-25T00:00:00,4,Love the new design,6.3.2,Desktop,United States
+rev_0000355,2026-07-22T13:00:00,5,Great offers and smooth checkout,6.4.0,Android,Germany
+rev_0000356,2026-07-02T18:00:00,5,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000357,2026-02-18T02:00:00,5,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000358,2026-07-07T00:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000359,2026-03-06T18:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000360,2026-03-13T12:00:00,2,Login is slow,6.3.2,Android,United States
+rev_0000361,2026-02-13T01:00:00,4,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000362,2026-06-23T15:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000363,2026-03-28T02:00:00,1,Login is slow,6.3.2,Android,India
+rev_0000364,2026-03-20T21:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000365,2026-03-02T09:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000366,2026-07-03T02:00:00,4,Easy to use and fast,6.3.2,Desktop,United States
+rev_0000367,2026-06-05T13:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000368,2026-05-25T07:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000369,2026-04-06T23:00:00,5,Love the new design,6.3.2,Android,Germany
+rev_0000370,2026-03-06T22:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000371,2026-05-27T01:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000372,2026-06-04T11:00:00,5,Love the new design,6.3.2,Desktop,India
+rev_0000373,2026-02-16T13:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000374,2026-03-17T01:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000375,2026-04-10T02:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000376,2026-04-28T19:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000377,2026-03-15T16:00:00,4,Great offers and smooth checkout,6.3.2,Desktop,United States
+rev_0000378,2026-05-21T16:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000379,2026-04-05T04:00:00,5,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000380,2026-03-26T10:00:00,5,Love the new design,6.3.2,Android,Singapore
+rev_0000381,2026-04-13T11:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000382,2026-03-08T02:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000383,2026-02-06T15:00:00,2,Refund is delayed,6.3.2,Android,India
+rev_0000384,2026-07-23T05:00:00,2,Payment keeps failing on Android,6.4.0,Android,Singapore
+rev_0000385,2026-02-13T09:00:00,1,Payment keeps failing on Android,6.3.2,Android,United Kingdom
+rev_0000386,2026-06-25T21:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000387,2026-07-10T01:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000388,2026-06-17T15:00:00,4,Love the new design,6.3.2,Android,Singapore
+rev_0000389,2026-05-05T14:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000390,2026-07-30T09:00:00,4,Great offers and smooth checkout,6.4.0,Android,India
+rev_0000391,2026-04-11T09:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,India
+rev_0000392,2026-07-09T03:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000393,2026-07-19T16:00:00,1,Login is slow,6.3.2,Desktop,United Kingdom
+rev_0000394,2026-07-15T03:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000395,2026-06-08T16:00:00,2,Login is slow,6.3.2,Android,United States
+rev_0000396,2026-04-05T21:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000397,2026-03-17T22:00:00,4,Love the new design,6.3.2,Desktop,India
+rev_0000398,2026-04-27T15:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000399,2026-06-26T05:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000400,2026-03-10T06:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000401,2026-06-24T10:00:00,2,Payment keeps failing on Android,6.3.2,Android,Germany
+rev_0000402,2026-04-28T00:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,United Kingdom
+rev_0000403,2026-06-24T05:00:00,4,Love the new design,6.3.2,Android,United Kingdom
+rev_0000404,2026-07-30T21:00:00,2,Refund is delayed,6.4.0,Android,India
+rev_0000405,2026-07-15T22:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000406,2026-06-28T03:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000407,2026-03-20T22:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000408,2026-05-13T13:00:00,1,Login is slow,6.3.2,Android,India
+rev_0000409,2026-02-20T18:00:00,2,Refund is delayed,6.3.2,Android,India
+rev_0000410,2026-02-24T16:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000411,2026-02-28T08:00:00,4,Love the new design,6.3.2,Desktop,Germany
+rev_0000412,2026-03-25T00:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000413,2026-07-06T01:00:00,5,Easy to use and fast,6.3.2,iOS,United Kingdom
+rev_0000414,2026-03-14T18:00:00,4,Love the new design,6.3.2,Desktop,United Kingdom
+rev_0000415,2026-05-27T07:00:00,1,Refund is delayed,6.3.2,Android,United States
+rev_0000416,2026-05-08T11:00:00,5,Easy to use and fast,6.3.2,iOS,United Kingdom
+rev_0000417,2026-02-25T22:00:00,2,App crash during checkout,6.3.2,Android,United States
+rev_0000418,2026-02-17T05:00:00,1,App crash during checkout,6.3.2,Android,Germany
+rev_0000419,2026-04-17T09:00:00,2,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000420,2026-05-29T10:00:00,5,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000421,2026-06-11T03:00:00,4,Great offers and smooth checkout,6.3.2,Desktop,India
+rev_0000422,2026-03-25T12:00:00,2,Login is slow,6.3.2,iOS,India
+rev_0000423,2026-07-09T12:00:00,1,App crash during checkout,6.3.2,Android,United States
+rev_0000424,2026-04-05T14:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000425,2026-04-04T17:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000426,2026-06-05T22:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000427,2026-03-22T04:00:00,4,Love the new design,6.3.2,iOS,United States
+rev_0000428,2026-06-21T23:00:00,4,Easy to use and fast,6.3.2,Android,Singapore
+rev_0000429,2026-05-16T11:00:00,1,Login is slow,6.3.2,Android,India
+rev_0000430,2026-06-24T07:00:00,4,Love the new design,6.3.2,iOS,United States
+rev_0000431,2026-07-17T07:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000432,2026-04-05T11:00:00,1,App crash during checkout,6.3.2,Android,Germany
+rev_0000433,2026-03-29T15:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000434,2026-03-29T05:00:00,4,Love the new design,6.3.2,iOS,United Kingdom
+rev_0000435,2026-04-11T03:00:00,2,App crash during checkout,6.3.2,iOS,India
+rev_0000436,2026-05-08T02:00:00,5,Love the new design,6.3.2,iOS,India
+rev_0000437,2026-04-04T11:00:00,4,Easy to use and fast,6.3.2,iOS,India
+rev_0000438,2026-03-26T09:00:00,5,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000439,2026-06-10T10:00:00,4,Love the new design,6.3.2,Android,United Kingdom
+rev_0000440,2026-04-22T04:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000441,2026-04-23T08:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000442,2026-05-31T10:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000443,2026-04-12T23:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000444,2026-04-23T10:00:00,5,Easy to use and fast,6.3.2,Android,Germany
+rev_0000445,2026-07-10T14:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000446,2026-06-20T19:00:00,1,Login is slow,6.3.2,Android,United States
+rev_0000447,2026-05-13T15:00:00,5,Love the new design,6.3.2,iOS,United States
+rev_0000448,2026-06-26T07:00:00,5,Love the new design,6.3.2,iOS,India
+rev_0000449,2026-03-09T21:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000450,2026-02-18T20:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000451,2026-05-08T21:00:00,5,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000452,2026-03-25T02:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000453,2026-04-03T19:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000454,2026-05-31T13:00:00,2,Payment keeps failing on Android,6.3.2,iOS,Singapore
+rev_0000455,2026-05-04T14:00:00,1,App crash during checkout,6.3.2,Android,United States
+rev_0000456,2026-06-30T09:00:00,2,Payment keeps failing on Android,6.3.2,Android,United States
+rev_0000457,2026-07-30T21:00:00,5,Great offers and smooth checkout,6.4.0,Android,India
+rev_0000458,2026-06-07T18:00:00,1,App crash during checkout,6.3.2,iOS,United Kingdom
+rev_0000459,2026-07-03T01:00:00,4,Easy to use and fast,6.3.2,Desktop,India
+rev_0000460,2026-02-02T02:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000461,2026-04-22T10:00:00,1,Login is slow,6.3.2,Android,India
+rev_0000462,2026-04-09T08:00:00,5,Easy to use and fast,6.3.2,iOS,India
+rev_0000463,2026-07-29T15:00:00,1,Refund is delayed,6.4.0,iOS,India
+rev_0000464,2026-07-11T02:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000465,2026-07-09T19:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000466,2026-02-16T06:00:00,5,Love the new design,6.3.2,Android,Singapore
+rev_0000467,2026-03-08T03:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000468,2026-02-20T23:00:00,1,App crash during checkout,6.3.2,Desktop,United States
+rev_0000469,2026-03-28T03:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000470,2026-02-04T18:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000471,2026-06-19T15:00:00,1,Payment keeps failing on Android,6.3.2,Android,United States
+rev_0000472,2026-03-03T09:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000473,2026-07-25T23:00:00,5,Love the new design,6.4.0,Android,United Kingdom
+rev_0000474,2026-03-07T20:00:00,2,App crash during checkout,6.3.2,iOS,India
+rev_0000475,2026-04-22T16:00:00,5,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000476,2026-05-03T09:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000477,2026-05-05T14:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000478,2026-02-02T21:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000479,2026-04-30T08:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000480,2026-06-30T20:00:00,5,Love the new design,6.3.2,Desktop,United States
+rev_0000481,2026-02-18T10:00:00,4,Great offers and smooth checkout,6.3.2,iOS,United Kingdom
+rev_0000482,2026-04-01T12:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000483,2026-07-25T04:00:00,2,Login is slow,6.4.0,iOS,India
+rev_0000484,2026-05-06T18:00:00,5,Love the new design,6.3.2,iOS,Germany
+rev_0000485,2026-03-11T15:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000486,2026-06-28T23:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000487,2026-03-23T11:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000488,2026-02-10T18:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000489,2026-05-30T00:00:00,1,Refund is delayed,6.3.2,iOS,United Kingdom
+rev_0000490,2026-07-26T23:00:00,5,Easy to use and fast,6.4.0,Android,United Kingdom
+rev_0000491,2026-05-06T22:00:00,4,Love the new design,6.3.2,iOS,Singapore
+rev_0000492,2026-07-03T10:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000493,2026-03-18T18:00:00,4,Easy to use and fast,6.3.2,Android,Germany
+rev_0000494,2026-07-25T14:00:00,5,Great offers and smooth checkout,6.4.0,Android,United Kingdom
+rev_0000495,2026-05-30T20:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000496,2026-02-09T16:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000497,2026-07-30T00:00:00,1,Login is slow,6.4.0,Android,United States
+rev_0000498,2026-07-24T19:00:00,1,App crash during checkout,6.4.0,Android,Singapore
+rev_0000499,2026-02-12T03:00:00,5,Love the new design,6.3.2,Desktop,United Kingdom
+rev_0000500,2026-05-26T23:00:00,2,Login is slow,6.3.2,Android,United States
+rev_0000501,2026-04-12T19:00:00,5,Love the new design,6.3.2,iOS,United Kingdom
+rev_0000502,2026-03-02T08:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000503,2026-05-30T12:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000504,2026-06-04T03:00:00,4,Love the new design,6.3.2,Android,Singapore
+rev_0000505,2026-04-20T05:00:00,4,Great offers and smooth checkout,6.3.2,iOS,United States
+rev_0000506,2026-02-10T05:00:00,5,Easy to use and fast,6.3.2,iOS,India
+rev_0000507,2026-03-06T16:00:00,2,Refund is delayed,6.3.2,iOS,India
+rev_0000508,2026-05-05T08:00:00,2,Payment keeps failing on Android,6.3.2,Android,United States
+rev_0000509,2026-06-23T15:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000510,2026-06-13T21:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000511,2026-07-08T05:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000512,2026-04-25T12:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000513,2026-03-17T07:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000514,2026-05-22T00:00:00,4,Easy to use and fast,6.3.2,iOS,United States
+rev_0000515,2026-06-26T08:00:00,5,Easy to use and fast,6.3.2,Android,Germany
+rev_0000516,2026-04-23T13:00:00,5,Easy to use and fast,6.3.2,Android,United States
+rev_0000517,2026-05-22T17:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000518,2026-04-19T18:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000519,2026-03-12T14:00:00,2,Login is slow,6.3.2,Android,United Kingdom
+rev_0000520,2026-07-18T12:00:00,2,App crash during checkout,6.3.2,Android,India
+rev_0000521,2026-05-02T15:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000522,2026-04-28T19:00:00,4,Easy to use and fast,6.3.2,iOS,India
+rev_0000523,2026-04-04T08:00:00,4,Love the new design,6.3.2,Android,Germany
+rev_0000524,2026-07-20T18:00:00,1,App crash during checkout,6.4.0,iOS,India
+rev_0000525,2026-02-12T23:00:00,4,Love the new design,6.3.2,Android,United Kingdom
+rev_0000526,2026-02-16T18:00:00,4,Love the new design,6.3.2,Android,Singapore
+rev_0000527,2026-02-13T18:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000528,2026-05-30T03:00:00,1,Payment keeps failing on Android,6.3.2,iOS,India
+rev_0000529,2026-06-29T06:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000530,2026-06-16T15:00:00,1,App crash during checkout,6.3.2,iOS,United States
+rev_0000531,2026-07-31T14:00:00,1,Login is slow,6.4.0,Android,United States
+rev_0000532,2026-02-16T14:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000533,2026-04-21T12:00:00,4,Love the new design,6.3.2,Desktop,Germany
+rev_0000534,2026-03-16T02:00:00,1,Payment keeps failing on Android,6.3.2,Desktop,India
+rev_0000535,2026-05-31T13:00:00,4,Great offers and smooth checkout,6.3.2,iOS,United Kingdom
+rev_0000536,2026-04-30T07:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000537,2026-03-15T02:00:00,5,Great offers and smooth checkout,6.3.2,iOS,United Kingdom
+rev_0000538,2026-02-01T18:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000539,2026-07-14T17:00:00,4,Easy to use and fast,6.3.2,Android,Singapore
+rev_0000540,2026-04-25T10:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000541,2026-06-02T17:00:00,2,Login is slow,6.3.2,iOS,Singapore
+rev_0000542,2026-04-13T21:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000543,2026-05-25T12:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,United States
+rev_0000544,2026-05-06T23:00:00,5,Easy to use and fast,6.3.2,Android,Singapore
+rev_0000545,2026-04-05T13:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000546,2026-05-31T15:00:00,2,App crash during checkout,6.3.2,Android,Germany
+rev_0000547,2026-07-17T00:00:00,5,Easy to use and fast,6.3.2,iOS,United Kingdom
+rev_0000548,2026-04-29T01:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000549,2026-03-11T21:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000550,2026-06-30T04:00:00,5,Easy to use and fast,6.3.2,iOS,United States
+rev_0000551,2026-05-07T18:00:00,1,Payment keeps failing on Android,6.3.2,Desktop,India
+rev_0000552,2026-03-20T21:00:00,4,Love the new design,6.3.2,iOS,United States
+rev_0000553,2026-05-23T06:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000554,2026-03-07T07:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000555,2026-03-22T04:00:00,4,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000556,2026-07-10T12:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000557,2026-02-13T22:00:00,5,Easy to use and fast,6.3.2,Desktop,United States
+rev_0000558,2026-07-23T16:00:00,1,App crash during checkout,6.4.0,Android,United States
+rev_0000559,2026-04-19T18:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000560,2026-05-18T16:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000561,2026-04-04T04:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000562,2026-02-01T12:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000563,2026-07-09T10:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,Germany
+rev_0000564,2026-03-17T11:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000565,2026-03-01T15:00:00,1,Login is slow,6.3.2,Android,United Kingdom
+rev_0000566,2026-05-19T03:00:00,5,Easy to use and fast,6.3.2,Desktop,India
+rev_0000567,2026-04-25T14:00:00,1,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000568,2026-06-09T15:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000569,2026-07-11T11:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000570,2026-04-12T16:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000571,2026-06-17T12:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000572,2026-06-12T14:00:00,1,Login is slow,6.3.2,Android,United States
+rev_0000573,2026-05-05T01:00:00,5,Love the new design,6.3.2,Android,Singapore
+rev_0000574,2026-04-10T09:00:00,4,Great offers and smooth checkout,6.3.2,Desktop,India
+rev_0000575,2026-05-10T03:00:00,1,Refund is delayed,6.3.2,Android,United States
+rev_0000576,2026-04-22T02:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000577,2026-06-13T16:00:00,1,App crash during checkout,6.3.2,iOS,United Kingdom
+rev_0000578,2026-07-17T06:00:00,5,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000579,2026-02-28T19:00:00,2,App crash during checkout,6.3.2,Android,United States
+rev_0000580,2026-02-13T19:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000581,2026-06-06T10:00:00,1,Payment keeps failing on Android,6.3.2,Android,Germany
+rev_0000582,2026-05-15T08:00:00,1,Payment keeps failing on Android,6.3.2,iOS,India
+rev_0000583,2026-06-03T13:00:00,4,Love the new design,6.3.2,Android,United States
+rev_0000584,2026-02-02T00:00:00,2,Login is slow,6.3.2,Desktop,Germany
+rev_0000585,2026-02-25T07:00:00,4,Great offers and smooth checkout,6.3.2,Desktop,United States
+rev_0000586,2026-07-01T10:00:00,5,Easy to use and fast,6.3.2,iOS,United States
+rev_0000587,2026-05-07T05:00:00,5,Love the new design,6.3.2,Desktop,United Kingdom
+rev_0000588,2026-04-14T14:00:00,5,Easy to use and fast,6.3.2,iOS,India
+rev_0000589,2026-05-02T08:00:00,5,Easy to use and fast,6.3.2,iOS,United Kingdom
+rev_0000590,2026-02-25T09:00:00,4,Easy to use and fast,6.3.2,Android,Germany
+rev_0000591,2026-05-20T05:00:00,5,Love the new design,6.3.2,Desktop,India
+rev_0000592,2026-06-29T19:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000593,2026-03-12T11:00:00,4,Easy to use and fast,6.3.2,Android,Germany
+rev_0000594,2026-07-06T18:00:00,4,Easy to use and fast,6.3.2,Android,United Kingdom
+rev_0000595,2026-02-22T14:00:00,5,Easy to use and fast,6.3.2,iOS,India
+rev_0000596,2026-05-19T04:00:00,5,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000597,2026-04-01T21:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000598,2026-05-22T07:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000599,2026-04-13T05:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000600,2026-06-05T00:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000601,2026-02-17T02:00:00,2,Refund is delayed,6.3.2,Android,United States
+rev_0000602,2026-05-03T14:00:00,5,Easy to use and fast,6.3.2,Android,Germany
+rev_0000603,2026-04-25T06:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000604,2026-03-21T06:00:00,4,Love the new design,6.3.2,Android,Germany
+rev_0000605,2026-03-24T19:00:00,4,Great offers and smooth checkout,6.3.2,iOS,India
+rev_0000606,2026-02-06T06:00:00,5,Easy to use and fast,6.3.2,iOS,India
+rev_0000607,2026-02-22T23:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000608,2026-02-17T19:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000609,2026-02-28T20:00:00,4,Love the new design,6.3.2,Desktop,India
+rev_0000610,2026-05-31T04:00:00,2,App crash during checkout,6.3.2,Android,United Kingdom
+rev_0000611,2026-07-13T16:00:00,4,Easy to use and fast,6.3.2,Android,United States
+rev_0000612,2026-02-21T15:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000613,2026-06-27T22:00:00,2,Refund is delayed,6.3.2,Desktop,India
+rev_0000614,2026-07-26T09:00:00,1,Login is slow,6.4.0,iOS,India
+rev_0000615,2026-04-05T08:00:00,1,App crash during checkout,6.3.2,Android,United States
+rev_0000616,2026-06-24T04:00:00,5,Easy to use and fast,6.3.2,Desktop,United Kingdom
+rev_0000617,2026-05-04T02:00:00,5,Love the new design,6.3.2,Android,Germany
+rev_0000618,2026-07-11T09:00:00,4,Easy to use and fast,6.3.2,iOS,India
+rev_0000619,2026-04-17T05:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000620,2026-03-13T04:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000621,2026-05-24T23:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000622,2026-05-10T21:00:00,5,Love the new design,6.3.2,Android,India
+rev_0000623,2026-06-07T23:00:00,2,Login is slow,6.3.2,Android,India
+rev_0000624,2026-06-25T22:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,Germany
+rev_0000625,2026-06-30T05:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000626,2026-06-08T13:00:00,5,Love the new design,6.3.2,iOS,United Kingdom
+rev_0000627,2026-07-06T13:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000628,2026-02-14T13:00:00,4,Great offers and smooth checkout,6.3.2,Android,Germany
+rev_0000629,2026-07-03T03:00:00,4,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000630,2026-02-27T14:00:00,1,Refund is delayed,6.3.2,Desktop,India
+rev_0000631,2026-02-17T03:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000632,2026-06-05T02:00:00,4,Love the new design,6.3.2,iOS,India
+rev_0000633,2026-04-18T17:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000634,2026-03-22T14:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000635,2026-05-16T22:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000636,2026-04-08T13:00:00,4,Easy to use and fast,6.3.2,iOS,United States
+rev_0000637,2026-06-23T00:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000638,2026-03-30T06:00:00,5,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000639,2026-06-16T22:00:00,4,Love the new design,6.3.2,Android,India
+rev_0000640,2026-06-26T13:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000641,2026-07-27T04:00:00,2,Login is slow,6.4.0,Android,India
+rev_0000642,2026-04-15T17:00:00,1,App crash during checkout,6.3.2,Android,India
+rev_0000643,2026-05-03T21:00:00,2,Login is slow,6.3.2,iOS,United States
+rev_0000644,2026-05-14T22:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000645,2026-02-06T08:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000646,2026-03-04T22:00:00,5,Easy to use and fast,6.3.2,Desktop,United Kingdom
+rev_0000647,2026-03-05T01:00:00,2,Login is slow,6.3.2,Android,United States
+rev_0000648,2026-04-03T05:00:00,4,Love the new design,6.3.2,Android,Singapore
+rev_0000649,2026-06-17T05:00:00,5,Easy to use and fast,6.3.2,Desktop,India
+rev_0000650,2026-07-25T13:00:00,5,Easy to use and fast,6.4.0,Android,Germany
+rev_0000651,2026-05-25T15:00:00,1,Payment keeps failing on Android,6.3.2,Android,United Kingdom
+rev_0000652,2026-04-12T21:00:00,5,Great offers and smooth checkout,6.3.2,Android,United Kingdom
+rev_0000653,2026-03-19T13:00:00,4,Easy to use and fast,6.3.2,iOS,Singapore
+rev_0000654,2026-03-11T20:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000655,2026-04-13T05:00:00,5,Love the new design,6.3.2,Android,Singapore
+rev_0000656,2026-02-22T05:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000657,2026-05-17T21:00:00,1,Login is slow,6.3.2,Android,United States
+rev_0000658,2026-02-04T00:00:00,4,Great offers and smooth checkout,6.3.2,Desktop,Germany
+rev_0000659,2026-03-14T11:00:00,1,Payment keeps failing on Android,6.3.2,Android,United Kingdom
+rev_0000660,2026-06-12T10:00:00,2,Login is slow,6.3.2,Android,United Kingdom
+rev_0000661,2026-04-07T12:00:00,1,App crash during checkout,6.3.2,Android,India
+rev_0000662,2026-04-13T01:00:00,4,Love the new design,6.3.2,iOS,India
+rev_0000663,2026-07-04T01:00:00,4,Great offers and smooth checkout,6.3.2,Android,Singapore
+rev_0000664,2026-06-09T03:00:00,2,Payment keeps failing on Android,6.3.2,iOS,United States
+rev_0000665,2026-02-05T08:00:00,4,Easy to use and fast,6.3.2,iOS,Singapore
+rev_0000666,2026-03-02T22:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000667,2026-06-01T13:00:00,2,Refund is delayed,6.3.2,iOS,United States
+rev_0000668,2026-02-07T15:00:00,1,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000669,2026-03-01T02:00:00,5,Love the new design,6.3.2,Desktop,India
+rev_0000670,2026-06-19T06:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000671,2026-02-12T14:00:00,2,Refund is delayed,6.3.2,iOS,India
+rev_0000672,2026-04-07T13:00:00,2,Login is slow,6.3.2,Android,United States
+rev_0000673,2026-07-13T04:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000674,2026-02-19T20:00:00,5,Love the new design,6.3.2,Android,United States
+rev_0000675,2026-04-30T13:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000676,2026-02-27T16:00:00,5,Easy to use and fast,6.3.2,Desktop,Singapore
+rev_0000677,2026-04-06T00:00:00,2,Login is slow,6.3.2,Android,India
+rev_0000678,2026-02-22T19:00:00,4,Love the new design,6.3.2,Android,United Kingdom
+rev_0000679,2026-07-22T17:00:00,2,Login is slow,6.4.0,Android,India
+rev_0000680,2026-07-20T04:00:00,1,Login is slow,6.4.0,Android,India
+rev_0000681,2026-06-23T04:00:00,1,Refund is delayed,6.3.2,Android,United Kingdom
+rev_0000682,2026-02-07T06:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000683,2026-04-25T15:00:00,2,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000684,2026-02-05T07:00:00,5,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000685,2026-02-22T23:00:00,4,Love the new design,6.3.2,Android,Singapore
+rev_0000686,2026-03-11T11:00:00,5,Easy to use and fast,6.3.2,Desktop,United States
+rev_0000687,2026-06-04T09:00:00,1,Payment keeps failing on Android,6.3.2,Android,United States
+rev_0000688,2026-06-15T08:00:00,4,Easy to use and fast,6.3.2,Android,India
+rev_0000689,2026-06-04T16:00:00,4,Great offers and smooth checkout,6.3.2,Android,United States
+rev_0000690,2026-07-26T03:00:00,1,App crash during checkout,6.4.0,Android,Singapore
+rev_0000691,2026-03-29T06:00:00,4,Easy to use and fast,6.3.2,iOS,India
+rev_0000692,2026-02-01T06:00:00,4,Great offers and smooth checkout,6.3.2,Desktop,India
+rev_0000693,2026-05-28T07:00:00,5,Great offers and smooth checkout,6.3.2,Desktop,Germany
+rev_0000694,2026-04-13T16:00:00,5,Easy to use and fast,6.3.2,Android,India
+rev_0000695,2026-03-17T09:00:00,5,Love the new design,6.3.2,Android,United Kingdom
+rev_0000696,2026-05-27T20:00:00,2,Refund is delayed,6.3.2,Android,India
+rev_0000697,2026-07-16T01:00:00,4,Great offers and smooth checkout,6.3.2,Android,India
+rev_0000698,2026-02-27T10:00:00,2,Login is slow,6.3.2,Android,United States
+rev_0000699,2026-04-27T14:00:00,2,Payment keeps failing on Android,6.3.2,Android,India
+rev_0000700,2026-03-27T21:00:00,5,Easy to use and fast,6.3.2,Desktop,India

@@ -1,0 +1,4 @@
+incident_id,incident_date,title,description,affected_metric,affected_channel,root_cause,resolution,impact
+inc_001,2026-07-20,Android checkout regression,Payment-start events and completed purchases fell after app 6.4.0 rollout.,checkout_completion_rate,All,Android payment SDK regression,Rollback SDK and release 6.4.1,High
+inc_002,2026-06-01,Google Ads auction inflation,Search CPC increased while conversion volume remained broadly flat.,cpc,Google Ads,Competitor bidding pressure,Tighten bids and negative keywords,Medium
+inc_003,2026-06-15,Organic ranking decline,Organic sessions declined following a simulated ranking update.,sessions,Organic Search,Search ranking change,Refresh affected landing pages,Medium

@@ -1,0 +1,1501 @@
+customer_id,signup_date,country,city,age_group,device_type,acquisition_channel,customer_segment
+cus_0000001,2025-08-24,United States,Chicago,55+,iOS,Organic Search,New
+cus_0000002,2025-11-10,India,Delhi,25-34,Desktop,Email,Loyal
+cus_0000003,2025-04-15,India,Delhi,18-24,iOS,Google Ads,Occasional
+cus_0000004,2025-08-29,India,Delhi,45-54,Android,Referral,Occasional
+cus_0000005,2025-09-14,United States,Chicago,45-54,iOS,Meta Ads,New
+cus_0000006,2025-10-12,India,Bengaluru,18-24,Android,Meta Ads,Occasional
+cus_0000007,2025-07-30,United States,Austin,55+,iOS,Direct,Loyal
+cus_0000008,2025-04-19,United States,San Francisco,55+,Desktop,Meta Ads,Occasional
+cus_0000009,2025-12-19,Singapore,Singapore,35-44,Android,Google Ads,New
+cus_0000010,2025-06-12,United States,Austin,18-24,Android,Google Ads,New
+cus_0000011,2025-12-25,India,Delhi,18-24,Android,Organic Search,Loyal
+cus_0000012,2025-12-19,Germany,Hamburg,18-24,iOS,Direct,New
+cus_0000013,2025-04-20,United States,New York,18-24,Desktop,Email,High Value
+cus_0000014,2025-08-09,India,Mumbai,45-54,iOS,Google Ads,Occasional
+cus_0000015,2025-08-13,United Kingdom,London,45-54,Android,Meta Ads,High Value
+cus_0000016,2025-06-11,United Kingdom,London,55+,iOS,Email,Occasional
+cus_0000017,2025-08-03,United Kingdom,Bristol,25-34,Desktop,Organic Search,Occasional
+cus_0000018,2026-01-14,Singapore,Singapore,25-34,Android,Meta Ads,Occasional
+cus_0000019,2026-01-12,India,Mumbai,35-44,Android,Google Ads,Loyal
+cus_0000020,2025-07-30,Singapore,Singapore,25-34,Android,Direct,High Value
+cus_0000021,2026-01-13,United States,San Francisco,18-24,Android,Organic Search,New
+cus_0000022,2025-12-31,India,Bengaluru,18-24,Desktop,Direct,Occasional
+cus_0000023,2025-08-24,India,Hyderabad,25-34,Desktop,Direct,Occasional
+cus_0000024,2025-11-01,India,Delhi,25-34,Android,Email,Occasional
+cus_0000025,2025-05-30,Germany,Munich,55+,Android,Direct,Occasional
+cus_0000026,2025-09-20,India,Bengaluru,45-54,iOS,Organic Search,Loyal
+cus_0000027,2025-05-02,India,Hyderabad,55+,Android,Organic Search,Loyal
+cus_0000028,2025-12-01,India,Bengaluru,25-34,Android,Meta Ads,New
+cus_0000029,2025-09-03,United Kingdom,London,35-44,Desktop,Google Ads,New
+cus_0000030,2025-07-31,United States,New York,55+,Android,Organic Search,Loyal
+cus_0000031,2026-01-23,India,Delhi,25-34,Android,Google Ads,Occasional
+cus_0000032,2025-06-30,India,Mumbai,35-44,Desktop,Organic Search,Loyal
+cus_0000033,2025-06-08,India,Bengaluru,45-54,Desktop,Google Ads,Occasional
+cus_0000034,2025-10-16,United States,Austin,25-34,Android,Google Ads,High Value
+cus_0000035,2025-06-29,United States,Chicago,25-34,Android,Email,Loyal
+cus_0000036,2025-07-29,India,Hyderabad,25-34,Android,Organic Search,Loyal
+cus_0000037,2025-11-05,United States,San Francisco,35-44,Desktop,Direct,Occasional
+cus_0000038,2025-04-16,United States,San Francisco,25-34,iOS,Meta Ads,Occasional
+cus_0000039,2025-12-12,Singapore,Singapore,18-24,Android,Meta Ads,Occasional
+cus_0000040,2025-04-22,India,Hyderabad,35-44,iOS,Organic Search,Occasional
+cus_0000041,2025-12-03,India,Bengaluru,18-24,iOS,Organic Search,Loyal
+cus_0000042,2025-12-09,India,Delhi,45-54,Android,Email,Loyal
+cus_0000043,2025-08-14,India,Delhi,18-24,Desktop,Referral,Occasional
+cus_0000044,2025-08-23,India,Mumbai,55+,Android,Google Ads,Occasional
+cus_0000045,2025-05-09,Germany,Berlin,25-34,Android,Referral,New
+cus_0000046,2025-06-02,India,Delhi,18-24,Desktop,Direct,Occasional
+cus_0000047,2025-06-02,United States,Austin,35-44,Android,Google Ads,Loyal
+cus_0000048,2025-09-12,India,Delhi,55+,Desktop,Organic Search,Loyal
+cus_0000049,2025-09-16,United States,Chicago,18-24,iOS,Referral,Occasional
+cus_0000050,2025-04-22,United States,Austin,45-54,Android,Google Ads,Loyal
+cus_0000051,2025-07-12,India,Mumbai,25-34,Desktop,Organic Search,Occasional
+cus_0000052,2025-08-06,United States,Austin,25-34,Desktop,Organic Search,Loyal
+cus_0000053,2025-09-25,Germany,Hamburg,55+,iOS,Meta Ads,Occasional
+cus_0000054,2025-05-29,United Kingdom,London,25-34,iOS,Email,Loyal
+cus_0000055,2026-01-22,India,Mumbai,18-24,iOS,Direct,High Value
+cus_0000056,2025-12-20,India,Delhi,25-34,Desktop,Organic Search,Loyal
+cus_0000057,2025-10-28,India,Hyderabad,35-44,Desktop,Organic Search,New
+cus_0000058,2025-08-23,United States,New York,35-44,Android,Direct,Loyal
+cus_0000059,2025-10-30,United Kingdom,Bristol,55+,iOS,Organic Search,Loyal
+cus_0000060,2025-06-17,India,Mumbai,55+,Android,Google Ads,New
+cus_0000061,2025-04-29,United States,Chicago,55+,Android,Google Ads,Occasional
+cus_0000062,2025-05-07,United States,New York,25-34,Android,Direct,New
+cus_0000063,2025-10-10,India,Delhi,35-44,Android,Google Ads,Loyal
+cus_0000064,2025-11-16,United States,New York,25-34,iOS,Google Ads,Loyal
+cus_0000065,2025-07-12,Germany,Berlin,45-54,Android,Google Ads,New
+cus_0000066,2025-10-15,United States,Austin,18-24,Android,Organic Search,Occasional
+cus_0000067,2025-11-13,India,Mumbai,18-24,iOS,Direct,Loyal
+cus_0000068,2025-04-28,United Kingdom,London,25-34,Desktop,Email,Occasional
+cus_0000069,2025-12-13,United States,San Francisco,45-54,Android,Referral,Loyal
+cus_0000070,2025-08-15,United States,Austin,35-44,Android,Direct,New
+cus_0000071,2025-06-12,United States,San Francisco,55+,Android,Direct,New
+cus_0000072,2025-08-12,United States,Austin,25-34,Desktop,Google Ads,Occasional
+cus_0000073,2025-08-06,United Kingdom,Bristol,25-34,Android,Organic Search,Occasional
+cus_0000074,2026-01-03,United Kingdom,Manchester,18-24,Android,Meta Ads,New
+cus_0000075,2025-04-29,India,Mumbai,25-34,Android,Email,Occasional
+cus_0000076,2025-08-13,United States,Chicago,18-24,Android,Meta Ads,Occasional
+cus_0000077,2025-12-14,Germany,Munich,25-34,Android,Organic Search,New
+cus_0000078,2025-04-20,India,Mumbai,35-44,Android,Email,Occasional
+cus_0000079,2025-05-07,United States,Austin,45-54,iOS,Meta Ads,Occasional
+cus_0000080,2025-11-30,United States,San Francisco,18-24,Android,Meta Ads,Occasional
+cus_0000081,2025-06-08,India,Mumbai,45-54,iOS,Email,New
+cus_0000082,2025-09-03,India,Delhi,55+,Android,Google Ads,Loyal
+cus_0000083,2025-04-07,India,Bengaluru,25-34,Android,Email,Loyal
+cus_0000084,2025-04-12,United Kingdom,London,45-54,Android,Meta Ads,Loyal
+cus_0000085,2025-11-19,India,Hyderabad,55+,Android,Email,Loyal
+cus_0000086,2025-05-16,India,Bengaluru,25-34,Desktop,Referral,High Value
+cus_0000087,2025-09-10,United States,Chicago,25-34,iOS,Referral,Occasional
+cus_0000088,2025-12-20,United States,Chicago,25-34,Desktop,Direct,New
+cus_0000089,2025-11-30,United States,New York,25-34,Android,Organic Search,Loyal
+cus_0000090,2025-08-08,Singapore,Singapore,18-24,Desktop,Organic Search,New
+cus_0000091,2025-05-05,United States,New York,18-24,Desktop,Meta Ads,Loyal
+cus_0000092,2025-07-29,United States,San Francisco,25-34,Android,Google Ads,New
+cus_0000093,2025-12-16,United States,Austin,25-34,iOS,Meta Ads,New
+cus_0000094,2025-10-16,India,Mumbai,18-24,iOS,Meta Ads,Occasional
+cus_0000095,2025-09-12,India,Delhi,18-24,Android,Organic Search,Loyal
+cus_0000096,2026-01-10,India,Delhi,35-44,Android,Google Ads,Occasional
+cus_0000097,2025-08-08,India,Bengaluru,45-54,Desktop,Meta Ads,New
+cus_0000098,2025-10-09,India,Mumbai,18-24,Android,Email,Loyal
+cus_0000099,2025-07-08,India,Delhi,25-34,Android,Email,New
+cus_0000100,2026-01-20,India,Mumbai,25-34,iOS,Google Ads,New
+cus_0000101,2025-09-08,Germany,Munich,35-44,Desktop,Meta Ads,New
+cus_0000102,2025-12-11,India,Bengaluru,18-24,Android,Organic Search,Occasional
+cus_0000103,2025-07-12,United States,Chicago,35-44,Desktop,Organic Search,High Value
+cus_0000104,2025-07-20,India,Mumbai,25-34,Android,Organic Search,Occasional
+cus_0000105,2025-08-30,Germany,Munich,25-34,Desktop,Google Ads,Loyal
+cus_0000106,2025-05-31,United Kingdom,Bristol,25-34,iOS,Meta Ads,New
+cus_0000107,2025-12-23,United States,Chicago,25-34,Android,Organic Search,Loyal
+cus_0000108,2025-12-24,India,Mumbai,35-44,Android,Direct,Loyal
+cus_0000109,2025-06-08,Singapore,Singapore,55+,Android,Direct,Occasional
+cus_0000110,2025-09-30,India,Bengaluru,35-44,Android,Direct,New
+cus_0000111,2025-04-16,United States,San Francisco,55+,Desktop,Organic Search,Loyal
+cus_0000112,2025-05-30,India,Bengaluru,45-54,Desktop,Referral,New
+cus_0000113,2025-08-05,United Kingdom,Manchester,35-44,iOS,Organic Search,High Value
+cus_0000114,2025-05-04,United States,Austin,25-34,Desktop,Google Ads,Loyal
+cus_0000115,2025-07-19,India,Delhi,25-34,Android,Google Ads,New
+cus_0000116,2025-09-05,India,Delhi,25-34,iOS,Organic Search,New
+cus_0000117,2025-12-20,India,Bengaluru,25-34,iOS,Meta Ads,Occasional
+cus_0000118,2025-08-30,United States,New York,25-34,Android,Meta Ads,Occasional
+cus_0000119,2025-06-12,India,Mumbai,25-34,Desktop,Organic Search,Occasional
+cus_0000120,2025-09-16,United States,San Francisco,25-34,Desktop,Meta Ads,Occasional
+cus_0000121,2025-12-04,Germany,Munich,35-44,Android,Email,New
+cus_0000122,2025-09-21,India,Hyderabad,45-54,Desktop,Meta Ads,New
+cus_0000123,2025-10-19,India,Mumbai,18-24,iOS,Email,Loyal
+cus_0000124,2025-07-27,India,Delhi,35-44,Android,Direct,Occasional
+cus_0000125,2025-08-12,India,Bengaluru,25-34,iOS,Google Ads,Occasional
+cus_0000126,2025-04-25,India,Delhi,25-34,Android,Google Ads,Occasional
+cus_0000127,2025-04-19,India,Delhi,25-34,Android,Google Ads,Loyal
+cus_0000128,2026-01-01,India,Delhi,55+,iOS,Organic Search,Loyal
+cus_0000129,2025-09-09,India,Mumbai,18-24,Android,Organic Search,Loyal
+cus_0000130,2025-09-16,Singapore,Singapore,35-44,Desktop,Meta Ads,Loyal
+cus_0000131,2026-01-19,United Kingdom,Bristol,18-24,Android,Email,Loyal
+cus_0000132,2025-08-18,India,Bengaluru,25-34,iOS,Direct,Loyal
+cus_0000133,2025-05-15,Singapore,Singapore,45-54,Android,Meta Ads,Loyal
+cus_0000134,2025-11-27,India,Delhi,45-54,iOS,Meta Ads,Loyal
+cus_0000135,2025-09-22,India,Delhi,45-54,Android,Direct,Occasional
+cus_0000136,2025-12-24,United Kingdom,London,18-24,Android,Email,New
+cus_0000137,2026-01-06,Singapore,Singapore,55+,iOS,Email,High Value
+cus_0000138,2025-08-28,India,Bengaluru,18-24,Desktop,Organic Search,High Value
+cus_0000139,2025-05-15,United States,New York,35-44,Desktop,Email,Occasional
+cus_0000140,2025-11-12,United Kingdom,Bristol,45-54,Android,Organic Search,Loyal
+cus_0000141,2025-11-21,United States,Chicago,35-44,Android,Google Ads,High Value
+cus_0000142,2025-10-11,Germany,Berlin,25-34,iOS,Google Ads,Loyal
+cus_0000143,2025-10-04,India,Mumbai,25-34,Android,Organic Search,Occasional
+cus_0000144,2025-12-19,India,Hyderabad,25-34,Android,Google Ads,Occasional
+cus_0000145,2025-10-07,United Kingdom,London,18-24,iOS,Google Ads,Loyal
+cus_0000146,2025-10-26,Germany,Berlin,55+,Android,Referral,New
+cus_0000147,2025-12-26,United Kingdom,London,25-34,iOS,Meta Ads,Occasional
+cus_0000148,2025-11-03,United States,Austin,35-44,Android,Organic Search,New
+cus_0000149,2025-09-17,India,Bengaluru,55+,Desktop,Meta Ads,Occasional
+cus_0000150,2025-09-19,United States,San Francisco,55+,Android,Google Ads,New
+cus_0000151,2025-09-26,India,Hyderabad,25-34,Desktop,Direct,Occasional
+cus_0000152,2025-12-27,India,Mumbai,35-44,Android,Referral,New
+cus_0000153,2025-08-22,Germany,Hamburg,18-24,iOS,Organic Search,Loyal
+cus_0000154,2026-01-19,Germany,Munich,45-54,Android,Organic Search,New
+cus_0000155,2025-04-13,United States,San Francisco,18-24,Android,Email,Occasional
+cus_0000156,2025-07-06,India,Delhi,55+,Android,Email,Occasional
+cus_0000157,2025-10-19,India,Hyderabad,25-34,Android,Direct,Occasional
+cus_0000158,2025-04-26,Germany,Berlin,45-54,Android,Direct,New
+cus_0000159,2025-12-29,Singapore,Singapore,45-54,Android,Meta Ads,Loyal
+cus_0000160,2026-01-22,India,Delhi,45-54,Android,Email,Loyal
+cus_0000161,2025-07-14,India,Bengaluru,45-54,Android,Email,Occasional
+cus_0000162,2025-06-12,Germany,Hamburg,45-54,Android,Meta Ads,New
+cus_0000163,2025-11-18,United States,Chicago,25-34,Android,Meta Ads,New
+cus_0000164,2025-06-09,India,Delhi,35-44,iOS,Direct,New
+cus_0000165,2025-12-03,United States,Austin,25-34,iOS,Direct,Occasional
+cus_0000166,2025-08-28,United Kingdom,London,35-44,Android,Google Ads,Loyal
+cus_0000167,2025-06-07,United Kingdom,Manchester,18-24,Android,Direct,Loyal
+cus_0000168,2025-08-21,Singapore,Singapore,25-34,Android,Email,New
+cus_0000169,2025-04-24,India,Hyderabad,35-44,iOS,Referral,New
+cus_0000170,2026-01-05,India,Delhi,45-54,Desktop,Meta Ads,New
+cus_0000171,2025-12-10,India,Delhi,55+,Android,Organic Search,New
+cus_0000172,2025-08-21,United States,Austin,55+,Android,Google Ads,Occasional
+cus_0000173,2025-09-03,Germany,Munich,18-24,iOS,Google Ads,Loyal
+cus_0000174,2025-04-29,India,Bengaluru,25-34,iOS,Email,New
+cus_0000175,2025-05-07,Germany,Hamburg,45-54,Android,Google Ads,Occasional
+cus_0000176,2025-04-13,India,Mumbai,25-34,Desktop,Organic Search,Occasional
+cus_0000177,2026-01-28,Singapore,Singapore,45-54,iOS,Referral,Loyal
+cus_0000178,2025-05-30,India,Mumbai,55+,Android,Direct,Occasional
+cus_0000179,2025-08-26,India,Delhi,18-24,Android,Google Ads,Occasional
+cus_0000180,2025-09-07,United States,San Francisco,35-44,Android,Meta Ads,New
+cus_0000181,2025-09-08,Singapore,Singapore,25-34,Desktop,Meta Ads,New
+cus_0000182,2025-11-09,India,Delhi,35-44,Android,Direct,New
+cus_0000183,2025-11-21,United States,Austin,25-34,Android,Direct,High Value
+cus_0000184,2025-06-19,India,Delhi,55+,Desktop,Organic Search,Occasional
+cus_0000185,2026-01-10,United States,Chicago,18-24,Android,Meta Ads,Occasional
+cus_0000186,2025-05-25,Singapore,Singapore,35-44,Android,Direct,New
+cus_0000187,2025-07-26,India,Delhi,25-34,iOS,Meta Ads,New
+cus_0000188,2025-07-08,India,Bengaluru,25-34,Android,Google Ads,Occasional
+cus_0000189,2025-12-14,India,Delhi,18-24,Android,Organic Search,New
+cus_0000190,2025-11-03,India,Delhi,18-24,Android,Google Ads,Occasional
+cus_0000191,2025-05-02,Singapore,Singapore,25-34,iOS,Direct,Loyal
+cus_0000192,2025-10-13,United States,San Francisco,25-34,Android,Google Ads,Loyal
+cus_0000193,2025-08-23,Germany,Berlin,35-44,Android,Organic Search,Occasional
+cus_0000194,2025-09-22,United States,San Francisco,55+,Android,Meta Ads,Occasional
+cus_0000195,2026-01-19,India,Mumbai,35-44,Desktop,Organic Search,New
+cus_0000196,2025-10-04,India,Bengaluru,18-24,iOS,Meta Ads,New
+cus_0000197,2025-10-16,India,Mumbai,55+,Desktop,Direct,New
+cus_0000198,2025-10-16,Singapore,Singapore,25-34,Android,Email,New
+cus_0000199,2026-01-21,India,Hyderabad,35-44,Android,Google Ads,Occasional
+cus_0000200,2025-05-04,India,Bengaluru,45-54,Desktop,Meta Ads,Occasional
+cus_0000201,2025-06-24,India,Mumbai,55+,Android,Google Ads,Occasional
+cus_0000202,2025-08-26,India,Delhi,35-44,Android,Direct,New
+cus_0000203,2025-05-30,Germany,Berlin,25-34,Desktop,Organic Search,New
+cus_0000204,2026-01-05,India,Mumbai,18-24,Android,Meta Ads,Loyal
+cus_0000205,2025-10-17,United States,San Francisco,25-34,iOS,Organic Search,New
+cus_0000206,2026-01-22,United States,New York,25-34,iOS,Referral,New
+cus_0000207,2025-10-12,United States,Austin,45-54,Desktop,Organic Search,Occasional
+cus_0000208,2025-12-21,India,Delhi,55+,Android,Referral,Occasional
+cus_0000209,2025-06-28,Germany,Munich,55+,iOS,Email,Occasional
+cus_0000210,2025-09-17,Germany,Hamburg,25-34,Android,Direct,Loyal
+cus_0000211,2025-05-04,United States,New York,45-54,Android,Organic Search,Loyal
+cus_0000212,2025-09-10,India,Delhi,25-34,Desktop,Google Ads,New
+cus_0000213,2025-05-26,United States,New York,25-34,iOS,Meta Ads,New
+cus_0000214,2025-12-03,India,Bengaluru,25-34,Android,Organic Search,Loyal
+cus_0000215,2026-01-11,Germany,Hamburg,25-34,Desktop,Google Ads,New
+cus_0000216,2026-01-27,United Kingdom,London,25-34,Android,Meta Ads,Loyal
+cus_0000217,2026-01-14,United Kingdom,London,35-44,Android,Direct,Occasional
+cus_0000218,2026-01-19,Germany,Berlin,35-44,Android,Direct,Occasional
+cus_0000219,2025-05-30,United Kingdom,Manchester,55+,iOS,Organic Search,Loyal
+cus_0000220,2026-01-19,Singapore,Singapore,55+,Android,Google Ads,Loyal
+cus_0000221,2025-07-07,Singapore,Singapore,25-34,Android,Direct,Occasional
+cus_0000222,2025-06-03,India,Hyderabad,18-24,iOS,Meta Ads,Occasional
+cus_0000223,2025-12-14,India,Bengaluru,25-34,Android,Google Ads,Loyal
+cus_0000224,2025-04-18,Germany,Hamburg,18-24,Desktop,Meta Ads,Occasional
+cus_0000225,2025-08-12,India,Mumbai,25-34,iOS,Email,Occasional
+cus_0000226,2026-01-07,Germany,Munich,25-34,Android,Organic Search,New
+cus_0000227,2025-11-18,United States,Austin,55+,iOS,Direct,Occasional
+cus_0000228,2025-10-25,United States,San Francisco,25-34,Android,Meta Ads,New
+cus_0000229,2025-12-06,India,Bengaluru,55+,Android,Referral,High Value
+cus_0000230,2025-04-26,United Kingdom,Manchester,55+,Desktop,Meta Ads,New
+cus_0000231,2025-12-31,Germany,Berlin,35-44,Desktop,Meta Ads,Loyal
+cus_0000232,2025-10-28,United States,New York,25-34,Android,Meta Ads,New
+cus_0000233,2025-09-06,India,Hyderabad,18-24,Android,Google Ads,Occasional
+cus_0000234,2025-10-26,India,Delhi,45-54,Android,Email,New
+cus_0000235,2025-09-18,United Kingdom,Manchester,35-44,Android,Organic Search,Loyal
+cus_0000236,2025-09-17,United States,New York,35-44,Android,Organic Search,Occasional
+cus_0000237,2025-09-18,United States,Austin,45-54,Android,Google Ads,Occasional
+cus_0000238,2025-11-08,Singapore,Singapore,45-54,Desktop,Organic Search,Occasional
+cus_0000239,2025-04-20,United Kingdom,London,35-44,Android,Meta Ads,New
+cus_0000240,2025-06-07,India,Hyderabad,45-54,iOS,Email,Occasional
+cus_0000241,2025-04-21,United States,Austin,25-34,Desktop,Direct,New
+cus_0000242,2025-05-05,Singapore,Singapore,25-34,iOS,Meta Ads,Loyal
+cus_0000243,2026-01-05,United States,Chicago,55+,Android,Direct,New
+cus_0000244,2025-05-30,Singapore,Singapore,55+,iOS,Direct,New
+cus_0000245,2025-10-16,Singapore,Singapore,25-34,iOS,Google Ads,New
+cus_0000246,2026-01-01,India,Hyderabad,45-54,Android,Meta Ads,New
+cus_0000247,2025-10-05,India,Bengaluru,25-34,Android,Organic Search,Occasional
+cus_0000248,2025-10-19,India,Bengaluru,35-44,Android,Email,New
+cus_0000249,2025-09-03,United Kingdom,London,35-44,Android,Direct,Occasional
+cus_0000250,2025-10-26,India,Delhi,18-24,Android,Direct,Loyal
+cus_0000251,2026-01-30,Singapore,Singapore,45-54,iOS,Organic Search,Occasional
+cus_0000252,2025-07-16,India,Delhi,25-34,Android,Google Ads,High Value
+cus_0000253,2025-06-15,United States,New York,25-34,iOS,Direct,Occasional
+cus_0000254,2025-05-10,United States,Austin,45-54,Android,Email,New
+cus_0000255,2025-08-29,United States,Chicago,35-44,Android,Direct,New
+cus_0000256,2025-04-08,Germany,Munich,45-54,iOS,Google Ads,New
+cus_0000257,2025-05-27,Germany,Munich,25-34,iOS,Google Ads,New
+cus_0000258,2025-07-09,United Kingdom,Bristol,35-44,iOS,Referral,New
+cus_0000259,2025-04-27,India,Delhi,55+,Desktop,Direct,New
+cus_0000260,2025-08-15,United States,Austin,45-54,Desktop,Meta Ads,Loyal
+cus_0000261,2025-10-26,United States,New York,25-34,Android,Google Ads,Loyal
+cus_0000262,2025-05-04,India,Hyderabad,25-34,Desktop,Organic Search,Loyal
+cus_0000263,2025-08-26,United States,Austin,35-44,Desktop,Google Ads,Loyal
+cus_0000264,2025-08-12,United States,Chicago,55+,Desktop,Meta Ads,New
+cus_0000265,2025-12-20,Singapore,Singapore,55+,Desktop,Direct,New
+cus_0000266,2025-08-26,India,Mumbai,35-44,Desktop,Google Ads,Loyal
+cus_0000267,2025-11-23,United States,Austin,25-34,Android,Google Ads,Occasional
+cus_0000268,2025-05-03,India,Bengaluru,25-34,iOS,Google Ads,Occasional
+cus_0000269,2025-12-09,United States,Chicago,55+,iOS,Direct,Occasional
+cus_0000270,2025-05-26,Germany,Berlin,25-34,Android,Google Ads,New
+cus_0000271,2025-08-07,India,Bengaluru,25-34,Android,Direct,Occasional
+cus_0000272,2025-09-07,India,Delhi,35-44,iOS,Direct,Loyal
+cus_0000273,2025-08-25,United Kingdom,Manchester,45-54,Android,Referral,Occasional
+cus_0000274,2025-12-11,India,Delhi,18-24,Android,Google Ads,High Value
+cus_0000275,2025-11-24,Germany,Hamburg,18-24,Android,Meta Ads,Occasional
+cus_0000276,2025-10-31,United States,New York,25-34,Android,Organic Search,Loyal
+cus_0000277,2025-04-30,Singapore,Singapore,18-24,Android,Referral,New
+cus_0000278,2025-10-06,United Kingdom,Bristol,25-34,Android,Meta Ads,Occasional
+cus_0000279,2025-08-27,India,Bengaluru,45-54,Android,Google Ads,Occasional
+cus_0000280,2025-04-17,Germany,Hamburg,35-44,Desktop,Direct,Occasional
+cus_0000281,2025-08-12,India,Delhi,18-24,Android,Referral,New
+cus_0000282,2025-09-11,United States,San Francisco,25-34,iOS,Google Ads,Loyal
+cus_0000283,2026-01-23,United States,New York,18-24,Android,Direct,Occasional
+cus_0000284,2025-09-05,United Kingdom,Bristol,55+,Android,Direct,New
+cus_0000285,2025-11-06,India,Mumbai,55+,Desktop,Email,New
+cus_0000286,2025-11-01,Germany,Berlin,25-34,iOS,Google Ads,New
+cus_0000287,2026-01-09,United States,Chicago,35-44,Android,Organic Search,Loyal
+cus_0000288,2025-10-12,United States,Chicago,18-24,Desktop,Direct,New
+cus_0000289,2025-10-29,Germany,Hamburg,25-34,iOS,Direct,Loyal
+cus_0000290,2025-05-01,United Kingdom,Manchester,35-44,Android,Direct,New
+cus_0000291,2025-05-11,India,Mumbai,25-34,iOS,Google Ads,Loyal
+cus_0000292,2025-10-10,India,Delhi,25-34,Android,Organic Search,Loyal
+cus_0000293,2025-05-23,India,Delhi,55+,iOS,Referral,High Value
+cus_0000294,2025-07-29,Germany,Hamburg,25-34,iOS,Direct,Occasional
+cus_0000295,2025-04-18,India,Bengaluru,55+,Android,Google Ads,New
+cus_0000296,2025-07-28,United States,Chicago,55+,Android,Organic Search,High Value
+cus_0000297,2025-10-03,United Kingdom,Manchester,25-34,Desktop,Direct,Occasional
+cus_0000298,2025-05-07,Germany,Berlin,35-44,Android,Referral,Occasional
+cus_0000299,2025-08-21,United States,San Francisco,18-24,iOS,Organic Search,Loyal
+cus_0000300,2025-11-18,India,Delhi,55+,Android,Direct,Occasional
+cus_0000301,2025-10-11,India,Bengaluru,25-34,Desktop,Email,Loyal
+cus_0000302,2025-12-03,India,Bengaluru,35-44,Android,Google Ads,Occasional
+cus_0000303,2025-05-13,India,Hyderabad,35-44,Android,Organic Search,Loyal
+cus_0000304,2025-05-09,India,Bengaluru,25-34,Android,Google Ads,Loyal
+cus_0000305,2025-06-14,United States,San Francisco,35-44,Desktop,Direct,Loyal
+cus_0000306,2026-01-19,India,Bengaluru,18-24,Desktop,Meta Ads,Occasional
+cus_0000307,2025-09-28,United States,Austin,25-34,Android,Direct,Occasional
+cus_0000308,2025-10-06,Germany,Berlin,25-34,Android,Google Ads,Occasional
+cus_0000309,2025-12-01,Singapore,Singapore,45-54,Android,Direct,Occasional
+cus_0000310,2025-06-23,India,Mumbai,18-24,iOS,Organic Search,Occasional
+cus_0000311,2025-04-27,India,Mumbai,35-44,iOS,Meta Ads,High Value
+cus_0000312,2025-11-04,Germany,Munich,45-54,Desktop,Organic Search,New
+cus_0000313,2025-04-09,India,Mumbai,25-34,iOS,Meta Ads,Loyal
+cus_0000314,2026-01-20,Germany,Munich,55+,iOS,Google Ads,New
+cus_0000315,2025-08-12,Singapore,Singapore,55+,Android,Google Ads,Loyal
+cus_0000316,2025-09-19,India,Hyderabad,25-34,Android,Email,New
+cus_0000317,2025-12-11,United States,Chicago,35-44,Desktop,Google Ads,Loyal
+cus_0000318,2025-12-25,Germany,Munich,18-24,Android,Organic Search,Loyal
+cus_0000319,2025-10-12,India,Bengaluru,35-44,Android,Direct,New
+cus_0000320,2025-06-12,Germany,Hamburg,25-34,Android,Google Ads,Occasional
+cus_0000321,2025-07-27,Singapore,Singapore,55+,Desktop,Organic Search,High Value
+cus_0000322,2025-08-08,United States,San Francisco,45-54,Android,Referral,Occasional
+cus_0000323,2025-11-20,India,Mumbai,35-44,Android,Direct,Loyal
+cus_0000324,2025-12-22,India,Bengaluru,18-24,Android,Google Ads,Occasional
+cus_0000325,2025-04-17,Singapore,Singapore,35-44,Android,Organic Search,New
+cus_0000326,2026-01-24,India,Bengaluru,18-24,Desktop,Organic Search,New
+cus_0000327,2025-08-05,India,Hyderabad,55+,Android,Email,Loyal
+cus_0000328,2025-10-11,India,Hyderabad,35-44,iOS,Google Ads,New
+cus_0000329,2026-01-16,India,Mumbai,18-24,Desktop,Referral,Occasional
+cus_0000330,2025-12-27,India,Mumbai,18-24,Android,Organic Search,Loyal
+cus_0000331,2025-08-18,India,Mumbai,25-34,Desktop,Referral,Occasional
+cus_0000332,2025-08-18,United States,San Francisco,45-54,iOS,Meta Ads,New
+cus_0000333,2026-01-28,United States,New York,25-34,Android,Google Ads,Occasional
+cus_0000334,2026-01-16,Germany,Hamburg,18-24,Android,Meta Ads,High Value
+cus_0000335,2025-11-07,Germany,Berlin,25-34,Desktop,Organic Search,Loyal
+cus_0000336,2025-10-07,India,Delhi,45-54,Android,Google Ads,Loyal
+cus_0000337,2025-06-15,United States,Chicago,45-54,Android,Referral,Loyal
+cus_0000338,2025-11-21,Singapore,Singapore,45-54,Android,Organic Search,Occasional
+cus_0000339,2026-01-23,Germany,Munich,25-34,iOS,Meta Ads,New
+cus_0000340,2025-04-30,United States,Chicago,25-34,Android,Direct,Occasional
+cus_0000341,2025-06-22,United Kingdom,Bristol,35-44,iOS,Meta Ads,Loyal
+cus_0000342,2025-05-25,India,Delhi,55+,Android,Google Ads,Loyal
+cus_0000343,2025-08-06,United States,Austin,25-34,Android,Organic Search,New
+cus_0000344,2026-01-09,India,Bengaluru,35-44,Android,Google Ads,New
+cus_0000345,2025-11-03,Germany,Hamburg,25-34,iOS,Referral,New
+cus_0000346,2025-10-18,United States,New York,35-44,iOS,Google Ads,New
+cus_0000347,2025-12-15,Germany,Berlin,25-34,iOS,Meta Ads,New
+cus_0000348,2026-01-20,United States,New York,25-34,Android,Google Ads,Loyal
+cus_0000349,2025-09-20,India,Hyderabad,45-54,Android,Google Ads,Loyal
+cus_0000350,2025-12-30,India,Hyderabad,45-54,Desktop,Meta Ads,High Value
+cus_0000351,2025-08-18,India,Hyderabad,25-34,Android,Organic Search,New
+cus_0000352,2026-01-20,Singapore,Singapore,25-34,iOS,Google Ads,New
+cus_0000353,2025-05-11,Germany,Hamburg,25-34,Android,Google Ads,Occasional
+cus_0000354,2025-11-24,India,Bengaluru,18-24,Desktop,Meta Ads,Occasional
+cus_0000355,2025-11-14,Germany,Hamburg,25-34,iOS,Organic Search,Loyal
+cus_0000356,2025-06-30,Singapore,Singapore,55+,Android,Organic Search,Occasional
+cus_0000357,2025-04-22,India,Bengaluru,55+,Android,Email,Loyal
+cus_0000358,2025-07-17,Singapore,Singapore,25-34,Desktop,Organic Search,Loyal
+cus_0000359,2025-10-02,United States,Austin,18-24,iOS,Email,New
+cus_0000360,2025-07-08,India,Hyderabad,55+,Desktop,Google Ads,Loyal
+cus_0000361,2025-04-18,United States,New York,25-34,Android,Referral,High Value
+cus_0000362,2026-01-07,India,Delhi,35-44,Desktop,Direct,New
+cus_0000363,2025-04-14,India,Hyderabad,35-44,Android,Google Ads,New
+cus_0000364,2025-11-24,United Kingdom,Bristol,25-34,Android,Direct,Occasional
+cus_0000365,2025-12-30,India,Delhi,25-34,Desktop,Google Ads,Occasional
+cus_0000366,2025-07-21,Singapore,Singapore,25-34,Android,Organic Search,New
+cus_0000367,2025-12-25,India,Bengaluru,45-54,Android,Organic Search,New
+cus_0000368,2025-11-19,India,Hyderabad,45-54,iOS,Organic Search,Loyal
+cus_0000369,2025-08-04,India,Hyderabad,45-54,iOS,Meta Ads,Loyal
+cus_0000370,2025-06-11,United States,San Francisco,55+,iOS,Email,Occasional
+cus_0000371,2026-01-21,India,Bengaluru,25-34,Android,Email,New
+cus_0000372,2025-09-18,United Kingdom,Manchester,35-44,Android,Organic Search,New
+cus_0000373,2025-04-20,United States,Austin,55+,Android,Google Ads,Occasional
+cus_0000374,2025-04-14,United Kingdom,London,35-44,Android,Meta Ads,High Value
+cus_0000375,2025-09-17,United States,New York,25-34,Android,Meta Ads,New
+cus_0000376,2025-12-16,United States,Chicago,18-24,Android,Organic Search,Loyal
+cus_0000377,2025-04-26,Singapore,Singapore,35-44,Desktop,Email,New
+cus_0000378,2025-09-11,India,Bengaluru,45-54,Android,Referral,High Value
+cus_0000379,2025-05-09,India,Bengaluru,35-44,Desktop,Google Ads,Loyal
+cus_0000380,2025-11-20,India,Bengaluru,45-54,iOS,Direct,Occasional
+cus_0000381,2025-11-09,United States,Austin,45-54,Desktop,Google Ads,New
+cus_0000382,2025-07-24,Singapore,Singapore,18-24,Android,Organic Search,New
+cus_0000383,2026-02-01,United States,New York,25-34,Android,Google Ads,Loyal
+cus_0000384,2025-07-15,India,Mumbai,25-34,Desktop,Organic Search,High Value
+cus_0000385,2025-06-11,United Kingdom,Bristol,45-54,Android,Meta Ads,High Value
+cus_0000386,2025-10-17,United States,New York,35-44,Android,Organic Search,Occasional
+cus_0000387,2025-05-13,Germany,Hamburg,25-34,iOS,Organic Search,Loyal
+cus_0000388,2025-04-20,India,Bengaluru,25-34,iOS,Email,Loyal
+cus_0000389,2026-01-11,Singapore,Singapore,35-44,Desktop,Referral,New
+cus_0000390,2025-08-26,United Kingdom,London,35-44,Android,Google Ads,New
+cus_0000391,2025-11-14,Singapore,Singapore,45-54,Desktop,Meta Ads,Occasional
+cus_0000392,2025-06-11,United States,Austin,18-24,Android,Direct,New
+cus_0000393,2025-07-19,United States,Chicago,35-44,iOS,Meta Ads,Loyal
+cus_0000394,2025-11-18,Germany,Hamburg,55+,Desktop,Google Ads,Loyal
+cus_0000395,2025-05-02,India,Bengaluru,25-34,iOS,Google Ads,High Value
+cus_0000396,2025-07-18,India,Bengaluru,45-54,Android,Direct,New
+cus_0000397,2025-10-21,United States,New York,55+,Android,Direct,Occasional
+cus_0000398,2025-10-20,Germany,Hamburg,25-34,Desktop,Google Ads,Loyal
+cus_0000399,2025-05-14,Singapore,Singapore,25-34,Android,Referral,Occasional
+cus_0000400,2025-12-10,India,Bengaluru,18-24,Desktop,Google Ads,High Value
+cus_0000401,2025-10-04,United States,San Francisco,45-54,iOS,Email,New
+cus_0000402,2026-01-02,United States,New York,18-24,iOS,Organic Search,Occasional
+cus_0000403,2025-11-20,Germany,Hamburg,55+,Android,Direct,Occasional
+cus_0000404,2025-05-23,Germany,Hamburg,25-34,Android,Organic Search,Occasional
+cus_0000405,2025-07-30,United States,Austin,25-34,Android,Email,New
+cus_0000406,2026-01-03,India,Delhi,45-54,Android,Direct,New
+cus_0000407,2025-09-17,India,Delhi,35-44,Android,Organic Search,New
+cus_0000408,2025-12-30,Singapore,Singapore,55+,iOS,Google Ads,Loyal
+cus_0000409,2025-07-25,United States,San Francisco,25-34,Android,Email,Loyal
+cus_0000410,2025-08-01,India,Bengaluru,55+,Android,Organic Search,Occasional
+cus_0000411,2025-06-29,United Kingdom,Bristol,25-34,iOS,Direct,New
+cus_0000412,2025-09-14,United States,New York,35-44,Android,Google Ads,Loyal
+cus_0000413,2025-07-07,United Kingdom,London,25-34,Android,Direct,Occasional
+cus_0000414,2025-10-12,United States,San Francisco,18-24,Android,Referral,Loyal
+cus_0000415,2025-07-19,United States,Austin,25-34,iOS,Organic Search,New
+cus_0000416,2025-10-27,India,Delhi,45-54,Android,Referral,Loyal
+cus_0000417,2025-11-03,United States,Chicago,18-24,Android,Direct,New
+cus_0000418,2025-09-22,India,Bengaluru,25-34,iOS,Organic Search,Loyal
+cus_0000419,2025-12-15,United States,Chicago,25-34,iOS,Organic Search,Loyal
+cus_0000420,2025-07-09,United States,New York,35-44,iOS,Google Ads,Loyal
+cus_0000421,2025-05-22,India,Delhi,18-24,Android,Referral,New
+cus_0000422,2026-01-10,India,Delhi,35-44,iOS,Meta Ads,Occasional
+cus_0000423,2025-10-09,United States,San Francisco,35-44,Android,Google Ads,Occasional
+cus_0000424,2025-08-14,India,Bengaluru,25-34,Android,Google Ads,Occasional
+cus_0000425,2025-09-08,United States,Chicago,18-24,Desktop,Google Ads,Occasional
+cus_0000426,2025-04-24,India,Bengaluru,45-54,Android,Meta Ads,Loyal
+cus_0000427,2025-12-02,United Kingdom,London,35-44,Desktop,Meta Ads,Occasional
+cus_0000428,2025-10-07,United Kingdom,London,55+,iOS,Direct,Loyal
+cus_0000429,2025-11-07,United States,Chicago,45-54,Android,Direct,New
+cus_0000430,2026-01-26,United States,New York,55+,Android,Direct,Occasional
+cus_0000431,2025-11-21,Singapore,Singapore,35-44,iOS,Direct,Occasional
+cus_0000432,2025-06-15,United States,New York,35-44,iOS,Google Ads,New
+cus_0000433,2026-01-19,India,Mumbai,18-24,Android,Organic Search,New
+cus_0000434,2025-12-06,India,Mumbai,45-54,Android,Email,High Value
+cus_0000435,2025-05-26,India,Delhi,55+,Desktop,Direct,New
+cus_0000436,2025-11-19,Germany,Hamburg,18-24,iOS,Direct,Occasional
+cus_0000437,2025-05-22,United States,Chicago,25-34,Android,Google Ads,Occasional
+cus_0000438,2025-07-26,India,Mumbai,25-34,iOS,Direct,New
+cus_0000439,2025-09-11,Singapore,Singapore,25-34,Desktop,Organic Search,New
+cus_0000440,2025-09-14,India,Delhi,25-34,Android,Email,Occasional
+cus_0000441,2026-01-14,United Kingdom,Bristol,25-34,Android,Meta Ads,Occasional
+cus_0000442,2026-01-16,Germany,Hamburg,18-24,Android,Meta Ads,New
+cus_0000443,2025-06-19,India,Mumbai,55+,Android,Google Ads,High Value
+cus_0000444,2025-06-11,India,Mumbai,35-44,Desktop,Direct,Occasional
+cus_0000445,2025-10-22,Germany,Berlin,35-44,Android,Google Ads,Occasional
+cus_0000446,2026-01-05,United States,New York,25-34,Android,Organic Search,Loyal
+cus_0000447,2025-05-17,India,Hyderabad,25-34,iOS,Referral,Occasional
+cus_0000448,2025-07-07,United Kingdom,London,25-34,Android,Email,Occasional
+cus_0000449,2025-10-13,United States,Chicago,45-54,Android,Organic Search,Occasional
+cus_0000450,2025-11-13,United Kingdom,London,35-44,Desktop,Meta Ads,Loyal
+cus_0000451,2025-12-08,India,Delhi,45-54,Android,Direct,New
+cus_0000452,2025-07-26,Germany,Munich,25-34,Android,Email,Loyal
+cus_0000453,2025-10-14,United States,New York,25-34,Desktop,Organic Search,Occasional
+cus_0000454,2025-10-17,India,Bengaluru,45-54,iOS,Direct,Occasional
+cus_0000455,2026-01-12,India,Mumbai,45-54,iOS,Google Ads,High Value
+cus_0000456,2025-05-04,United Kingdom,Manchester,25-34,Desktop,Email,Loyal
+cus_0000457,2025-12-31,India,Hyderabad,55+,Android,Google Ads,Loyal
+cus_0000458,2025-04-10,Singapore,Singapore,25-34,Android,Referral,Occasional
+cus_0000459,2025-06-05,India,Bengaluru,35-44,Android,Email,New
+cus_0000460,2025-08-14,United States,Chicago,25-34,Desktop,Direct,New
+cus_0000461,2025-11-06,India,Delhi,25-34,Android,Direct,Occasional
+cus_0000462,2025-12-27,India,Delhi,18-24,Desktop,Google Ads,New
+cus_0000463,2025-07-07,India,Bengaluru,55+,Android,Meta Ads,New
+cus_0000464,2026-01-04,United Kingdom,Manchester,25-34,Android,Google Ads,Occasional
+cus_0000465,2025-08-08,India,Mumbai,25-34,iOS,Direct,Loyal
+cus_0000466,2025-05-08,United Kingdom,Manchester,35-44,Android,Email,New
+cus_0000467,2025-10-22,Germany,Hamburg,35-44,iOS,Organic Search,New
+cus_0000468,2025-08-05,India,Delhi,55+,Desktop,Google Ads,Occasional
+cus_0000469,2025-08-28,India,Bengaluru,45-54,Android,Meta Ads,Occasional
+cus_0000470,2025-10-09,United States,Austin,55+,Android,Organic Search,New
+cus_0000471,2025-08-30,United States,New York,18-24,Desktop,Google Ads,Occasional
+cus_0000472,2025-07-04,Singapore,Singapore,35-44,Android,Google Ads,Loyal
+cus_0000473,2025-09-08,India,Delhi,45-54,Desktop,Google Ads,High Value
+cus_0000474,2025-09-13,United States,San Francisco,18-24,Android,Direct,Occasional
+cus_0000475,2025-04-09,Singapore,Singapore,35-44,Android,Direct,Occasional
+cus_0000476,2025-06-04,Singapore,Singapore,35-44,Desktop,Google Ads,High Value
+cus_0000477,2025-06-14,United States,Austin,45-54,Desktop,Meta Ads,Occasional
+cus_0000478,2025-04-15,United Kingdom,London,35-44,Android,Direct,Occasional
+cus_0000479,2026-01-03,United States,Austin,25-34,Android,Email,New
+cus_0000480,2026-01-15,United States,Austin,45-54,Android,Organic Search,Loyal
+cus_0000481,2026-01-26,India,Delhi,25-34,Android,Organic Search,New
+cus_0000482,2025-04-23,United States,Austin,25-34,Android,Meta Ads,Occasional
+cus_0000483,2025-04-12,Germany,Berlin,18-24,Android,Organic Search,Occasional
+cus_0000484,2025-07-11,India,Hyderabad,25-34,Android,Organic Search,High Value
+cus_0000485,2025-09-27,Singapore,Singapore,25-34,Desktop,Google Ads,Loyal
+cus_0000486,2025-09-04,India,Mumbai,25-34,iOS,Email,Occasional
+cus_0000487,2025-07-02,India,Hyderabad,35-44,Android,Meta Ads,New
+cus_0000488,2026-01-27,India,Delhi,25-34,Desktop,Direct,Occasional
+cus_0000489,2025-12-10,India,Delhi,45-54,Android,Google Ads,New
+cus_0000490,2025-12-29,India,Hyderabad,35-44,Android,Google Ads,Occasional
+cus_0000491,2025-09-06,India,Hyderabad,35-44,Desktop,Organic Search,High Value
+cus_0000492,2025-11-03,Singapore,Singapore,45-54,iOS,Organic Search,Loyal
+cus_0000493,2025-11-01,India,Hyderabad,25-34,Android,Meta Ads,Loyal
+cus_0000494,2025-05-29,United Kingdom,London,55+,iOS,Meta Ads,Occasional
+cus_0000495,2026-01-27,United States,Chicago,25-34,Desktop,Meta Ads,New
+cus_0000496,2026-01-09,Germany,Munich,45-54,Android,Meta Ads,High Value
+cus_0000497,2025-08-12,United States,New York,18-24,iOS,Google Ads,Occasional
+cus_0000498,2025-05-03,Germany,Hamburg,25-34,iOS,Referral,High Value
+cus_0000499,2025-08-04,United States,Chicago,25-34,Desktop,Direct,Occasional
+cus_0000500,2025-05-22,India,Bengaluru,35-44,iOS,Meta Ads,Occasional
+cus_0000501,2025-07-18,India,Bengaluru,55+,Android,Organic Search,Occasional
+cus_0000502,2025-09-21,India,Bengaluru,25-34,Desktop,Organic Search,Loyal
+cus_0000503,2025-10-03,India,Mumbai,45-54,iOS,Google Ads,Occasional
+cus_0000504,2025-09-15,United States,New York,35-44,Android,Organic Search,Occasional
+cus_0000505,2025-08-17,United States,New York,25-34,Android,Meta Ads,New
+cus_0000506,2025-04-28,United States,New York,45-54,Android,Google Ads,Occasional
+cus_0000507,2025-08-26,United States,San Francisco,25-34,iOS,Email,New
+cus_0000508,2026-01-29,India,Mumbai,25-34,Desktop,Referral,Loyal
+cus_0000509,2025-07-09,Germany,Berlin,35-44,iOS,Organic Search,Loyal
+cus_0000510,2025-06-28,United States,Austin,25-34,iOS,Meta Ads,Occasional
+cus_0000511,2025-06-17,Germany,Hamburg,35-44,Android,Meta Ads,Loyal
+cus_0000512,2025-10-09,United States,Chicago,25-34,iOS,Organic Search,Occasional
+cus_0000513,2025-08-13,Germany,Munich,18-24,Android,Organic Search,Occasional
+cus_0000514,2025-12-18,United States,San Francisco,25-34,Android,Email,New
+cus_0000515,2025-05-06,India,Mumbai,18-24,Desktop,Meta Ads,Loyal
+cus_0000516,2025-05-02,India,Bengaluru,18-24,Android,Direct,Occasional
+cus_0000517,2025-10-01,United Kingdom,Manchester,55+,iOS,Meta Ads,New
+cus_0000518,2026-01-12,Singapore,Singapore,55+,Android,Meta Ads,New
+cus_0000519,2026-01-18,India,Hyderabad,55+,iOS,Meta Ads,Occasional
+cus_0000520,2025-08-29,India,Hyderabad,18-24,Android,Google Ads,New
+cus_0000521,2025-04-13,United Kingdom,Manchester,45-54,Desktop,Meta Ads,Loyal
+cus_0000522,2025-09-27,United States,New York,18-24,iOS,Google Ads,Occasional
+cus_0000523,2025-08-11,India,Hyderabad,25-34,Desktop,Meta Ads,Loyal
+cus_0000524,2026-01-05,Germany,Munich,25-34,Desktop,Direct,Occasional
+cus_0000525,2025-10-08,India,Delhi,45-54,iOS,Google Ads,Occasional
+cus_0000526,2026-01-10,United Kingdom,Bristol,25-34,Android,Direct,New
+cus_0000527,2025-06-07,India,Bengaluru,25-34,Android,Organic Search,High Value
+cus_0000528,2026-01-17,United States,Chicago,25-34,Android,Google Ads,New
+cus_0000529,2025-08-08,India,Delhi,45-54,Android,Organic Search,New
+cus_0000530,2025-10-18,United Kingdom,Manchester,35-44,iOS,Organic Search,Occasional
+cus_0000531,2025-10-12,United States,New York,25-34,Android,Organic Search,New
+cus_0000532,2025-07-27,United States,Austin,25-34,iOS,Email,Occasional
+cus_0000533,2025-12-26,United States,San Francisco,35-44,Android,Referral,Occasional
+cus_0000534,2025-08-22,United Kingdom,Manchester,55+,Desktop,Google Ads,New
+cus_0000535,2025-12-04,Germany,Berlin,25-34,iOS,Meta Ads,Occasional
+cus_0000536,2025-07-10,India,Hyderabad,55+,Desktop,Meta Ads,New
+cus_0000537,2025-04-29,United States,New York,35-44,Desktop,Organic Search,Loyal
+cus_0000538,2025-12-03,United States,San Francisco,25-34,Android,Referral,Loyal
+cus_0000539,2025-09-19,United Kingdom,Manchester,35-44,Android,Referral,Occasional
+cus_0000540,2025-09-16,India,Bengaluru,45-54,Android,Direct,Occasional
+cus_0000541,2025-10-17,India,Delhi,18-24,iOS,Google Ads,New
+cus_0000542,2025-05-18,India,Hyderabad,18-24,iOS,Google Ads,Occasional
+cus_0000543,2025-05-25,Germany,Munich,25-34,Desktop,Direct,New
+cus_0000544,2025-06-23,United Kingdom,Manchester,18-24,Android,Organic Search,High Value
+cus_0000545,2025-10-23,United States,New York,18-24,Android,Organic Search,Loyal
+cus_0000546,2026-01-13,India,Bengaluru,25-34,Android,Organic Search,New
+cus_0000547,2025-08-09,India,Bengaluru,55+,Android,Meta Ads,Loyal
+cus_0000548,2025-08-08,India,Bengaluru,18-24,iOS,Meta Ads,Occasional
+cus_0000549,2026-01-14,India,Delhi,55+,Desktop,Meta Ads,Loyal
+cus_0000550,2025-05-04,United Kingdom,Manchester,55+,iOS,Email,New
+cus_0000551,2025-07-08,Singapore,Singapore,55+,Desktop,Referral,Loyal
+cus_0000552,2025-06-15,Germany,Munich,25-34,Android,Google Ads,Occasional
+cus_0000553,2025-10-14,United Kingdom,London,25-34,iOS,Direct,High Value
+cus_0000554,2025-07-27,Germany,Berlin,25-34,Android,Direct,Occasional
+cus_0000555,2025-09-24,India,Delhi,25-34,Desktop,Organic Search,Occasional
+cus_0000556,2025-09-30,Germany,Hamburg,55+,Android,Meta Ads,Loyal
+cus_0000557,2025-10-04,India,Hyderabad,55+,Desktop,Meta Ads,New
+cus_0000558,2025-08-27,United States,New York,25-34,iOS,Google Ads,Occasional
+cus_0000559,2025-07-04,United States,New York,18-24,Desktop,Direct,Occasional
+cus_0000560,2025-11-12,Germany,Munich,55+,iOS,Google Ads,Occasional
+cus_0000561,2026-01-17,United States,New York,35-44,Android,Email,Occasional
+cus_0000562,2025-11-19,India,Delhi,55+,iOS,Organic Search,Occasional
+cus_0000563,2025-04-29,India,Delhi,45-54,iOS,Referral,New
+cus_0000564,2026-01-22,India,Hyderabad,25-34,Android,Meta Ads,New
+cus_0000565,2025-04-29,Singapore,Singapore,25-34,Android,Referral,New
+cus_0000566,2025-12-30,India,Mumbai,55+,iOS,Meta Ads,Occasional
+cus_0000567,2025-04-19,India,Mumbai,18-24,Desktop,Organic Search,Occasional
+cus_0000568,2025-10-20,United Kingdom,London,35-44,Desktop,Direct,Occasional
+cus_0000569,2025-05-25,India,Bengaluru,55+,Android,Organic Search,Occasional
+cus_0000570,2025-07-08,United Kingdom,London,45-54,iOS,Google Ads,Occasional
+cus_0000571,2025-10-21,United States,Chicago,35-44,Desktop,Google Ads,New
+cus_0000572,2025-06-04,India,Hyderabad,18-24,Android,Email,High Value
+cus_0000573,2025-07-06,United States,Chicago,55+,Desktop,Organic Search,Loyal
+cus_0000574,2025-11-15,United States,Chicago,25-34,Android,Google Ads,Occasional
+cus_0000575,2025-05-25,India,Mumbai,35-44,Android,Meta Ads,Occasional
+cus_0000576,2025-09-08,Germany,Munich,25-34,iOS,Referral,New
+cus_0000577,2025-08-18,India,Bengaluru,25-34,Android,Organic Search,New
+cus_0000578,2025-05-14,India,Mumbai,18-24,Android,Organic Search,New
+cus_0000579,2025-08-05,India,Hyderabad,45-54,Desktop,Google Ads,Loyal
+cus_0000580,2025-04-19,India,Mumbai,35-44,Android,Direct,New
+cus_0000581,2025-06-14,United States,New York,25-34,iOS,Google Ads,Occasional
+cus_0000582,2025-11-03,India,Bengaluru,25-34,Android,Email,New
+cus_0000583,2025-08-17,Germany,Hamburg,25-34,iOS,Meta Ads,High Value
+cus_0000584,2025-11-10,United Kingdom,London,45-54,Android,Organic Search,Occasional
+cus_0000585,2025-10-04,United Kingdom,Bristol,55+,iOS,Google Ads,Occasional
+cus_0000586,2025-06-27,United Kingdom,Bristol,25-34,Desktop,Direct,New
+cus_0000587,2025-12-05,Singapore,Singapore,25-34,Desktop,Direct,New
+cus_0000588,2025-05-19,India,Hyderabad,25-34,Android,Meta Ads,Loyal
+cus_0000589,2026-01-06,United States,Austin,45-54,iOS,Organic Search,Occasional
+cus_0000590,2025-09-29,India,Bengaluru,25-34,Android,Meta Ads,Loyal
+cus_0000591,2025-11-23,Singapore,Singapore,55+,Android,Meta Ads,Occasional
+cus_0000592,2025-11-22,India,Bengaluru,55+,iOS,Organic Search,Loyal
+cus_0000593,2025-05-14,United States,Chicago,25-34,Android,Meta Ads,New
+cus_0000594,2025-05-27,United Kingdom,Manchester,55+,Desktop,Meta Ads,New
+cus_0000595,2025-11-29,United States,San Francisco,55+,Android,Organic Search,High Value
+cus_0000596,2025-04-25,Singapore,Singapore,25-34,Android,Direct,Occasional
+cus_0000597,2025-09-15,India,Bengaluru,55+,Android,Meta Ads,New
+cus_0000598,2025-08-16,United States,San Francisco,55+,Desktop,Email,Loyal
+cus_0000599,2025-11-07,Germany,Munich,45-54,Desktop,Google Ads,New
+cus_0000600,2025-11-13,United Kingdom,Manchester,25-34,iOS,Meta Ads,Loyal
+cus_0000601,2025-04-16,Singapore,Singapore,25-34,iOS,Referral,New
+cus_0000602,2025-12-07,India,Bengaluru,45-54,Desktop,Google Ads,New
+cus_0000603,2025-05-18,India,Delhi,35-44,Android,Organic Search,New
+cus_0000604,2025-09-20,Germany,Berlin,55+,iOS,Referral,Occasional
+cus_0000605,2026-01-12,Germany,Hamburg,45-54,Android,Organic Search,Occasional
+cus_0000606,2025-12-30,India,Bengaluru,35-44,Desktop,Organic Search,New
+cus_0000607,2026-01-17,United States,New York,45-54,Android,Email,New
+cus_0000608,2025-08-06,India,Hyderabad,55+,Desktop,Direct,Occasional
+cus_0000609,2026-01-13,United States,Chicago,45-54,Android,Email,Occasional
+cus_0000610,2025-08-17,India,Bengaluru,35-44,Desktop,Email,Loyal
+cus_0000611,2025-04-29,United Kingdom,Manchester,35-44,Android,Organic Search,New
+cus_0000612,2025-08-13,United States,Chicago,25-34,Android,Organic Search,New
+cus_0000613,2025-06-03,India,Bengaluru,45-54,Desktop,Email,New
+cus_0000614,2025-12-29,India,Hyderabad,45-54,Android,Organic Search,Loyal
+cus_0000615,2025-04-21,Germany,Berlin,45-54,Android,Referral,High Value
+cus_0000616,2025-04-27,India,Mumbai,45-54,Android,Google Ads,Loyal
+cus_0000617,2025-04-23,India,Mumbai,55+,Desktop,Organic Search,Loyal
+cus_0000618,2025-07-10,United States,New York,25-34,iOS,Meta Ads,New
+cus_0000619,2025-11-25,India,Delhi,45-54,Android,Meta Ads,New
+cus_0000620,2025-12-31,India,Bengaluru,25-34,Android,Google Ads,High Value
+cus_0000621,2025-05-15,India,Mumbai,35-44,Android,Meta Ads,High Value
+cus_0000622,2025-04-24,United States,San Francisco,35-44,Android,Meta Ads,Occasional
+cus_0000623,2025-04-22,Germany,Berlin,45-54,Desktop,Google Ads,New
+cus_0000624,2025-05-25,India,Mumbai,55+,Android,Google Ads,Occasional
+cus_0000625,2025-07-25,India,Hyderabad,25-34,Desktop,Organic Search,Occasional
+cus_0000626,2025-06-05,Singapore,Singapore,35-44,Android,Organic Search,Occasional
+cus_0000627,2025-08-14,Germany,Berlin,25-34,Desktop,Google Ads,New
+cus_0000628,2025-08-16,India,Bengaluru,25-34,Android,Organic Search,New
+cus_0000629,2025-05-27,India,Bengaluru,25-34,Desktop,Direct,Occasional
+cus_0000630,2025-10-02,United Kingdom,London,45-54,Android,Google Ads,New
+cus_0000631,2025-09-10,India,Delhi,25-34,Android,Direct,Loyal
+cus_0000632,2025-09-08,India,Bengaluru,18-24,Android,Direct,New
+cus_0000633,2026-01-09,India,Hyderabad,55+,Android,Referral,Occasional
+cus_0000634,2025-05-30,United Kingdom,Manchester,35-44,Android,Direct,Occasional
+cus_0000635,2025-11-12,Germany,Munich,35-44,iOS,Direct,Occasional
+cus_0000636,2025-06-16,India,Delhi,18-24,Desktop,Email,Occasional
+cus_0000637,2025-08-12,Singapore,Singapore,25-34,Android,Meta Ads,New
+cus_0000638,2026-01-17,Singapore,Singapore,25-34,iOS,Google Ads,Occasional
+cus_0000639,2025-05-18,United States,San Francisco,55+,Android,Google Ads,Occasional
+cus_0000640,2025-05-26,United States,San Francisco,35-44,Android,Organic Search,High Value
+cus_0000641,2025-06-18,United States,San Francisco,45-54,Desktop,Google Ads,Loyal
+cus_0000642,2025-04-11,United Kingdom,Bristol,45-54,Android,Google Ads,Loyal
+cus_0000643,2026-01-03,United States,Austin,25-34,Android,Organic Search,Occasional
+cus_0000644,2025-10-23,United Kingdom,Manchester,25-34,Desktop,Google Ads,New
+cus_0000645,2025-07-11,India,Hyderabad,25-34,Desktop,Direct,Loyal
+cus_0000646,2025-07-06,United States,Chicago,18-24,Android,Referral,New
+cus_0000647,2025-10-03,United Kingdom,Bristol,18-24,iOS,Meta Ads,New
+cus_0000648,2025-11-17,United Kingdom,Manchester,25-34,iOS,Email,Occasional
+cus_0000649,2025-12-27,United States,San Francisco,45-54,iOS,Email,Loyal
+cus_0000650,2025-07-18,United States,Austin,25-34,Android,Email,High Value
+cus_0000651,2025-08-20,India,Mumbai,55+,Android,Organic Search,Loyal
+cus_0000652,2025-10-23,India,Hyderabad,35-44,Android,Google Ads,New
+cus_0000653,2026-01-04,United States,San Francisco,25-34,Android,Organic Search,Loyal
+cus_0000654,2025-12-24,India,Bengaluru,18-24,iOS,Google Ads,Occasional
+cus_0000655,2025-04-28,India,Delhi,45-54,Desktop,Meta Ads,New
+cus_0000656,2025-11-18,India,Hyderabad,25-34,Android,Google Ads,New
+cus_0000657,2025-05-06,India,Bengaluru,25-34,Android,Organic Search,New
+cus_0000658,2025-06-26,Singapore,Singapore,25-34,Android,Google Ads,Occasional
+cus_0000659,2026-01-04,India,Bengaluru,25-34,Android,Direct,Loyal
+cus_0000660,2025-07-19,United States,Austin,55+,Desktop,Google Ads,Occasional
+cus_0000661,2025-08-15,Germany,Munich,25-34,Desktop,Organic Search,Loyal
+cus_0000662,2025-04-26,United States,Austin,25-34,Desktop,Google Ads,Loyal
+cus_0000663,2025-10-08,India,Delhi,45-54,iOS,Direct,Occasional
+cus_0000664,2025-09-25,United Kingdom,London,25-34,Desktop,Google Ads,Occasional
+cus_0000665,2025-10-04,India,Bengaluru,25-34,Desktop,Organic Search,Loyal
+cus_0000666,2025-08-13,India,Delhi,25-34,iOS,Organic Search,New
+cus_0000667,2025-11-01,United States,Chicago,45-54,Desktop,Organic Search,Loyal
+cus_0000668,2026-01-23,India,Hyderabad,25-34,Android,Organic Search,Loyal
+cus_0000669,2025-12-01,India,Hyderabad,18-24,iOS,Email,Occasional
+cus_0000670,2025-10-17,India,Bengaluru,55+,iOS,Direct,New
+cus_0000671,2025-09-19,India,Hyderabad,25-34,Desktop,Google Ads,Loyal
+cus_0000672,2025-11-24,Singapore,Singapore,18-24,Android,Google Ads,Occasional
+cus_0000673,2025-08-14,United States,Chicago,45-54,Android,Organic Search,Loyal
+cus_0000674,2025-09-01,United Kingdom,Bristol,25-34,iOS,Email,Occasional
+cus_0000675,2025-08-13,Singapore,Singapore,25-34,Desktop,Google Ads,Occasional
+cus_0000676,2025-08-04,India,Mumbai,25-34,Desktop,Referral,New
+cus_0000677,2025-07-13,United Kingdom,Manchester,18-24,Android,Google Ads,Occasional
+cus_0000678,2025-05-14,United States,New York,35-44,Android,Meta Ads,Occasional
+cus_0000679,2025-10-09,United States,Chicago,35-44,iOS,Organic Search,New
+cus_0000680,2025-06-21,India,Bengaluru,35-44,Desktop,Organic Search,Occasional
+cus_0000681,2025-09-29,India,Hyderabad,18-24,Android,Referral,New
+cus_0000682,2025-07-10,United Kingdom,Manchester,35-44,iOS,Organic Search,Loyal
+cus_0000683,2025-09-25,United Kingdom,Bristol,45-54,Android,Direct,Occasional
+cus_0000684,2025-05-07,Germany,Munich,35-44,iOS,Google Ads,Occasional
+cus_0000685,2025-07-26,United States,New York,25-34,Android,Email,New
+cus_0000686,2025-07-16,Germany,Berlin,18-24,iOS,Organic Search,New
+cus_0000687,2025-09-16,United States,Chicago,25-34,iOS,Direct,New
+cus_0000688,2025-06-08,India,Delhi,55+,iOS,Google Ads,New
+cus_0000689,2025-10-07,India,Bengaluru,55+,Android,Organic Search,Occasional
+cus_0000690,2025-10-25,India,Hyderabad,18-24,Desktop,Google Ads,Occasional
+cus_0000691,2025-11-28,India,Hyderabad,45-54,Android,Direct,Loyal
+cus_0000692,2025-07-30,United States,Austin,35-44,Android,Referral,High Value
+cus_0000693,2025-07-24,India,Mumbai,25-34,Android,Referral,Loyal
+cus_0000694,2025-10-25,United Kingdom,Manchester,35-44,Android,Referral,Loyal
+cus_0000695,2025-08-19,United States,Austin,55+,Android,Organic Search,New
+cus_0000696,2025-10-15,India,Hyderabad,55+,Android,Direct,Loyal
+cus_0000697,2026-01-01,Singapore,Singapore,25-34,Android,Referral,High Value
+cus_0000698,2025-09-24,Germany,Berlin,18-24,iOS,Referral,New
+cus_0000699,2025-06-23,India,Delhi,25-34,Android,Organic Search,New
+cus_0000700,2025-12-04,Germany,Hamburg,55+,Android,Google Ads,High Value
+cus_0000701,2025-06-07,United States,New York,25-34,Android,Direct,Occasional
+cus_0000702,2025-10-03,Singapore,Singapore,25-34,Android,Direct,New
+cus_0000703,2025-09-22,India,Delhi,25-34,Android,Organic Search,Occasional
+cus_0000704,2025-05-01,United States,Austin,45-54,iOS,Organic Search,Occasional
+cus_0000705,2025-12-14,India,Hyderabad,25-34,Desktop,Organic Search,New
+cus_0000706,2025-04-25,Singapore,Singapore,18-24,Android,Meta Ads,High Value
+cus_0000707,2025-11-10,India,Mumbai,45-54,iOS,Organic Search,High Value
+cus_0000708,2026-01-07,India,Mumbai,25-34,Desktop,Meta Ads,Occasional
+cus_0000709,2025-12-13,Singapore,Singapore,18-24,Android,Organic Search,Occasional
+cus_0000710,2026-01-10,India,Hyderabad,35-44,Android,Referral,Occasional
+cus_0000711,2025-11-08,Singapore,Singapore,25-34,Android,Meta Ads,Occasional
+cus_0000712,2025-04-30,United States,Austin,18-24,Android,Email,Occasional
+cus_0000713,2025-11-01,India,Mumbai,55+,Desktop,Meta Ads,Occasional
+cus_0000714,2026-01-11,United States,Austin,25-34,Android,Meta Ads,Occasional
+cus_0000715,2025-07-08,United States,San Francisco,25-34,Android,Referral,New
+cus_0000716,2025-06-16,United States,Chicago,55+,Android,Email,Occasional
+cus_0000717,2025-12-17,United States,Austin,55+,iOS,Google Ads,Loyal
+cus_0000718,2025-05-03,United Kingdom,London,25-34,iOS,Referral,Occasional
+cus_0000719,2025-08-27,India,Delhi,25-34,Android,Organic Search,New
+cus_0000720,2025-05-31,United States,New York,25-34,Android,Direct,Occasional
+cus_0000721,2025-10-06,India,Mumbai,35-44,Desktop,Organic Search,New
+cus_0000722,2026-01-30,Germany,Munich,18-24,Android,Meta Ads,New
+cus_0000723,2025-12-19,Singapore,Singapore,45-54,iOS,Referral,New
+cus_0000724,2025-09-11,United Kingdom,Bristol,45-54,Desktop,Direct,New
+cus_0000725,2025-12-11,Singapore,Singapore,35-44,iOS,Organic Search,New
+cus_0000726,2025-05-22,Singapore,Singapore,35-44,Desktop,Google Ads,Occasional
+cus_0000727,2025-06-08,India,Mumbai,55+,Desktop,Meta Ads,Occasional
+cus_0000728,2025-09-09,United States,Austin,45-54,Desktop,Google Ads,New
+cus_0000729,2025-09-06,India,Hyderabad,25-34,Android,Email,New
+cus_0000730,2025-11-21,India,Mumbai,35-44,Android,Direct,Loyal
+cus_0000731,2025-06-02,India,Delhi,55+,Android,Google Ads,Occasional
+cus_0000732,2025-07-19,India,Hyderabad,55+,Android,Google Ads,Loyal
+cus_0000733,2025-07-09,United States,San Francisco,55+,Desktop,Meta Ads,Occasional
+cus_0000734,2025-11-08,Germany,Munich,55+,Desktop,Direct,Occasional
+cus_0000735,2025-07-28,Germany,Berlin,35-44,iOS,Meta Ads,New
+cus_0000736,2025-04-19,United Kingdom,London,45-54,Android,Google Ads,New
+cus_0000737,2025-04-15,India,Hyderabad,35-44,iOS,Organic Search,Occasional
+cus_0000738,2025-06-13,India,Hyderabad,45-54,Android,Meta Ads,Loyal
+cus_0000739,2025-09-02,India,Hyderabad,25-34,Android,Referral,Occasional
+cus_0000740,2025-10-17,United States,Chicago,35-44,Android,Google Ads,Loyal
+cus_0000741,2025-11-13,United States,New York,45-54,iOS,Organic Search,High Value
+cus_0000742,2025-08-27,United States,Chicago,55+,iOS,Meta Ads,Occasional
+cus_0000743,2025-10-10,United Kingdom,Manchester,18-24,Android,Google Ads,Occasional
+cus_0000744,2025-06-23,United Kingdom,London,25-34,Android,Organic Search,Loyal
+cus_0000745,2025-09-03,India,Delhi,18-24,iOS,Google Ads,High Value
+cus_0000746,2025-12-23,Germany,Berlin,55+,iOS,Meta Ads,Occasional
+cus_0000747,2025-07-03,India,Bengaluru,55+,Android,Organic Search,Occasional
+cus_0000748,2025-11-04,India,Delhi,25-34,Android,Direct,New
+cus_0000749,2025-06-25,Singapore,Singapore,25-34,Android,Direct,Occasional
+cus_0000750,2026-01-15,India,Bengaluru,18-24,Android,Direct,New
+cus_0000751,2025-09-15,Germany,Munich,25-34,iOS,Direct,Occasional
+cus_0000752,2025-11-03,United States,New York,25-34,iOS,Email,Occasional
+cus_0000753,2025-06-04,United Kingdom,Manchester,18-24,Android,Google Ads,High Value
+cus_0000754,2025-06-26,Germany,Berlin,45-54,Android,Google Ads,Occasional
+cus_0000755,2025-10-23,India,Mumbai,35-44,Desktop,Meta Ads,New
+cus_0000756,2025-06-06,India,Delhi,25-34,Desktop,Organic Search,New
+cus_0000757,2025-11-10,United States,Chicago,35-44,Android,Referral,Occasional
+cus_0000758,2026-01-10,Germany,Berlin,45-54,Desktop,Google Ads,Occasional
+cus_0000759,2025-08-04,United Kingdom,London,18-24,Android,Google Ads,Loyal
+cus_0000760,2025-05-27,United Kingdom,Bristol,18-24,Android,Meta Ads,New
+cus_0000761,2025-09-28,United Kingdom,Manchester,25-34,Android,Organic Search,New
+cus_0000762,2025-12-10,United States,Chicago,25-34,Android,Direct,Occasional
+cus_0000763,2025-06-16,United States,New York,25-34,iOS,Organic Search,Occasional
+cus_0000764,2025-08-11,United Kingdom,Bristol,45-54,iOS,Meta Ads,Loyal
+cus_0000765,2025-05-31,India,Mumbai,25-34,Android,Meta Ads,New
+cus_0000766,2025-10-02,United States,New York,45-54,Desktop,Google Ads,New
+cus_0000767,2025-08-13,United Kingdom,Bristol,35-44,iOS,Direct,Loyal
+cus_0000768,2025-07-31,United States,San Francisco,45-54,Android,Google Ads,Occasional
+cus_0000769,2025-07-11,United Kingdom,Bristol,55+,iOS,Organic Search,Loyal
+cus_0000770,2026-01-19,India,Hyderabad,25-34,Android,Google Ads,New
+cus_0000771,2025-04-20,Singapore,Singapore,55+,Desktop,Direct,Occasional
+cus_0000772,2025-08-25,United States,San Francisco,25-34,Android,Meta Ads,Loyal
+cus_0000773,2025-07-20,Germany,Berlin,45-54,Desktop,Organic Search,Loyal
+cus_0000774,2025-07-01,India,Delhi,25-34,Android,Organic Search,Occasional
+cus_0000775,2025-06-28,United States,Austin,25-34,iOS,Direct,Loyal
+cus_0000776,2025-05-30,United States,San Francisco,55+,Desktop,Meta Ads,Loyal
+cus_0000777,2025-05-03,United States,New York,35-44,Desktop,Direct,High Value
+cus_0000778,2025-11-13,United States,New York,45-54,Android,Email,Loyal
+cus_0000779,2025-06-08,India,Bengaluru,35-44,Android,Google Ads,New
+cus_0000780,2025-10-27,India,Bengaluru,45-54,Android,Email,New
+cus_0000781,2025-10-30,United Kingdom,London,25-34,iOS,Google Ads,High Value
+cus_0000782,2025-10-13,United States,Chicago,45-54,Android,Direct,Occasional
+cus_0000783,2025-11-08,India,Bengaluru,35-44,Android,Meta Ads,Occasional
+cus_0000784,2025-11-22,India,Mumbai,18-24,Android,Google Ads,Occasional
+cus_0000785,2025-04-14,Singapore,Singapore,55+,Desktop,Referral,New
+cus_0000786,2025-05-22,India,Mumbai,25-34,Android,Google Ads,New
+cus_0000787,2025-12-29,United States,Chicago,25-34,iOS,Meta Ads,New
+cus_0000788,2025-09-28,United States,Austin,35-44,Android,Organic Search,Loyal
+cus_0000789,2025-04-28,United States,San Francisco,45-54,Desktop,Meta Ads,New
+cus_0000790,2025-08-25,Germany,Munich,55+,Android,Email,Occasional
+cus_0000791,2025-04-13,United Kingdom,London,55+,iOS,Direct,High Value
+cus_0000792,2025-12-08,India,Bengaluru,35-44,Desktop,Organic Search,Occasional
+cus_0000793,2025-08-24,India,Mumbai,25-34,Android,Organic Search,Occasional
+cus_0000794,2025-06-07,United States,Chicago,35-44,Android,Email,Loyal
+cus_0000795,2025-07-28,India,Mumbai,25-34,Android,Google Ads,New
+cus_0000796,2025-07-26,Germany,Hamburg,45-54,Android,Google Ads,Occasional
+cus_0000797,2025-04-10,India,Bengaluru,25-34,iOS,Meta Ads,New
+cus_0000798,2025-08-02,India,Bengaluru,55+,Android,Direct,Loyal
+cus_0000799,2025-05-21,Singapore,Singapore,45-54,Android,Organic Search,New
+cus_0000800,2025-09-25,India,Bengaluru,35-44,Android,Meta Ads,New
+cus_0000801,2025-06-11,India,Bengaluru,25-34,Desktop,Direct,Loyal
+cus_0000802,2025-07-10,Germany,Munich,18-24,Android,Google Ads,Loyal
+cus_0000803,2025-11-15,India,Mumbai,45-54,Android,Direct,New
+cus_0000804,2025-10-11,United States,San Francisco,35-44,Android,Referral,Occasional
+cus_0000805,2026-01-22,India,Mumbai,35-44,Android,Organic Search,Occasional
+cus_0000806,2025-12-06,India,Bengaluru,35-44,Android,Direct,New
+cus_0000807,2025-10-05,India,Hyderabad,55+,Desktop,Meta Ads,Occasional
+cus_0000808,2026-01-03,India,Hyderabad,18-24,iOS,Direct,Occasional
+cus_0000809,2025-12-28,Singapore,Singapore,18-24,Desktop,Meta Ads,Loyal
+cus_0000810,2025-06-08,United Kingdom,Manchester,45-54,Desktop,Google Ads,Loyal
+cus_0000811,2025-11-24,United States,New York,55+,Desktop,Organic Search,Loyal
+cus_0000812,2025-12-10,United Kingdom,London,18-24,Android,Organic Search,Occasional
+cus_0000813,2025-07-10,India,Hyderabad,18-24,Android,Google Ads,New
+cus_0000814,2025-05-19,Singapore,Singapore,25-34,Android,Google Ads,New
+cus_0000815,2025-04-18,India,Bengaluru,18-24,Android,Google Ads,Loyal
+cus_0000816,2025-08-23,United States,New York,25-34,Android,Organic Search,Loyal
+cus_0000817,2025-12-20,United States,Austin,55+,Android,Google Ads,New
+cus_0000818,2026-01-21,United States,Austin,18-24,iOS,Google Ads,Occasional
+cus_0000819,2025-04-29,United States,San Francisco,35-44,Android,Organic Search,Occasional
+cus_0000820,2025-10-03,Singapore,Singapore,25-34,iOS,Google Ads,Occasional
+cus_0000821,2025-11-08,United Kingdom,Bristol,55+,Android,Google Ads,Occasional
+cus_0000822,2025-07-12,India,Bengaluru,35-44,Desktop,Meta Ads,Occasional
+cus_0000823,2025-07-17,United States,Chicago,18-24,iOS,Meta Ads,New
+cus_0000824,2026-01-29,United States,Chicago,25-34,iOS,Organic Search,Occasional
+cus_0000825,2025-09-03,India,Mumbai,55+,iOS,Direct,Occasional
+cus_0000826,2025-08-15,India,Delhi,18-24,Android,Meta Ads,Occasional
+cus_0000827,2025-09-02,Singapore,Singapore,18-24,iOS,Google Ads,Loyal
+cus_0000828,2025-11-27,India,Mumbai,55+,Desktop,Organic Search,Loyal
+cus_0000829,2025-12-19,India,Mumbai,18-24,Android,Organic Search,New
+cus_0000830,2025-08-29,India,Hyderabad,55+,iOS,Google Ads,Occasional
+cus_0000831,2025-04-09,Germany,Hamburg,25-34,Android,Email,Loyal
+cus_0000832,2026-01-17,Germany,Hamburg,25-34,Android,Meta Ads,Occasional
+cus_0000833,2025-12-30,United States,New York,45-54,Android,Referral,Occasional
+cus_0000834,2025-09-30,United Kingdom,London,35-44,Desktop,Organic Search,New
+cus_0000835,2025-08-17,India,Hyderabad,25-34,Android,Meta Ads,Loyal
+cus_0000836,2026-01-07,India,Delhi,18-24,iOS,Organic Search,Occasional
+cus_0000837,2025-12-23,India,Mumbai,18-24,Android,Email,New
+cus_0000838,2025-04-26,India,Hyderabad,25-34,Android,Organic Search,High Value
+cus_0000839,2026-01-24,India,Delhi,35-44,iOS,Google Ads,Occasional
+cus_0000840,2025-09-17,United States,Chicago,45-54,Desktop,Referral,Loyal
+cus_0000841,2025-12-18,United States,San Francisco,25-34,Android,Email,Occasional
+cus_0000842,2025-05-30,United Kingdom,London,45-54,Android,Email,New
+cus_0000843,2025-04-15,United Kingdom,London,35-44,Android,Meta Ads,New
+cus_0000844,2026-01-08,Germany,Berlin,18-24,Android,Organic Search,New
+cus_0000845,2025-05-28,India,Delhi,35-44,Android,Google Ads,Occasional
+cus_0000846,2025-11-20,United Kingdom,Manchester,35-44,iOS,Meta Ads,New
+cus_0000847,2026-01-02,India,Bengaluru,55+,iOS,Meta Ads,Loyal
+cus_0000848,2025-07-23,United States,San Francisco,25-34,Android,Meta Ads,New
+cus_0000849,2025-11-19,United States,Austin,35-44,Desktop,Meta Ads,New
+cus_0000850,2025-11-28,India,Mumbai,35-44,Desktop,Google Ads,New
+cus_0000851,2026-01-18,India,Delhi,35-44,Android,Google Ads,High Value
+cus_0000852,2025-11-26,India,Hyderabad,18-24,Desktop,Email,Occasional
+cus_0000853,2025-08-01,United Kingdom,London,55+,Android,Google Ads,New
+cus_0000854,2025-10-31,India,Bengaluru,18-24,Android,Email,Occasional
+cus_0000855,2025-05-13,Germany,Berlin,55+,iOS,Organic Search,Loyal
+cus_0000856,2025-07-14,Germany,Berlin,35-44,iOS,Meta Ads,Occasional
+cus_0000857,2025-05-17,United Kingdom,Bristol,35-44,iOS,Direct,Loyal
+cus_0000858,2025-08-28,India,Delhi,25-34,Android,Email,Loyal
+cus_0000859,2025-05-06,United States,Austin,25-34,iOS,Google Ads,Loyal
+cus_0000860,2025-08-03,United States,Chicago,45-54,iOS,Google Ads,Loyal
+cus_0000861,2025-10-26,United Kingdom,London,45-54,Android,Organic Search,High Value
+cus_0000862,2025-08-28,India,Mumbai,25-34,Desktop,Direct,Occasional
+cus_0000863,2025-05-25,United Kingdom,Manchester,25-34,Android,Organic Search,Loyal
+cus_0000864,2025-11-26,Singapore,Singapore,45-54,iOS,Google Ads,Loyal
+cus_0000865,2025-09-28,India,Delhi,55+,Android,Organic Search,High Value
+cus_0000866,2025-05-31,Germany,Hamburg,25-34,Desktop,Email,Loyal
+cus_0000867,2025-12-23,United Kingdom,Manchester,25-34,Desktop,Google Ads,New
+cus_0000868,2025-12-19,Germany,Munich,25-34,iOS,Google Ads,High Value
+cus_0000869,2025-05-16,Germany,Munich,18-24,Android,Organic Search,High Value
+cus_0000870,2025-11-04,United States,Austin,45-54,Desktop,Organic Search,Occasional
+cus_0000871,2025-07-25,India,Bengaluru,18-24,Desktop,Organic Search,New
+cus_0000872,2025-06-11,Germany,Berlin,25-34,Android,Organic Search,Loyal
+cus_0000873,2025-06-30,Germany,Berlin,45-54,Android,Google Ads,Loyal
+cus_0000874,2025-05-21,India,Hyderabad,25-34,Android,Meta Ads,New
+cus_0000875,2025-04-27,India,Delhi,35-44,iOS,Email,High Value
+cus_0000876,2025-09-12,Germany,Hamburg,35-44,iOS,Google Ads,Loyal
+cus_0000877,2025-04-28,United States,Austin,18-24,iOS,Organic Search,New
+cus_0000878,2025-05-26,India,Hyderabad,55+,Android,Organic Search,Occasional
+cus_0000879,2025-10-20,United States,New York,45-54,Android,Email,New
+cus_0000880,2025-06-23,India,Mumbai,45-54,Android,Direct,New
+cus_0000881,2025-09-25,Singapore,Singapore,35-44,Android,Google Ads,Loyal
+cus_0000882,2025-04-18,United States,Chicago,18-24,Android,Google Ads,Occasional
+cus_0000883,2025-11-28,India,Bengaluru,25-34,Desktop,Google Ads,Occasional
+cus_0000884,2025-11-25,India,Hyderabad,25-34,Android,Organic Search,New
+cus_0000885,2025-04-30,India,Mumbai,25-34,Android,Direct,Occasional
+cus_0000886,2025-05-03,India,Hyderabad,25-34,iOS,Meta Ads,Occasional
+cus_0000887,2026-01-26,India,Delhi,25-34,iOS,Direct,Loyal
+cus_0000888,2025-05-21,United Kingdom,London,18-24,iOS,Email,Occasional
+cus_0000889,2025-06-06,India,Delhi,18-24,Android,Google Ads,New
+cus_0000890,2025-08-29,India,Mumbai,25-34,Desktop,Email,Occasional
+cus_0000891,2025-10-02,Singapore,Singapore,55+,Android,Organic Search,Occasional
+cus_0000892,2025-10-19,United States,San Francisco,18-24,Desktop,Meta Ads,New
+cus_0000893,2025-08-29,India,Bengaluru,35-44,iOS,Referral,New
+cus_0000894,2025-10-07,United States,San Francisco,45-54,Android,Email,Occasional
+cus_0000895,2025-07-15,India,Mumbai,55+,Android,Organic Search,New
+cus_0000896,2025-10-26,United Kingdom,Manchester,35-44,Android,Meta Ads,Occasional
+cus_0000897,2025-12-18,India,Mumbai,25-34,Desktop,Direct,Loyal
+cus_0000898,2025-07-24,India,Delhi,25-34,Android,Direct,Loyal
+cus_0000899,2025-08-11,Germany,Munich,25-34,Android,Email,High Value
+cus_0000900,2026-01-08,India,Bengaluru,45-54,iOS,Organic Search,Loyal
+cus_0000901,2025-06-13,India,Mumbai,25-34,Android,Organic Search,Occasional
+cus_0000902,2025-10-09,India,Hyderabad,25-34,Desktop,Organic Search,Occasional
+cus_0000903,2025-09-03,India,Bengaluru,45-54,Desktop,Meta Ads,Loyal
+cus_0000904,2025-10-12,United States,Chicago,55+,Android,Organic Search,New
+cus_0000905,2025-08-30,United States,San Francisco,55+,Android,Email,New
+cus_0000906,2025-06-29,United States,New York,35-44,Desktop,Referral,Loyal
+cus_0000907,2026-01-06,India,Bengaluru,45-54,iOS,Google Ads,Loyal
+cus_0000908,2026-02-01,India,Mumbai,25-34,iOS,Google Ads,Loyal
+cus_0000909,2025-05-11,India,Bengaluru,25-34,iOS,Email,New
+cus_0000910,2026-01-03,Germany,Berlin,45-54,Desktop,Organic Search,Occasional
+cus_0000911,2025-12-06,Singapore,Singapore,18-24,iOS,Organic Search,New
+cus_0000912,2025-08-26,India,Delhi,55+,Android,Referral,Occasional
+cus_0000913,2025-05-02,United States,San Francisco,25-34,Android,Meta Ads,Occasional
+cus_0000914,2025-06-08,Germany,Munich,55+,iOS,Google Ads,Occasional
+cus_0000915,2025-10-14,Germany,Hamburg,35-44,Android,Direct,New
+cus_0000916,2025-11-22,Singapore,Singapore,18-24,Desktop,Google Ads,New
+cus_0000917,2025-08-01,United States,New York,45-54,Desktop,Referral,New
+cus_0000918,2025-04-17,United States,New York,25-34,Android,Organic Search,New
+cus_0000919,2025-12-05,India,Mumbai,45-54,Android,Meta Ads,Occasional
+cus_0000920,2026-01-06,United Kingdom,Manchester,25-34,Android,Meta Ads,New
+cus_0000921,2025-09-02,India,Bengaluru,25-34,iOS,Meta Ads,Occasional
+cus_0000922,2026-01-27,India,Delhi,25-34,Android,Email,Loyal
+cus_0000923,2026-01-10,India,Bengaluru,35-44,Android,Referral,Loyal
+cus_0000924,2025-12-18,Germany,Berlin,55+,iOS,Organic Search,Occasional
+cus_0000925,2025-09-25,India,Hyderabad,45-54,Android,Google Ads,New
+cus_0000926,2025-06-29,Singapore,Singapore,55+,iOS,Direct,New
+cus_0000927,2025-10-25,United States,New York,25-34,Desktop,Meta Ads,Occasional
+cus_0000928,2025-07-08,India,Bengaluru,25-34,Desktop,Organic Search,High Value
+cus_0000929,2025-08-16,United States,New York,35-44,Android,Email,New
+cus_0000930,2025-10-27,India,Bengaluru,25-34,iOS,Google Ads,New
+cus_0000931,2026-01-12,Germany,Munich,25-34,Android,Email,Loyal
+cus_0000932,2025-12-28,United States,San Francisco,25-34,Android,Google Ads,Occasional
+cus_0000933,2025-07-05,India,Delhi,25-34,iOS,Google Ads,New
+cus_0000934,2026-01-06,United Kingdom,London,55+,Android,Meta Ads,Occasional
+cus_0000935,2025-12-31,India,Hyderabad,25-34,iOS,Google Ads,New
+cus_0000936,2025-06-02,United Kingdom,London,25-34,Android,Organic Search,Loyal
+cus_0000937,2025-05-16,Germany,Hamburg,18-24,Android,Email,Occasional
+cus_0000938,2025-04-26,United States,Austin,35-44,Desktop,Direct,Loyal
+cus_0000939,2025-08-23,India,Hyderabad,25-34,iOS,Referral,Loyal
+cus_0000940,2025-08-24,United Kingdom,Bristol,25-34,iOS,Email,New
+cus_0000941,2026-01-11,India,Hyderabad,25-34,Android,Referral,New
+cus_0000942,2025-11-28,United Kingdom,Manchester,18-24,Android,Direct,New
+cus_0000943,2025-09-04,India,Hyderabad,25-34,iOS,Meta Ads,Loyal
+cus_0000944,2025-11-01,India,Delhi,35-44,Desktop,Organic Search,New
+cus_0000945,2026-01-08,United States,Chicago,25-34,Desktop,Google Ads,Loyal
+cus_0000946,2025-08-28,India,Hyderabad,55+,Android,Direct,New
+cus_0000947,2025-04-17,Germany,Munich,55+,Desktop,Google Ads,Occasional
+cus_0000948,2025-07-12,United States,New York,25-34,iOS,Referral,New
+cus_0000949,2025-05-04,India,Bengaluru,25-34,Android,Meta Ads,Loyal
+cus_0000950,2025-12-10,United States,Austin,55+,Android,Organic Search,New
+cus_0000951,2026-01-31,United Kingdom,Manchester,45-54,Android,Meta Ads,Occasional
+cus_0000952,2026-01-27,United States,Chicago,45-54,Android,Email,New
+cus_0000953,2025-12-24,Singapore,Singapore,18-24,Android,Meta Ads,Loyal
+cus_0000954,2025-11-23,India,Hyderabad,55+,Desktop,Direct,New
+cus_0000955,2025-09-02,India,Mumbai,35-44,iOS,Organic Search,Loyal
+cus_0000956,2025-09-28,United States,New York,35-44,Desktop,Direct,Loyal
+cus_0000957,2025-11-21,Singapore,Singapore,18-24,Android,Google Ads,Occasional
+cus_0000958,2025-07-16,United States,Chicago,55+,Android,Google Ads,Loyal
+cus_0000959,2025-05-21,India,Delhi,25-34,Android,Email,New
+cus_0000960,2025-10-07,India,Delhi,55+,Android,Google Ads,Occasional
+cus_0000961,2025-04-30,United States,Austin,18-24,Android,Meta Ads,New
+cus_0000962,2025-08-11,India,Mumbai,45-54,iOS,Organic Search,Occasional
+cus_0000963,2025-10-01,Germany,Hamburg,35-44,iOS,Meta Ads,Loyal
+cus_0000964,2025-09-22,India,Delhi,18-24,Android,Meta Ads,Loyal
+cus_0000965,2025-10-17,India,Delhi,25-34,Android,Direct,Loyal
+cus_0000966,2025-07-05,India,Mumbai,45-54,Android,Email,High Value
+cus_0000967,2025-06-01,India,Delhi,18-24,Desktop,Google Ads,Occasional
+cus_0000968,2025-09-20,United States,Austin,18-24,Android,Meta Ads,Occasional
+cus_0000969,2025-09-27,India,Mumbai,55+,Android,Direct,Occasional
+cus_0000970,2025-08-29,United Kingdom,London,18-24,Desktop,Direct,Loyal
+cus_0000971,2025-07-13,United Kingdom,Manchester,55+,Android,Organic Search,High Value
+cus_0000972,2025-04-25,India,Hyderabad,45-54,Android,Direct,New
+cus_0000973,2025-07-12,India,Hyderabad,25-34,Android,Direct,Loyal
+cus_0000974,2025-11-26,India,Mumbai,18-24,Android,Google Ads,Occasional
+cus_0000975,2025-05-15,Singapore,Singapore,45-54,iOS,Organic Search,New
+cus_0000976,2025-06-05,United States,New York,18-24,Android,Google Ads,Occasional
+cus_0000977,2025-06-10,India,Bengaluru,55+,iOS,Direct,Occasional
+cus_0000978,2025-12-03,United States,Chicago,55+,Android,Meta Ads,High Value
+cus_0000979,2025-05-06,India,Delhi,18-24,Android,Meta Ads,Occasional
+cus_0000980,2025-11-08,India,Hyderabad,25-34,Android,Email,Loyal
+cus_0000981,2026-01-06,United States,Austin,18-24,Android,Google Ads,New
+cus_0000982,2025-06-16,United States,New York,25-34,Android,Meta Ads,Loyal
+cus_0000983,2025-05-27,United States,Austin,18-24,Android,Direct,High Value
+cus_0000984,2025-11-08,Germany,Berlin,25-34,iOS,Direct,New
+cus_0000985,2025-06-20,India,Bengaluru,18-24,Android,Email,High Value
+cus_0000986,2025-06-23,India,Mumbai,25-34,iOS,Google Ads,Loyal
+cus_0000987,2025-10-24,United States,New York,45-54,Android,Direct,Loyal
+cus_0000988,2025-04-12,India,Mumbai,18-24,Android,Organic Search,New
+cus_0000989,2025-11-03,India,Delhi,25-34,Desktop,Email,Occasional
+cus_0000990,2025-05-17,United Kingdom,Manchester,55+,Android,Meta Ads,New
+cus_0000991,2025-07-14,India,Mumbai,35-44,Android,Organic Search,Occasional
+cus_0000992,2025-11-30,Germany,Hamburg,45-54,Android,Direct,New
+cus_0000993,2025-05-09,United States,New York,55+,Android,Email,New
+cus_0000994,2025-10-04,Germany,Hamburg,35-44,iOS,Email,Occasional
+cus_0000995,2026-01-17,United Kingdom,Bristol,25-34,Android,Direct,Loyal
+cus_0000996,2025-10-29,India,Hyderabad,25-34,Desktop,Google Ads,Loyal
+cus_0000997,2025-06-01,India,Mumbai,55+,Desktop,Google Ads,Occasional
+cus_0000998,2025-12-12,United Kingdom,Manchester,25-34,Android,Direct,Loyal
+cus_0000999,2025-11-24,Germany,Hamburg,18-24,iOS,Organic Search,Occasional
+cus_0001000,2025-10-22,United States,New York,25-34,Desktop,Meta Ads,Loyal
+cus_0001001,2025-05-04,Germany,Hamburg,55+,iOS,Direct,Occasional
+cus_0001002,2025-12-21,Germany,Berlin,45-54,Android,Direct,Loyal
+cus_0001003,2025-05-18,United Kingdom,Bristol,18-24,Desktop,Organic Search,Loyal
+cus_0001004,2025-08-01,India,Mumbai,25-34,Desktop,Organic Search,Loyal
+cus_0001005,2025-05-29,United States,San Francisco,25-34,Android,Google Ads,Occasional
+cus_0001006,2025-07-07,United Kingdom,London,25-34,Desktop,Google Ads,Occasional
+cus_0001007,2025-10-13,Germany,Hamburg,25-34,Android,Email,Loyal
+cus_0001008,2025-05-21,Germany,Munich,55+,Android,Google Ads,Occasional
+cus_0001009,2025-11-15,India,Bengaluru,35-44,Android,Organic Search,Occasional
+cus_0001010,2025-06-09,United States,New York,18-24,Android,Organic Search,High Value
+cus_0001011,2026-01-25,United States,San Francisco,25-34,Android,Google Ads,High Value
+cus_0001012,2026-01-12,India,Mumbai,35-44,Android,Organic Search,Occasional
+cus_0001013,2025-11-26,United States,Chicago,35-44,Android,Organic Search,New
+cus_0001014,2025-11-21,United Kingdom,London,18-24,Desktop,Organic Search,Occasional
+cus_0001015,2026-02-01,India,Hyderabad,35-44,iOS,Google Ads,New
+cus_0001016,2025-10-06,Germany,Hamburg,25-34,iOS,Google Ads,Occasional
+cus_0001017,2025-12-18,India,Hyderabad,35-44,Desktop,Organic Search,Loyal
+cus_0001018,2025-11-22,United States,Chicago,18-24,iOS,Google Ads,High Value
+cus_0001019,2025-11-06,United Kingdom,London,45-54,Android,Meta Ads,New
+cus_0001020,2025-08-01,United Kingdom,London,35-44,Desktop,Google Ads,Loyal
+cus_0001021,2025-07-24,India,Bengaluru,18-24,Desktop,Meta Ads,Occasional
+cus_0001022,2025-08-22,United Kingdom,Manchester,25-34,iOS,Organic Search,New
+cus_0001023,2025-11-03,United States,San Francisco,18-24,iOS,Google Ads,Loyal
+cus_0001024,2025-11-28,United States,New York,45-54,Android,Direct,Loyal
+cus_0001025,2025-06-12,India,Bengaluru,25-34,Desktop,Direct,New
+cus_0001026,2025-05-01,India,Hyderabad,55+,Android,Direct,Loyal
+cus_0001027,2025-09-08,United States,Chicago,25-34,Android,Google Ads,New
+cus_0001028,2025-07-31,India,Bengaluru,45-54,Android,Google Ads,Occasional
+cus_0001029,2025-08-04,Germany,Hamburg,45-54,Android,Organic Search,Loyal
+cus_0001030,2025-05-20,India,Bengaluru,18-24,Desktop,Referral,New
+cus_0001031,2025-07-25,India,Mumbai,18-24,Android,Google Ads,New
+cus_0001032,2025-09-13,India,Mumbai,25-34,Android,Referral,Loyal
+cus_0001033,2025-09-11,India,Mumbai,35-44,iOS,Meta Ads,New
+cus_0001034,2025-10-11,United States,Chicago,35-44,iOS,Google Ads,Loyal
+cus_0001035,2025-06-17,United Kingdom,Bristol,18-24,Android,Organic Search,New
+cus_0001036,2025-06-13,India,Bengaluru,55+,Android,Email,Loyal
+cus_0001037,2025-04-29,United Kingdom,Manchester,25-34,Desktop,Google Ads,Loyal
+cus_0001038,2026-02-01,India,Delhi,35-44,Android,Google Ads,Loyal
+cus_0001039,2025-04-09,India,Hyderabad,25-34,iOS,Direct,Occasional
+cus_0001040,2025-08-06,United States,Austin,55+,Android,Google Ads,Loyal
+cus_0001041,2025-11-15,United States,Austin,18-24,Android,Google Ads,Loyal
+cus_0001042,2025-09-24,United States,San Francisco,25-34,Android,Referral,Occasional
+cus_0001043,2025-10-12,India,Hyderabad,55+,Desktop,Google Ads,Loyal
+cus_0001044,2025-08-04,United States,San Francisco,25-34,Android,Google Ads,Loyal
+cus_0001045,2026-01-18,United Kingdom,Manchester,18-24,Android,Organic Search,New
+cus_0001046,2025-12-13,India,Bengaluru,18-24,Android,Google Ads,New
+cus_0001047,2026-01-04,Germany,Hamburg,25-34,Android,Organic Search,Occasional
+cus_0001048,2025-12-02,United States,San Francisco,25-34,Desktop,Meta Ads,New
+cus_0001049,2025-05-24,Germany,Berlin,25-34,iOS,Direct,New
+cus_0001050,2025-06-08,United States,Austin,25-34,iOS,Direct,Occasional
+cus_0001051,2025-10-07,India,Hyderabad,45-54,Android,Referral,New
+cus_0001052,2025-09-15,United Kingdom,London,25-34,iOS,Google Ads,New
+cus_0001053,2025-09-24,India,Delhi,18-24,Desktop,Organic Search,New
+cus_0001054,2025-07-05,India,Hyderabad,25-34,iOS,Direct,New
+cus_0001055,2025-04-17,Germany,Hamburg,45-54,Android,Direct,New
+cus_0001056,2025-11-03,United States,San Francisco,55+,Android,Google Ads,Loyal
+cus_0001057,2025-05-14,India,Delhi,35-44,Android,Meta Ads,Occasional
+cus_0001058,2025-08-07,United Kingdom,Manchester,45-54,iOS,Direct,Occasional
+cus_0001059,2025-11-07,India,Bengaluru,35-44,iOS,Google Ads,New
+cus_0001060,2025-04-15,United States,Austin,25-34,Desktop,Email,New
+cus_0001061,2025-12-19,India,Delhi,25-34,iOS,Google Ads,New
+cus_0001062,2025-08-01,India,Mumbai,25-34,Android,Organic Search,New
+cus_0001063,2025-07-04,India,Mumbai,45-54,iOS,Organic Search,Occasional
+cus_0001064,2025-09-08,United Kingdom,London,25-34,Android,Meta Ads,New
+cus_0001065,2025-09-05,United Kingdom,London,25-34,iOS,Organic Search,New
+cus_0001066,2026-01-20,United States,New York,25-34,Android,Email,Occasional
+cus_0001067,2025-06-09,India,Hyderabad,55+,Desktop,Meta Ads,Loyal
+cus_0001068,2025-08-13,United States,New York,25-34,Desktop,Organic Search,New
+cus_0001069,2025-10-30,India,Mumbai,45-54,Android,Google Ads,New
+cus_0001070,2025-11-13,India,Hyderabad,18-24,Desktop,Organic Search,Occasional
+cus_0001071,2025-10-17,United States,San Francisco,25-34,Android,Meta Ads,Loyal
+cus_0001072,2025-11-15,United Kingdom,Bristol,35-44,iOS,Organic Search,New
+cus_0001073,2025-07-25,United States,Austin,25-34,iOS,Direct,Loyal
+cus_0001074,2025-11-20,India,Bengaluru,18-24,Desktop,Email,New
+cus_0001075,2025-12-12,India,Bengaluru,25-34,iOS,Referral,New
+cus_0001076,2025-07-18,Germany,Munich,45-54,Desktop,Google Ads,High Value
+cus_0001077,2025-08-04,India,Bengaluru,18-24,Android,Referral,Loyal
+cus_0001078,2025-10-20,United Kingdom,London,25-34,Android,Meta Ads,Occasional
+cus_0001079,2026-02-01,United Kingdom,London,25-34,Android,Meta Ads,Occasional
+cus_0001080,2025-04-21,India,Bengaluru,45-54,Desktop,Meta Ads,Occasional
+cus_0001081,2025-05-02,India,Bengaluru,35-44,iOS,Google Ads,New
+cus_0001082,2025-10-25,Singapore,Singapore,35-44,Desktop,Meta Ads,New
+cus_0001083,2025-08-25,India,Bengaluru,25-34,iOS,Email,New
+cus_0001084,2025-11-22,India,Bengaluru,18-24,Desktop,Organic Search,Occasional
+cus_0001085,2025-10-26,India,Hyderabad,45-54,Desktop,Google Ads,Occasional
+cus_0001086,2025-12-19,India,Mumbai,18-24,Android,Google Ads,Occasional
+cus_0001087,2025-07-26,India,Bengaluru,25-34,Android,Google Ads,New
+cus_0001088,2025-09-05,United States,Austin,45-54,Android,Email,New
+cus_0001089,2025-10-28,India,Hyderabad,35-44,Android,Meta Ads,New
+cus_0001090,2025-06-02,India,Mumbai,55+,Desktop,Organic Search,Loyal
+cus_0001091,2025-08-08,India,Hyderabad,55+,iOS,Direct,New
+cus_0001092,2025-07-15,United Kingdom,Manchester,55+,iOS,Direct,Occasional
+cus_0001093,2025-09-04,United States,New York,35-44,iOS,Organic Search,Loyal
+cus_0001094,2025-04-24,India,Mumbai,55+,iOS,Organic Search,New
+cus_0001095,2025-07-20,United States,New York,25-34,Android,Direct,Occasional
+cus_0001096,2025-09-24,United Kingdom,Bristol,18-24,Android,Email,Occasional
+cus_0001097,2025-05-05,India,Bengaluru,25-34,Android,Direct,New
+cus_0001098,2025-07-14,India,Bengaluru,25-34,Android,Direct,Loyal
+cus_0001099,2025-05-18,United Kingdom,London,18-24,Android,Organic Search,New
+cus_0001100,2025-05-23,United Kingdom,Manchester,45-54,Desktop,Google Ads,Occasional
+cus_0001101,2025-08-31,India,Hyderabad,25-34,iOS,Email,New
+cus_0001102,2025-09-11,United Kingdom,Bristol,55+,iOS,Meta Ads,Loyal
+cus_0001103,2026-01-26,India,Hyderabad,25-34,Desktop,Google Ads,Loyal
+cus_0001104,2025-10-06,India,Bengaluru,35-44,iOS,Meta Ads,High Value
+cus_0001105,2025-07-23,India,Mumbai,35-44,Android,Meta Ads,Occasional
+cus_0001106,2026-01-24,India,Mumbai,25-34,Android,Meta Ads,New
+cus_0001107,2025-07-15,Germany,Hamburg,55+,Android,Email,Loyal
+cus_0001108,2025-08-05,India,Delhi,18-24,iOS,Google Ads,Loyal
+cus_0001109,2025-05-15,Germany,Berlin,55+,iOS,Direct,Occasional
+cus_0001110,2025-05-25,United Kingdom,Bristol,45-54,iOS,Google Ads,New
+cus_0001111,2025-12-01,India,Hyderabad,18-24,Desktop,Email,Occasional
+cus_0001112,2026-01-04,India,Bengaluru,35-44,Android,Email,New
+cus_0001113,2026-01-21,India,Hyderabad,25-34,Desktop,Referral,New
+cus_0001114,2025-06-06,India,Mumbai,35-44,iOS,Meta Ads,High Value
+cus_0001115,2025-06-26,Singapore,Singapore,18-24,iOS,Google Ads,New
+cus_0001116,2026-01-23,Germany,Munich,25-34,Desktop,Google Ads,Occasional
+cus_0001117,2025-12-26,United States,New York,25-34,Android,Google Ads,New
+cus_0001118,2025-08-05,India,Mumbai,55+,Android,Google Ads,New
+cus_0001119,2025-06-25,India,Delhi,18-24,iOS,Organic Search,Occasional
+cus_0001120,2026-01-28,United States,Chicago,35-44,iOS,Meta Ads,New
+cus_0001121,2025-05-04,Singapore,Singapore,18-24,Android,Direct,New
+cus_0001122,2025-07-01,United Kingdom,Bristol,25-34,Desktop,Organic Search,New
+cus_0001123,2025-07-11,Singapore,Singapore,55+,Android,Direct,Occasional
+cus_0001124,2025-08-26,United States,Chicago,35-44,Android,Google Ads,New
+cus_0001125,2025-06-21,India,Bengaluru,25-34,Android,Organic Search,Loyal
+cus_0001126,2025-05-30,India,Mumbai,25-34,Android,Meta Ads,Occasional
+cus_0001127,2025-11-16,Singapore,Singapore,55+,iOS,Google Ads,New
+cus_0001128,2025-09-19,India,Bengaluru,45-54,iOS,Organic Search,Loyal
+cus_0001129,2025-05-12,Singapore,Singapore,55+,Android,Meta Ads,New
+cus_0001130,2025-11-26,Germany,Hamburg,35-44,Android,Email,New
+cus_0001131,2026-01-21,United States,Chicago,18-24,Android,Direct,Occasional
+cus_0001132,2025-06-19,United Kingdom,Manchester,55+,Desktop,Google Ads,New
+cus_0001133,2025-07-24,India,Bengaluru,25-34,Android,Google Ads,Occasional
+cus_0001134,2025-04-26,India,Delhi,25-34,Android,Google Ads,New
+cus_0001135,2025-09-05,United Kingdom,Manchester,35-44,Desktop,Meta Ads,Occasional
+cus_0001136,2026-01-21,India,Delhi,25-34,Android,Google Ads,High Value
+cus_0001137,2025-10-13,India,Delhi,18-24,iOS,Organic Search,High Value
+cus_0001138,2025-07-13,United States,Chicago,55+,Android,Email,Occasional
+cus_0001139,2026-02-01,Singapore,Singapore,18-24,iOS,Google Ads,New
+cus_0001140,2025-07-29,India,Hyderabad,35-44,iOS,Email,Occasional
+cus_0001141,2025-06-26,United Kingdom,Manchester,18-24,iOS,Direct,New
+cus_0001142,2025-08-03,Germany,Hamburg,25-34,iOS,Organic Search,Loyal
+cus_0001143,2025-07-11,United States,Chicago,35-44,iOS,Meta Ads,New
+cus_0001144,2025-04-14,Germany,Berlin,55+,Android,Google Ads,Loyal
+cus_0001145,2025-07-18,United States,San Francisco,35-44,iOS,Google Ads,Occasional
+cus_0001146,2026-01-06,India,Bengaluru,45-54,Android,Google Ads,Loyal
+cus_0001147,2025-04-23,United Kingdom,Manchester,35-44,Desktop,Organic Search,Loyal
+cus_0001148,2025-12-01,United States,Austin,25-34,Android,Google Ads,Occasional
+cus_0001149,2025-11-15,United Kingdom,Bristol,25-34,Android,Referral,Occasional
+cus_0001150,2025-08-30,India,Delhi,35-44,Android,Meta Ads,Occasional
+cus_0001151,2025-11-24,United States,San Francisco,55+,Android,Direct,Occasional
+cus_0001152,2025-07-05,India,Hyderabad,25-34,iOS,Meta Ads,New
+cus_0001153,2025-05-18,United Kingdom,Manchester,25-34,Android,Email,Occasional
+cus_0001154,2025-09-12,United Kingdom,Bristol,35-44,iOS,Direct,Occasional
+cus_0001155,2026-01-06,United States,Chicago,25-34,Android,Direct,High Value
+cus_0001156,2025-07-27,Singapore,Singapore,18-24,iOS,Organic Search,Occasional
+cus_0001157,2025-11-13,Singapore,Singapore,35-44,Android,Organic Search,Loyal
+cus_0001158,2025-06-16,India,Delhi,45-54,Android,Direct,Loyal
+cus_0001159,2025-06-15,Germany,Munich,35-44,Desktop,Referral,New
+cus_0001160,2025-04-15,India,Hyderabad,45-54,Android,Organic Search,Loyal
+cus_0001161,2025-06-18,Germany,Berlin,25-34,Android,Organic Search,Occasional
+cus_0001162,2025-10-30,United Kingdom,Bristol,45-54,Android,Direct,New
+cus_0001163,2025-12-08,United States,Austin,55+,Android,Referral,Loyal
+cus_0001164,2025-04-24,India,Mumbai,25-34,Android,Organic Search,New
+cus_0001165,2025-04-29,United States,New York,25-34,Android,Google Ads,Occasional
+cus_0001166,2025-07-15,United States,San Francisco,18-24,Android,Direct,Loyal
+cus_0001167,2025-09-11,Germany,Berlin,35-44,Android,Organic Search,High Value
+cus_0001168,2025-08-09,India,Hyderabad,18-24,Android,Organic Search,Loyal
+cus_0001169,2025-05-07,India,Hyderabad,25-34,iOS,Google Ads,Occasional
+cus_0001170,2025-12-30,United States,New York,25-34,Desktop,Referral,New
+cus_0001171,2025-12-30,India,Mumbai,55+,Desktop,Direct,Loyal
+cus_0001172,2025-07-27,India,Delhi,25-34,Android,Meta Ads,Occasional
+cus_0001173,2025-11-28,India,Delhi,18-24,Android,Google Ads,New
+cus_0001174,2025-05-21,United States,Austin,45-54,iOS,Google Ads,Occasional
+cus_0001175,2025-05-06,United States,New York,18-24,iOS,Organic Search,Loyal
+cus_0001176,2026-01-18,United States,Austin,55+,Android,Direct,Occasional
+cus_0001177,2025-06-21,Germany,Berlin,35-44,Android,Organic Search,Occasional
+cus_0001178,2025-05-17,India,Delhi,25-34,Android,Organic Search,High Value
+cus_0001179,2025-10-21,United States,San Francisco,18-24,iOS,Organic Search,Loyal
+cus_0001180,2025-12-21,India,Delhi,25-34,Desktop,Google Ads,Occasional
+cus_0001181,2025-09-23,Germany,Munich,25-34,iOS,Organic Search,New
+cus_0001182,2025-11-14,United Kingdom,London,18-24,Android,Direct,Occasional
+cus_0001183,2025-04-26,India,Bengaluru,25-34,Android,Google Ads,Loyal
+cus_0001184,2025-12-27,India,Delhi,55+,Android,Direct,New
+cus_0001185,2025-10-24,United States,Chicago,35-44,iOS,Organic Search,Occasional
+cus_0001186,2025-09-10,India,Hyderabad,18-24,Android,Meta Ads,High Value
+cus_0001187,2025-08-28,India,Hyderabad,18-24,iOS,Meta Ads,Occasional
+cus_0001188,2025-06-14,United States,Austin,18-24,Android,Meta Ads,Occasional
+cus_0001189,2025-06-30,United States,New York,55+,Android,Email,Loyal
+cus_0001190,2025-12-12,India,Hyderabad,25-34,Android,Google Ads,Occasional
+cus_0001191,2025-09-15,United Kingdom,London,18-24,Desktop,Referral,Loyal
+cus_0001192,2025-08-08,India,Bengaluru,45-54,Android,Organic Search,Loyal
+cus_0001193,2025-04-17,Germany,Hamburg,25-34,Android,Referral,High Value
+cus_0001194,2025-04-26,United States,Austin,55+,Android,Meta Ads,New
+cus_0001195,2025-05-29,United Kingdom,Manchester,25-34,iOS,Google Ads,New
+cus_0001196,2025-07-22,India,Mumbai,45-54,Android,Direct,New
+cus_0001197,2025-10-11,India,Delhi,25-34,iOS,Organic Search,Occasional
+cus_0001198,2025-08-12,India,Hyderabad,55+,Android,Organic Search,High Value
+cus_0001199,2025-10-19,United States,New York,35-44,Desktop,Organic Search,New
+cus_0001200,2025-11-15,India,Delhi,45-54,Android,Meta Ads,Loyal
+cus_0001201,2025-04-17,United States,San Francisco,25-34,iOS,Google Ads,Loyal
+cus_0001202,2025-08-29,United Kingdom,Manchester,18-24,iOS,Direct,Occasional
+cus_0001203,2025-04-25,United Kingdom,Manchester,35-44,iOS,Direct,Occasional
+cus_0001204,2025-12-26,Singapore,Singapore,25-34,iOS,Email,New
+cus_0001205,2025-12-06,Germany,Berlin,25-34,Desktop,Referral,Loyal
+cus_0001206,2026-01-10,India,Bengaluru,45-54,iOS,Meta Ads,Occasional
+cus_0001207,2025-10-14,United States,Chicago,55+,Android,Google Ads,Loyal
+cus_0001208,2025-10-21,United States,San Francisco,25-34,Desktop,Organic Search,Loyal
+cus_0001209,2025-09-09,India,Bengaluru,18-24,Desktop,Direct,Loyal
+cus_0001210,2025-12-18,Germany,Munich,18-24,iOS,Email,Occasional
+cus_0001211,2025-04-28,United States,San Francisco,45-54,iOS,Organic Search,New
+cus_0001212,2025-08-08,India,Bengaluru,55+,Android,Organic Search,Loyal
+cus_0001213,2025-11-13,United States,New York,35-44,iOS,Google Ads,Occasional
+cus_0001214,2025-06-21,India,Bengaluru,35-44,Android,Organic Search,Occasional
+cus_0001215,2025-05-21,United States,Chicago,45-54,iOS,Direct,New
+cus_0001216,2025-10-18,United States,Chicago,25-34,iOS,Meta Ads,Loyal
+cus_0001217,2026-01-30,India,Delhi,45-54,Android,Google Ads,Occasional
+cus_0001218,2025-08-28,Singapore,Singapore,45-54,Android,Direct,Occasional
+cus_0001219,2025-08-12,United States,Chicago,25-34,Android,Meta Ads,New
+cus_0001220,2025-06-17,India,Hyderabad,55+,iOS,Organic Search,New
+cus_0001221,2025-10-18,United Kingdom,Bristol,25-34,Android,Meta Ads,New
+cus_0001222,2025-08-19,India,Delhi,35-44,Android,Organic Search,Occasional
+cus_0001223,2025-04-24,India,Mumbai,45-54,Android,Organic Search,Loyal
+cus_0001224,2025-11-16,India,Mumbai,25-34,Desktop,Meta Ads,High Value
+cus_0001225,2025-09-05,India,Delhi,55+,Android,Meta Ads,Occasional
+cus_0001226,2025-09-26,India,Mumbai,35-44,iOS,Email,New
+cus_0001227,2025-05-02,India,Bengaluru,25-34,iOS,Organic Search,Occasional
+cus_0001228,2025-11-18,India,Hyderabad,45-54,Android,Organic Search,Occasional
+cus_0001229,2026-01-12,United States,Austin,25-34,Android,Meta Ads,New
+cus_0001230,2025-08-15,Germany,Berlin,35-44,Android,Organic Search,New
+cus_0001231,2025-08-16,India,Mumbai,25-34,iOS,Meta Ads,High Value
+cus_0001232,2025-10-29,United States,Chicago,55+,Desktop,Direct,Occasional
+cus_0001233,2025-08-31,India,Mumbai,45-54,iOS,Organic Search,Loyal
+cus_0001234,2025-04-09,India,Delhi,25-34,Android,Direct,Occasional
+cus_0001235,2025-07-08,Germany,Hamburg,25-34,Android,Direct,Loyal
+cus_0001236,2025-09-30,United Kingdom,Bristol,55+,Android,Meta Ads,New
+cus_0001237,2025-11-20,Singapore,Singapore,25-34,Android,Email,Loyal
+cus_0001238,2025-08-22,United States,Chicago,25-34,Android,Organic Search,Loyal
+cus_0001239,2025-08-07,India,Bengaluru,25-34,Android,Meta Ads,New
+cus_0001240,2025-05-14,Germany,Munich,45-54,Desktop,Direct,Loyal
+cus_0001241,2025-09-15,United States,New York,35-44,Android,Referral,Occasional
+cus_0001242,2025-07-28,India,Mumbai,18-24,Android,Organic Search,Occasional
+cus_0001243,2026-01-22,Germany,Hamburg,55+,Android,Meta Ads,Loyal
+cus_0001244,2025-04-23,India,Delhi,25-34,Android,Organic Search,Occasional
+cus_0001245,2025-06-12,United States,San Francisco,25-34,Android,Referral,Loyal
+cus_0001246,2025-04-10,United Kingdom,Manchester,35-44,iOS,Direct,New
+cus_0001247,2025-04-13,India,Mumbai,35-44,iOS,Google Ads,New
+cus_0001248,2025-10-11,United States,San Francisco,45-54,Android,Direct,New
+cus_0001249,2025-11-12,Germany,Hamburg,25-34,Desktop,Organic Search,Occasional
+cus_0001250,2025-07-10,United Kingdom,Manchester,25-34,Android,Meta Ads,High Value
+cus_0001251,2025-06-16,India,Bengaluru,35-44,Desktop,Direct,Loyal
+cus_0001252,2025-09-21,India,Hyderabad,55+,iOS,Organic Search,New
+cus_0001253,2025-12-01,Germany,Munich,55+,Android,Google Ads,Occasional
+cus_0001254,2025-07-08,India,Mumbai,55+,iOS,Meta Ads,Occasional
+cus_0001255,2025-09-09,United Kingdom,Manchester,45-54,Android,Google Ads,Occasional
+cus_0001256,2025-08-14,Germany,Hamburg,55+,Android,Meta Ads,New
+cus_0001257,2025-07-14,India,Delhi,35-44,Android,Google Ads,High Value
+cus_0001258,2025-10-24,United Kingdom,Bristol,25-34,iOS,Meta Ads,New
+cus_0001259,2025-12-04,United States,New York,25-34,iOS,Google Ads,Loyal
+cus_0001260,2025-09-27,Singapore,Singapore,35-44,Desktop,Organic Search,Occasional
+cus_0001261,2025-12-10,United Kingdom,London,25-34,Desktop,Direct,Occasional
+cus_0001262,2025-10-27,India,Delhi,55+,iOS,Email,Loyal
+cus_0001263,2025-04-27,India,Delhi,35-44,Android,Organic Search,Occasional
+cus_0001264,2025-05-26,India,Bengaluru,25-34,Android,Organic Search,Occasional
+cus_0001265,2025-04-09,United States,Chicago,18-24,Android,Meta Ads,High Value
+cus_0001266,2025-11-29,Germany,Berlin,35-44,Android,Direct,Occasional
+cus_0001267,2026-01-16,United States,New York,45-54,Android,Organic Search,Occasional
+cus_0001268,2025-05-25,India,Hyderabad,25-34,Desktop,Google Ads,High Value
+cus_0001269,2025-08-12,United States,San Francisco,18-24,Android,Email,High Value
+cus_0001270,2025-07-04,United Kingdom,London,35-44,Android,Google Ads,High Value
+cus_0001271,2025-08-16,United States,New York,45-54,iOS,Organic Search,Loyal
+cus_0001272,2025-10-14,United States,Austin,55+,Android,Google Ads,New
+cus_0001273,2025-09-05,India,Delhi,25-34,iOS,Direct,Loyal
+cus_0001274,2025-10-18,Singapore,Singapore,25-34,Android,Organic Search,High Value
+cus_0001275,2025-07-24,India,Bengaluru,25-34,iOS,Organic Search,New
+cus_0001276,2025-06-06,India,Bengaluru,25-34,Android,Meta Ads,New
+cus_0001277,2025-06-15,India,Bengaluru,18-24,Android,Meta Ads,Occasional
+cus_0001278,2025-10-29,Germany,Hamburg,35-44,Android,Google Ads,New
+cus_0001279,2025-12-07,India,Delhi,18-24,Android,Direct,Loyal
+cus_0001280,2025-06-24,India,Delhi,55+,iOS,Organic Search,Occasional
+cus_0001281,2025-09-28,India,Hyderabad,55+,Android,Meta Ads,Occasional
+cus_0001282,2025-09-15,India,Bengaluru,45-54,iOS,Email,New
+cus_0001283,2025-06-14,Singapore,Singapore,18-24,Android,Email,Loyal
+cus_0001284,2025-10-21,India,Mumbai,35-44,Desktop,Meta Ads,Loyal
+cus_0001285,2025-08-09,India,Bengaluru,18-24,Android,Google Ads,New
+cus_0001286,2025-06-02,Singapore,Singapore,35-44,Desktop,Direct,High Value
+cus_0001287,2025-08-31,Singapore,Singapore,25-34,Android,Organic Search,High Value
+cus_0001288,2025-07-20,India,Bengaluru,18-24,Android,Organic Search,Loyal
+cus_0001289,2025-07-05,United Kingdom,Manchester,35-44,Android,Email,Occasional
+cus_0001290,2026-01-31,Germany,Berlin,25-34,iOS,Referral,New
+cus_0001291,2025-05-24,United States,New York,45-54,Android,Organic Search,Occasional
+cus_0001292,2025-06-22,United Kingdom,Manchester,25-34,Android,Google Ads,Occasional
+cus_0001293,2025-07-27,Singapore,Singapore,25-34,iOS,Meta Ads,Loyal
+cus_0001294,2025-07-10,United Kingdom,Manchester,25-34,Android,Email,Loyal
+cus_0001295,2025-04-22,India,Delhi,45-54,Desktop,Email,New
+cus_0001296,2025-08-09,India,Mumbai,18-24,Desktop,Meta Ads,Occasional
+cus_0001297,2026-01-23,India,Bengaluru,45-54,Android,Meta Ads,New
+cus_0001298,2025-07-09,India,Mumbai,35-44,Android,Direct,New
+cus_0001299,2026-02-01,India,Mumbai,35-44,Desktop,Organic Search,Occasional
+cus_0001300,2025-09-20,United States,Chicago,25-34,Android,Google Ads,Loyal
+cus_0001301,2025-06-13,United States,San Francisco,18-24,Android,Google Ads,New
+cus_0001302,2025-07-11,Germany,Berlin,45-54,Android,Referral,Loyal
+cus_0001303,2025-04-12,India,Delhi,35-44,Desktop,Organic Search,Loyal
+cus_0001304,2025-06-30,Singapore,Singapore,45-54,Android,Organic Search,Loyal
+cus_0001305,2025-07-22,India,Mumbai,25-34,Android,Meta Ads,Occasional
+cus_0001306,2025-12-21,India,Delhi,35-44,Android,Google Ads,New
+cus_0001307,2025-12-24,United States,New York,25-34,iOS,Referral,Occasional
+cus_0001308,2025-08-19,United States,San Francisco,25-34,Android,Meta Ads,New
+cus_0001309,2025-05-06,India,Bengaluru,25-34,iOS,Meta Ads,New
+cus_0001310,2026-01-04,India,Hyderabad,25-34,Desktop,Meta Ads,Loyal
+cus_0001311,2025-05-13,Germany,Munich,25-34,iOS,Direct,Occasional
+cus_0001312,2025-11-28,India,Bengaluru,55+,Android,Email,New
+cus_0001313,2025-07-10,United States,New York,25-34,iOS,Referral,Occasional
+cus_0001314,2025-04-07,United Kingdom,Manchester,55+,Android,Google Ads,Loyal
+cus_0001315,2025-05-17,India,Mumbai,25-34,Desktop,Organic Search,Loyal
+cus_0001316,2026-01-22,United Kingdom,London,25-34,Desktop,Direct,High Value
+cus_0001317,2025-11-13,India,Delhi,18-24,Android,Email,New
+cus_0001318,2025-08-10,India,Mumbai,25-34,Desktop,Organic Search,New
+cus_0001319,2025-04-09,Germany,Hamburg,35-44,iOS,Email,High Value
+cus_0001320,2025-11-01,India,Delhi,25-34,iOS,Google Ads,Occasional
+cus_0001321,2025-12-03,United States,Austin,55+,Android,Google Ads,New
+cus_0001322,2025-04-21,India,Hyderabad,18-24,Android,Meta Ads,High Value
+cus_0001323,2025-06-16,United States,Austin,55+,iOS,Referral,Loyal
+cus_0001324,2025-09-27,India,Bengaluru,25-34,iOS,Organic Search,New
+cus_0001325,2025-10-12,United Kingdom,London,25-34,Android,Meta Ads,Loyal
+cus_0001326,2026-01-17,United States,San Francisco,25-34,iOS,Organic Search,Loyal
+cus_0001327,2025-12-01,United States,Chicago,25-34,Android,Meta Ads,Occasional
+cus_0001328,2025-04-20,Germany,Hamburg,55+,Android,Meta Ads,Occasional
+cus_0001329,2025-08-30,India,Mumbai,45-54,Android,Email,New
+cus_0001330,2025-08-04,Germany,Berlin,45-54,iOS,Email,Loyal
+cus_0001331,2025-09-05,United States,San Francisco,18-24,iOS,Google Ads,New
+cus_0001332,2025-08-05,United States,San Francisco,25-34,Android,Organic Search,Occasional
+cus_0001333,2025-11-02,Germany,Munich,25-34,iOS,Organic Search,New
+cus_0001334,2025-09-11,India,Mumbai,25-34,Desktop,Organic Search,High Value
+cus_0001335,2026-01-09,India,Mumbai,35-44,Desktop,Direct,New
+cus_0001336,2025-11-10,United States,Austin,25-34,Android,Direct,New
+cus_0001337,2025-12-02,India,Delhi,18-24,Desktop,Referral,Loyal
+cus_0001338,2025-06-25,India,Delhi,35-44,Android,Email,Loyal
+cus_0001339,2026-01-16,United States,New York,35-44,iOS,Google Ads,New
+cus_0001340,2025-06-22,Germany,Berlin,55+,Desktop,Email,New
+cus_0001341,2026-01-20,India,Delhi,25-34,Android,Meta Ads,Occasional
+cus_0001342,2025-11-19,India,Bengaluru,25-34,iOS,Meta Ads,New
+cus_0001343,2025-12-15,United States,Austin,18-24,Desktop,Email,Occasional
+cus_0001344,2025-10-06,United Kingdom,London,55+,Desktop,Email,Occasional
+cus_0001345,2025-08-15,Germany,Hamburg,45-54,Android,Google Ads,New
+cus_0001346,2025-10-30,United States,Austin,25-34,iOS,Organic Search,Loyal
+cus_0001347,2025-10-18,Germany,Munich,45-54,Android,Referral,Loyal
+cus_0001348,2025-09-02,United States,Austin,25-34,Android,Organic Search,Occasional
+cus_0001349,2025-07-17,India,Hyderabad,35-44,Android,Direct,Loyal
+cus_0001350,2025-07-29,India,Bengaluru,35-44,Desktop,Meta Ads,Occasional
+cus_0001351,2026-01-31,India,Bengaluru,18-24,iOS,Direct,Occasional
+cus_0001352,2025-08-12,United States,San Francisco,18-24,Android,Meta Ads,High Value
+cus_0001353,2025-06-28,Germany,Berlin,25-34,Desktop,Organic Search,New
+cus_0001354,2025-07-17,India,Hyderabad,18-24,Android,Meta Ads,New
+cus_0001355,2025-08-12,United States,Austin,18-24,iOS,Meta Ads,High Value
+cus_0001356,2025-07-06,United States,Chicago,35-44,Android,Organic Search,New
+cus_0001357,2025-08-22,United States,Chicago,18-24,Android,Meta Ads,Occasional
+cus_0001358,2025-10-16,India,Bengaluru,25-34,Desktop,Direct,New
+cus_0001359,2025-10-07,India,Bengaluru,55+,Android,Google Ads,New
+cus_0001360,2025-10-12,Singapore,Singapore,25-34,Android,Meta Ads,New
+cus_0001361,2025-12-27,United States,New York,45-54,Android,Email,Loyal
+cus_0001362,2025-11-06,India,Bengaluru,18-24,Android,Email,Occasional
+cus_0001363,2025-05-19,India,Bengaluru,35-44,Android,Direct,Loyal
+cus_0001364,2025-11-24,United States,Austin,45-54,Desktop,Email,New
+cus_0001365,2025-09-10,India,Bengaluru,55+,Android,Email,Occasional
+cus_0001366,2025-11-24,India,Bengaluru,18-24,Android,Google Ads,Loyal
+cus_0001367,2025-06-22,India,Mumbai,55+,iOS,Meta Ads,Occasional
+cus_0001368,2025-10-04,United States,New York,55+,Android,Google Ads,Loyal
+cus_0001369,2025-10-13,United States,San Francisco,18-24,Android,Organic Search,New
+cus_0001370,2026-01-13,India,Delhi,55+,iOS,Direct,Occasional
+cus_0001371,2025-05-25,Germany,Munich,25-34,Android,Google Ads,Loyal
+cus_0001372,2025-04-19,United States,Chicago,35-44,iOS,Google Ads,New
+cus_0001373,2025-08-11,United States,San Francisco,45-54,Android,Direct,Occasional
+cus_0001374,2025-12-03,United States,Austin,18-24,Android,Direct,New
+cus_0001375,2025-06-21,United States,New York,55+,Android,Direct,Loyal
+cus_0001376,2025-07-03,United States,Chicago,55+,Android,Meta Ads,Loyal
+cus_0001377,2025-08-19,United States,New York,35-44,Android,Direct,Loyal
+cus_0001378,2025-10-08,India,Delhi,25-34,Desktop,Google Ads,New
+cus_0001379,2025-05-02,India,Mumbai,25-34,Desktop,Meta Ads,New
+cus_0001380,2025-04-24,United States,New York,55+,Android,Direct,New
+cus_0001381,2025-06-17,India,Mumbai,45-54,iOS,Organic Search,New
+cus_0001382,2025-12-31,United Kingdom,London,55+,Android,Direct,Loyal
+cus_0001383,2025-05-31,India,Hyderabad,45-54,Desktop,Meta Ads,Occasional
+cus_0001384,2026-01-01,India,Mumbai,45-54,Android,Meta Ads,Loyal
+cus_0001385,2025-08-09,India,Delhi,25-34,Android,Organic Search,Occasional
+cus_0001386,2025-05-07,United States,New York,25-34,Android,Google Ads,Occasional
+cus_0001387,2025-10-27,India,Hyderabad,45-54,Android,Google Ads,Occasional
+cus_0001388,2025-12-02,India,Mumbai,35-44,Android,Google Ads,Occasional
+cus_0001389,2025-07-25,India,Mumbai,35-44,iOS,Organic Search,Occasional
+cus_0001390,2026-01-20,United Kingdom,Manchester,45-54,Android,Organic Search,High Value
+cus_0001391,2025-11-20,United States,San Francisco,25-34,Android,Meta Ads,Occasional
+cus_0001392,2025-11-02,United Kingdom,Manchester,25-34,Android,Organic Search,Occasional
+cus_0001393,2025-06-02,United States,Austin,45-54,Desktop,Organic Search,New
+cus_0001394,2025-06-30,United States,Austin,55+,Android,Email,Loyal
+cus_0001395,2025-10-15,India,Bengaluru,45-54,Desktop,Google Ads,New
+cus_0001396,2025-06-08,India,Bengaluru,25-34,Android,Meta Ads,Loyal
+cus_0001397,2025-05-04,India,Mumbai,18-24,Desktop,Google Ads,New
+cus_0001398,2025-09-30,United States,Chicago,25-34,Android,Direct,Loyal
+cus_0001399,2025-05-21,Singapore,Singapore,55+,Desktop,Referral,New
+cus_0001400,2025-10-24,United States,Austin,55+,iOS,Email,Occasional
+cus_0001401,2025-12-24,Germany,Berlin,25-34,iOS,Referral,Loyal
+cus_0001402,2025-12-17,United Kingdom,Bristol,25-34,Desktop,Direct,New
+cus_0001403,2025-04-09,Singapore,Singapore,25-34,Android,Google Ads,High Value
+cus_0001404,2025-04-26,India,Bengaluru,18-24,Android,Google Ads,New
+cus_0001405,2025-11-26,United Kingdom,Bristol,18-24,Android,Email,Occasional
+cus_0001406,2025-08-26,United States,New York,25-34,iOS,Email,High Value
+cus_0001407,2026-01-24,India,Bengaluru,35-44,Desktop,Organic Search,New
+cus_0001408,2025-09-29,United States,Austin,25-34,Android,Organic Search,New
+cus_0001409,2025-07-15,India,Delhi,25-34,Android,Organic Search,High Value
+cus_0001410,2025-12-27,India,Hyderabad,18-24,Desktop,Direct,Occasional
+cus_0001411,2025-08-10,India,Delhi,25-34,Android,Email,Occasional
+cus_0001412,2026-01-02,India,Delhi,25-34,iOS,Direct,Occasional
+cus_0001413,2025-08-05,India,Bengaluru,35-44,Android,Direct,New
+cus_0001414,2025-12-20,India,Hyderabad,25-34,Desktop,Google Ads,New
+cus_0001415,2026-01-14,India,Mumbai,45-54,iOS,Organic Search,New
+cus_0001416,2025-11-25,India,Hyderabad,45-54,iOS,Organic Search,Occasional
+cus_0001417,2025-08-18,Singapore,Singapore,25-34,iOS,Referral,Loyal
+cus_0001418,2025-10-20,India,Bengaluru,25-34,Android,Direct,New
+cus_0001419,2025-10-15,United Kingdom,Bristol,18-24,Android,Email,High Value
+cus_0001420,2025-05-13,India,Delhi,35-44,Android,Meta Ads,Loyal
+cus_0001421,2025-08-30,United Kingdom,Manchester,25-34,Android,Organic Search,Loyal
+cus_0001422,2025-08-29,United Kingdom,Manchester,18-24,Android,Referral,Occasional
+cus_0001423,2025-08-31,India,Mumbai,45-54,Desktop,Meta Ads,Occasional
+cus_0001424,2025-09-13,United Kingdom,London,45-54,Desktop,Email,New
+cus_0001425,2025-04-09,United Kingdom,Bristol,35-44,Android,Email,Occasional
+cus_0001426,2025-07-27,India,Bengaluru,18-24,Android,Google Ads,Loyal
+cus_0001427,2025-04-30,Singapore,Singapore,55+,Desktop,Google Ads,High Value
+cus_0001428,2025-07-22,United States,San Francisco,25-34,iOS,Meta Ads,Loyal
+cus_0001429,2025-07-10,Germany,Munich,35-44,iOS,Meta Ads,New
+cus_0001430,2025-07-28,United States,New York,18-24,Desktop,Google Ads,Occasional
+cus_0001431,2025-06-11,United States,Austin,18-24,iOS,Organic Search,New
+cus_0001432,2025-04-25,Germany,Munich,35-44,iOS,Google Ads,Occasional
+cus_0001433,2025-04-16,Germany,Hamburg,55+,Desktop,Referral,New
+cus_0001434,2025-06-03,Germany,Berlin,25-34,Android,Direct,Occasional
+cus_0001435,2025-07-27,Germany,Berlin,25-34,Android,Meta Ads,Occasional
+cus_0001436,2025-04-21,India,Delhi,25-34,Android,Meta Ads,Occasional
+cus_0001437,2025-07-27,United Kingdom,London,35-44,Android,Organic Search,Occasional
+cus_0001438,2025-08-29,United States,Austin,35-44,Android,Referral,Occasional
+cus_0001439,2025-07-15,United Kingdom,Manchester,18-24,iOS,Meta Ads,New
+cus_0001440,2025-07-12,India,Delhi,25-34,Android,Direct,New
+cus_0001441,2025-11-23,India,Mumbai,18-24,Android,Direct,Occasional
+cus_0001442,2025-10-14,India,Delhi,45-54,Desktop,Referral,Occasional
+cus_0001443,2025-12-30,Germany,Berlin,18-24,Android,Referral,Occasional
+cus_0001444,2025-07-15,India,Bengaluru,25-34,Android,Direct,High Value
+cus_0001445,2025-05-14,India,Mumbai,35-44,iOS,Referral,High Value
+cus_0001446,2025-08-19,United States,New York,35-44,Android,Meta Ads,New
+cus_0001447,2025-06-13,United States,Austin,25-34,Android,Organic Search,Loyal
+cus_0001448,2025-08-06,India,Hyderabad,45-54,Android,Meta Ads,Loyal
+cus_0001449,2025-11-20,India,Bengaluru,18-24,Android,Google Ads,New
+cus_0001450,2025-08-26,India,Delhi,25-34,Android,Email,Occasional
+cus_0001451,2025-09-29,Germany,Berlin,35-44,Android,Meta Ads,Occasional
+cus_0001452,2025-12-25,India,Bengaluru,18-24,Android,Direct,Loyal
+cus_0001453,2025-08-30,United Kingdom,London,55+,Desktop,Email,Occasional
+cus_0001454,2025-12-18,Germany,Berlin,25-34,Android,Google Ads,Occasional
+cus_0001455,2025-12-07,United States,New York,35-44,Android,Direct,Loyal
+cus_0001456,2025-12-23,United Kingdom,Bristol,25-34,Android,Meta Ads,Loyal
+cus_0001457,2025-12-31,India,Delhi,25-34,iOS,Referral,New
+cus_0001458,2026-01-05,United Kingdom,London,35-44,Desktop,Meta Ads,Occasional
+cus_0001459,2025-06-20,India,Hyderabad,55+,iOS,Meta Ads,High Value
+cus_0001460,2025-04-27,United States,San Francisco,35-44,iOS,Organic Search,New
+cus_0001461,2025-07-13,United States,Austin,45-54,iOS,Referral,High Value
+cus_0001462,2025-05-20,India,Bengaluru,25-34,Android,Email,Occasional
+cus_0001463,2025-07-03,United States,San Francisco,25-34,Android,Organic Search,New
+cus_0001464,2025-12-24,India,Delhi,35-44,Android,Google Ads,Occasional
+cus_0001465,2025-12-11,United States,Austin,18-24,Desktop,Referral,Occasional
+cus_0001466,2025-12-29,India,Bengaluru,25-34,Android,Meta Ads,Occasional
+cus_0001467,2025-11-25,United Kingdom,London,45-54,Desktop,Organic Search,Occasional
+cus_0001468,2025-08-05,United States,Chicago,35-44,iOS,Google Ads,New
+cus_0001469,2025-06-22,United States,Chicago,45-54,iOS,Email,New
+cus_0001470,2025-12-26,United Kingdom,Manchester,35-44,iOS,Meta Ads,Occasional
+cus_0001471,2025-05-09,India,Bengaluru,18-24,iOS,Google Ads,New
+cus_0001472,2025-05-19,United Kingdom,London,25-34,Android,Meta Ads,Occasional
+cus_0001473,2025-07-04,Germany,Berlin,55+,Desktop,Organic Search,Loyal
+cus_0001474,2025-04-24,United Kingdom,London,45-54,Android,Google Ads,Loyal
+cus_0001475,2025-10-30,India,Bengaluru,55+,Android,Direct,Occasional
+cus_0001476,2025-08-09,Germany,Munich,45-54,Android,Referral,Loyal
+cus_0001477,2025-07-10,India,Delhi,25-34,Android,Google Ads,Occasional
+cus_0001478,2025-10-16,India,Bengaluru,45-54,Android,Organic Search,High Value
+cus_0001479,2025-05-04,United States,Chicago,18-24,Desktop,Organic Search,New
+cus_0001480,2025-05-27,United States,Chicago,55+,Android,Google Ads,Occasional
+cus_0001481,2025-06-02,United States,Austin,35-44,iOS,Meta Ads,High Value
+cus_0001482,2025-12-29,United States,San Francisco,18-24,Android,Google Ads,Occasional
+cus_0001483,2025-09-02,United States,New York,55+,iOS,Meta Ads,Occasional
+cus_0001484,2025-08-22,United Kingdom,London,55+,Android,Organic Search,New
+cus_0001485,2025-07-15,United States,New York,45-54,Android,Meta Ads,Occasional
+cus_0001486,2025-08-14,United States,New York,25-34,iOS,Email,High Value
+cus_0001487,2025-05-13,United States,San Francisco,55+,Android,Organic Search,New
+cus_0001488,2025-07-02,India,Hyderabad,45-54,Android,Google Ads,Occasional
+cus_0001489,2025-12-24,United States,Austin,35-44,Android,Referral,Occasional
+cus_0001490,2025-08-18,Singapore,Singapore,45-54,iOS,Google Ads,New
+cus_0001491,2025-08-18,India,Bengaluru,35-44,Android,Google Ads,Occasional
+cus_0001492,2025-05-16,India,Delhi,35-44,Android,Organic Search,Occasional
+cus_0001493,2025-10-21,Germany,Munich,45-54,iOS,Email,Occasional
+cus_0001494,2025-04-26,Germany,Hamburg,45-54,Desktop,Email,Loyal
+cus_0001495,2025-11-16,India,Mumbai,45-54,Desktop,Email,Occasional
+cus_0001496,2025-07-16,Germany,Berlin,35-44,Android,Organic Search,High Value
+cus_0001497,2026-01-13,Germany,Hamburg,35-44,iOS,Google Ads,Loyal
+cus_0001498,2025-06-25,India,Delhi,45-54,Android,Organic Search,High Value
+cus_0001499,2025-12-11,India,Delhi,45-54,Desktop,Direct,Loyal
+cus_0001500,2025-09-19,India,Hyderabad,35-44,Android,Email,Occasional

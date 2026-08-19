@@ -1,0 +1,8 @@
+scenario_id,start_date,end_date,affected_metric,affected_dimension,expected_direction,root_cause,severity
+scn_001,2026-07-20,2026-07-26,checkout_completion_rate,device=Android,decrease,Android payment SDK regression,high
+scn_002,2026-06-01,2026-06-14,cpc,channel=Google Ads,increase,Competitor bidding pressure,medium
+scn_003,2026-06-15,2026-06-30,sessions,channel=Organic Search,decrease,Search ranking change,medium
+scn_004,2026-05-10,2026-05-16,attribution_completeness,campaign_id=NULL,decrease,Campaign attribution tracking failure,medium
+scn_005,2026-07-20,2026-07-31,negative_review_rate,topic=payment/crash/login/refund,increase,Android checkout regression,high
+scn_006,2026-07-01,2026-07-31,conversion_rate,campaign=Meta_Summer_Lift,increase,High-performing Meta creative,positive
+scn_007,2026-07-20,2026-07-26,revenue,country=India,decrease,Payment completion failure concentrated in India,high
