@@ -12,6 +12,7 @@ This initial foundation includes:
 - current-period versus previous-period comparisons; and
 - root-cause decomposition by device, country, channel, campaign, and customer segment;
 - sequential funnel-drop analysis and ranked evidence candidates; and
+- a FastAPI service with validated Pydantic request and evidence contracts; and
 - automated tests for KPI correctness and the known checkout incident.
 
 ## Quick start
@@ -25,6 +26,7 @@ python scripts/initialize_database.py
 python scripts/run_kpi_example.py
 python scripts/run_root_cause_analysis.py
 python -m pytest -q
+uvicorn src.api.main:app --reload
 ```
 
 The generated CSV files are stored in `data/synthetic/`. The local DuckDB database is created at
@@ -43,3 +45,9 @@ stable. Ground-truth scenario definitions are available in
 `scripts/run_root_cause_analysis.py` compares 2026-07-20–26 with the preceding week and writes a
 structured evidence report to `data/processed/root_cause_report.json`. Generated reports remain local
 because they can be reproduced from the committed data.
+
+## API
+
+After starting Uvicorn, open `http://127.0.0.1:8000/docs` for interactive API documentation.
+Available endpoints include `GET /health`, `GET /metrics`, `GET /incidents`, and
+`POST /investigations/revenue`.

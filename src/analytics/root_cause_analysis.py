@@ -57,6 +57,7 @@ def investigate_revenue_decline(
             score += max(0.0, min(-row["conversion_rate_change"] * 2, 0.15))
             score *= DIMENSION_RELIABILITY[dimension]
             candidates.append({
+                "evidence_id": row["evidence_id"],
                 "candidate_type": "dimension_driver",
                 "dimension": dimension,
                 "segment": row["segment"],
@@ -70,6 +71,7 @@ def investigate_revenue_decline(
         score = min(abs(transition["percent_change"] or 0), 1.0) * 0.65
         score += 0.25 if transition["statistically_significant"] else 0.0
         candidates.append({
+            "evidence_id": transition["evidence_id"],
             "candidate_type": "funnel_driver",
             "dimension": "device",
             "segment": leading_device,

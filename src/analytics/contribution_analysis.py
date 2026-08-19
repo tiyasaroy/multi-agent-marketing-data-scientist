@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import hashlib
 from datetime import date
 from typing import Any
 
@@ -87,7 +88,13 @@ def decompose_metric(
             row["current_conversions"], row["current_sessions"],
             row["previous_conversions"], row["previous_sessions"],
         )
+        evidence_key = "|".join([
+            "dimension", dimension, str(row["segment"]),
+            current_start.isoformat(), current_end.isoformat(),
+            previous_start.isoformat(), previous_end.isoformat(),
+        ])
         rows.append({
+            "evidence_id": f"dim_{hashlib.sha256(evidence_key.encode()).hexdigest()[:12]}",
             "metric": "revenue",
             "dimension": dimension,
             "segment": row["segment"],

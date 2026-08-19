@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import hashlib
 from datetime import date
 from typing import Any
 
@@ -75,7 +76,13 @@ def compare_funnels(
         current_rate = current_to / current_from if current_from else 0.0
         previous_rate = previous_to / previous_from if previous_from else 0.0
         p_value = _p_value(current_to, current_from, previous_to, previous_from)
+        evidence_key = "|".join([
+            "funnel", from_step, to_step, filter_dimension or "all", filter_value or "all",
+            current_start.isoformat(), current_end.isoformat(),
+            previous_start.isoformat(), previous_end.isoformat(),
+        ])
         transitions.append({
+            "evidence_id": f"fun_{hashlib.sha256(evidence_key.encode()).hexdigest()[:12]}",
             "from_step": from_step,
             "to_step": to_step,
             "current_from_sessions": current_from,
