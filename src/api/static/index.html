@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal Desk — Marketing Intelligence</title>
+  <meta name="description" content="Evidence-backed marketing investigations powered by deterministic analytics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Signal Desk home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span><strong>Signal Desk</strong><small>Marketing intelligence</small></span>
+      </a>
+
+      <nav aria-label="Example investigations">
+        <p class="nav-label">Investigation library</p>
+        <button class="case-button active" data-case="android"><span class="case-icon coral">↘</span><span>Revenue decline<small>Android checkout</small></span></button>
+        <button class="case-button" data-case="google"><span class="case-icon gold">⌁</span><span>Paid media<small>Google Ads CPC</small></span></button>
+        <button class="case-button" data-case="organic"><span class="case-icon mint">⌁</span><span>Organic traffic<small>Search sessions</small></span></button>
+        <button class="case-button" data-case="attribution"><span class="case-icon blue">◇</span><span>Data quality<small>Attribution loss</small></span></button>
+        <button class="case-button" data-case="reviews"><span class="case-icon violet">✦</span><span>Customer voice<small>Negative reviews</small></span></button>
+        <button class="case-button" data-case="experiment"><span class="case-icon mint">△</span><span>Experiment lift<small>Checkout copy</small></span></button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="system-row"><span class="status-dot" id="healthDot"></span><span><strong id="healthLabel">Connecting</strong><small id="healthDetail">Checking DuckDB</small></span></div>
+        <a href="/docs" target="_blank">API documentation <span>↗</span></a>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div><p class="eyebrow">Evidence-backed analytics</p><h1>What changed — and why?</h1></div>
+        <div class="validation-pill"><span>✓</span><div><strong>Guarded analysis</strong><small>Every claim requires evidence</small></div></div>
+      </header>
+
+      <section class="query-panel">
+        <form id="investigationForm">
+          <label class="question-label" for="question">Ask a marketing question</label>
+          <div class="question-row">
+            <textarea id="question" rows="2" required maxlength="500">Why did revenue decline from July 20 to July 26?</textarea>
+            <button class="run-button" id="runButton" type="submit"><span>Run investigation</span><b>→</b></button>
+          </div>
+          <div class="date-grid">
+            <div class="period-group"><span>Current period</span><label>From<input id="currentStart" type="date" required value="2026-07-20"></label><label>To <small>(exclusive)</small><input id="currentEnd" type="date" required value="2026-07-27"></label></div>
+            <div class="period-divider"></div>
+            <div class="period-group"><span>Comparison period</span><label>From<input id="previousStart" type="date" required value="2026-07-13"></label><label>To <small>(exclusive)</small><input id="previousEnd" type="date" required value="2026-07-20"></label></div>
+          </div>
+        </form>
+      </section>
+
+      <section id="emptyState" class="empty-state">
+        <div class="empty-orbit"><span>↗</span></div>
+        <h2>Ready to investigate</h2>
+        <p>Choose an example or ask a question. The result will be calculated from DuckDB and checked against its evidence before it appears here.</p>
+      </section>
+
+      <section id="loadingState" class="loading-state hidden" aria-live="polite">
+        <div class="loader"><i></i><i></i><i></i></div><div><strong>Following the evidence</strong><span id="loadingText">Classifying the question…</span></div>
+      </section>
+
+      <section id="errorState" class="error-state hidden" role="alert"><span>!</span><div><strong>Investigation could not be completed</strong><p id="errorMessage"></p></div></section>
+
+      <section id="results" class="results hidden" aria-live="polite">
+        <div class="result-heading"><div><p class="eyebrow" id="resultType">Investigation complete</p><h2 id="resultTitle"></h2><p id="resultMeta"></p></div><div class="approved-badge" id="approvedBadge"><span>✓</span><div><strong>Evidence approved</strong><small>Critic validation passed</small></div></div></div>
+
+        <div class="summary-grid">
+          <article class="primary-finding"><p class="card-label">Primary finding</p><h3 id="primaryFinding"></h3><div id="scopeChips" class="chips"></div></article>
+          <article class="summary-card"><p class="card-label">Executive readout</p><div id="summaryClaims"></div></article>
+        </div>
+
+        <div class="section-title"><div><p class="eyebrow">Measured change</p><h2>Key performance indicators</h2></div><span id="metricCount"></span></div>
+        <div id="kpiGrid" class="kpi-grid"></div>
+
+        <div class="detail-grid">
+          <article class="panel drivers-panel"><div class="panel-heading"><div><p class="eyebrow">Ranked evidence</p><h2>Likely drivers</h2></div><span>Confidence score</span></div><div id="drivers"></div></article>
+          <article class="panel"><div class="panel-heading"><div><p class="eyebrow">Action path</p><h2>Recommendations</h2></div></div><div id="recommendations" class="recommendations"></div></article>
+        </div>
+
+        <article class="panel evidence-panel"><button class="evidence-toggle" id="evidenceToggle" type="button"><span><b>Evidence &amp; audit trail</b><small id="evidenceSummary"></small></span><span class="toggle-icon">＋</span></button><div id="evidenceBody" class="evidence-body hidden"><div id="evidenceList" class="evidence-list"></div><details><summary>View raw response JSON</summary><pre id="rawJson"></pre></details></div></article>
+      </section>
+      <footer>Signal Desk uses deterministic SQL and Python calculations. LLM planning cannot calculate or modify evidence.</footer>
+    </main>
+  </div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
