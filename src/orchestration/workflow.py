@@ -1,10 +1,14 @@
 """Deterministic Manager → tools → report → Critic workflow."""
 
 from src.agents.critic_agent import CriticAgent
-from src.agents.manager_agent import ManagerAgent
 from src.api.schemas import InvestigationRequest
 from src.reporting.executive_report import build_executive_report
 from src.tools.analytics_tools import AnalyticsToolRegistry
+from src.planning.providers import (
+    DeterministicPlanningProvider,
+    PlanningProvider,
+    validate_plan_for_request,
+)
 
 from .state import WorkflowResponse, WorkflowState
 
@@ -14,14 +18,14 @@ class EvidenceValidationError(RuntimeError):
 
 
 class InvestigationWorkflow:
-    def __init__(self) -> None:
-        self.manager = ManagerAgent()
+    def __init__(self, planning_provider: PlanningProvider = None) -> None:
+        self.planning_provider = planning_provider or DeterministicPlanningProvider()
         self.tools = AnalyticsToolRegistry()
         self.critic = CriticAgent()
 
     def run(self, request: InvestigationRequest) -> WorkflowResponse:
         state = WorkflowState(question=request.question)
-        state.plan = self.manager.create_plan(request)
+        state.plan = validate_plan_for_request(self.planning_provider.create_plan(request), request)
         for tool_name in state.plan.tools:
             state.evidence = self.tools.execute(tool_name, state.plan)
             state.executed_tools.append(tool_name)

@@ -20,6 +20,8 @@ This initial foundation includes:
 - deterministic campaign-attribution completeness and missing-ID analysis;
 - deterministic negative-review rate and keyword-topic analysis;
 - treatment-versus-control experiment lift, confidence interval, significance, and power analysis;
+- provider-neutral structured LLM planning with immutable-date and allowlisted-tool validation;
+- deterministic-versus-provider plan agreement and workflow benchmark comparison;
 - a seven-case ground-truth evaluation benchmark with coverage and evidence-integrity metrics; and
 - automated tests for KPI correctness and the known checkout incident.
 
@@ -75,3 +77,15 @@ performance, traffic, attribution-quality, review-sentiment, and controlled expe
 are supported.
 The initial results and case-level analysis are documented in
 [`docs/evaluation_baseline.md`](docs/evaluation_baseline.md).
+
+## Optional planning providers
+
+The default workflow uses the deterministic Manager. A vendor SDK can be adapted through
+`StructuredLLMPlanningProvider` by supplying a structured-output callable. The provider may classify
+questions and propose validated plans, but it cannot change request dates, select unregistered tools,
+or calculate evidence. Analytics execution, report generation, and Critic validation remain
+deterministic.
+
+Use `python scripts/compare_planners.py` for a baseline smoke comparison, or provide
+`--replay plans.json` to evaluate previously captured structured LLM plans without making paid API
+calls. The resulting report compares plan agreement, workflow coverage, and evidence validity.
