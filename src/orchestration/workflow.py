@@ -49,4 +49,5 @@ class InvestigationWorkflow:
         ids.update(row.evidence_id for row in evidence.overall_funnel)
         ids.update(row.evidence_id for row in evidence.leading_device_funnel)
         ids.update(row.evidence_id for row in evidence.related_incidents)
+        ids.update(row.evidence_id for row in evidence.ranked_candidates)
         return ids

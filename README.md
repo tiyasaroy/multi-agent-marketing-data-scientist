@@ -15,6 +15,7 @@ This initial foundation includes:
 - a FastAPI service with validated Pydantic request and evidence contracts; and
 - a deterministic Manager, controlled tool registry, executive reporter, and evidence Critic; and
 - validated country, device, channel, campaign, and customer-segment scopes for revenue investigations;
+- deterministic campaign CPC, CTR, CPA, ROAS, and conversion-rate comparisons;
 - a seven-case ground-truth evaluation benchmark with coverage and evidence-integrity metrics; and
 - automated tests for KPI correctness and the known checkout incident.
 
@@ -65,7 +66,8 @@ KPI, decomposition, funnel, and related-anomaly query and are included in eviden
 ## Evaluation
 
 `scripts/run_evaluation.py` evaluates the workflow against seven injected scenario families. The
-report intentionally counts unsupported questions as coverage gaps, making it possible to measure
-improvements as campaign, traffic, attribution, sentiment, and experimentation tools are added.
+report intentionally counts unsupported questions as coverage gaps. Revenue and campaign
+performance cases are supported; traffic, attribution, sentiment, and experimentation remain
+explicit future capabilities.
 The initial results and case-level analysis are documented in
 [`docs/evaluation_baseline.md`](docs/evaluation_baseline.md).

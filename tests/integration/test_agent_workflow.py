@@ -56,6 +56,20 @@ def test_manager_extracts_each_supported_scope_dimension(question, dimension, va
     assert plan.scope.active_filters() == {dimension: value}
 
 
+def test_campaign_question_uses_campaign_tool_and_validated_report():
+    campaign_request = InvestigationRequest(
+        question="Why did Google Ads CPC increase in the first half of June?",
+        current_start=date(2026, 6, 1), current_end=date(2026, 6, 15),
+        previous_start=date(2026, 5, 18), previous_end=date(2026, 6, 1),
+    )
+    result = InvestigationWorkflow().run(campaign_request)
+    assert result.plan.question_type == "campaign_performance_analysis"
+    assert result.plan.primary_metric == "cpc"
+    assert result.executed_tools == ["run_campaign_performance_investigation"]
+    assert result.executive_report.primary_driver.text.endswith("channel=Google Ads.")
+    assert result.critic_review.approved is True
+
+
 def test_scoped_and_global_evidence_ids_are_distinct():
     global_result = InvestigationWorkflow().run(request())
     scoped_result = InvestigationWorkflow().run(

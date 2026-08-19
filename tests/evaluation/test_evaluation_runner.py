@@ -12,8 +12,8 @@ def test_benchmark_contains_all_injected_scenario_families():
 def test_baseline_metrics_expose_supported_and_unsupported_cases():
     report = EvaluationRunner().run()
     assert report.metrics.total_cases == 7
-    assert report.metrics.completed_cases == 2
-    assert report.metrics.unsupported_cases == 5
+    assert report.metrics.completed_cases == 4
+    assert report.metrics.unsupported_cases == 3
     assert report.metrics.failed_cases == 0
     assert report.metrics.evidence_validity_rate == 1.0
     android = next(case for case in report.cases if case.case_id == "android_checkout_regression")
@@ -24,6 +24,12 @@ def test_baseline_metrics_expose_supported_and_unsupported_cases():
     assert india.primary_driver_correct is True
     assert india.funnel_transition_correct is True
     assert india.root_cause_correct is True
+    google = next(case for case in report.cases if case.case_id == "google_ads_cpc_increase")
+    meta = next(case for case in report.cases if case.case_id == "meta_campaign_success")
+    assert google.primary_driver_correct is True
+    assert google.root_cause_correct is True
+    assert meta.primary_driver_correct is True
+    assert meta.root_cause_correct is True
 
 
 def test_evaluation_report_is_serializable(tmp_path: Path):

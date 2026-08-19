@@ -6,6 +6,8 @@ from src.orchestration.state import EvidenceClaim, ExecutiveReport
 
 def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
     """Create prose only from validated calculated evidence."""
+    if evidence.question_type == "campaign_performance_analysis":
+        return _build_campaign_report(evidence)
     revenue = evidence.kpis["revenue"]
     conversion_rate = evidence.kpis["conversion_rate"]
     primary = evidence.ranked_candidates[0]
@@ -74,4 +76,38 @@ def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
                 "This report uses global data because no explicit scope was requested."
             ),
         ],
+    )
+
+
+def _build_campaign_report(evidence: InvestigationReport) -> ExecutiveReport:
+    metric = evidence.kpis[evidence.metric]
+    primary = evidence.ranked_candidates[0]
+    incident = evidence.related_incidents[0] if evidence.related_incidents else None
+    scope_label = ", ".join(f"{key}={value}" for key, value in evidence.applied_scope.items())
+    recommendations = [EvidenceClaim(
+        claim_id="campaign_recommendation",
+        text=f"Review {primary.dimension}={primary.segment} and the inputs to {evidence.metric.upper()}.",
+        evidence_ids=[primary.evidence_id],
+    )]
+    if incident:
+        recommendations.append(EvidenceClaim(
+            claim_id="campaign_incident",
+            text=f"Investigate the documented cause: {incident.root_cause}.",
+            evidence_ids=[incident.evidence_id],
+        ))
+    return ExecutiveReport(
+        title=f"Campaign performance investigation ({scope_label or 'all campaigns'})",
+        summary=[EvidenceClaim(
+            claim_id="campaign_metric_change",
+            text=f"{evidence.metric.upper()} changed by {metric.percent_change:.1%} versus the previous period.",
+            evidence_ids=[metric.evidence_id],
+        )],
+        primary_driver=EvidenceClaim(
+            claim_id="primary_driver",
+            text=f"The leading campaign driver was {primary.dimension}={primary.segment}.",
+            evidence_ids=[primary.evidence_id],
+        ),
+        contributing_factors=[], recommendations=recommendations,
+        limitations=["Campaign KPI comparisons are observational and do not establish causality.",
+                     f"Applied campaign scope: {scope_label or 'none'}."],
     )

@@ -38,9 +38,31 @@ class ManagerAgent:
     """Turn a supported business question into a validated execution plan."""
 
     def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
-        if "revenue" not in request.question.casefold():
+        question = request.question.casefold()
+        scope = _extract_scope(request.question)
+        campaign_metric = next(
+            (metric for token, metric in (
+                ("cpc", "cpc"), ("cost per click", "cpc"), ("ctr", "ctr"),
+                ("click-through rate", "ctr"), ("cpa", "cpa"),
+                ("cost per acquisition", "cpa"), ("roas", "roas"),
+                ("conversion rate", "conversion_rate"),
+            ) if token in question),
+            None,
+        )
+        if campaign_metric and (scope.channel or scope.campaign or "campaign" in question):
+            return InvestigationPlan(
+                question=request.question,
+                question_type="campaign_performance_analysis",
+                primary_metric=campaign_metric,
+                current_period=PlanPeriod(start=request.current_start, end_exclusive=request.current_end),
+                comparison_period=PlanPeriod(start=request.previous_start, end_exclusive=request.previous_end),
+                scope=scope,
+                investigations=["campaign_kpi_comparison", "campaign_driver_analysis", "incident_retrieval"],
+                tools=["run_campaign_performance_investigation"],
+            )
+        if "revenue" not in question:
             raise UnsupportedQuestionError(
-                "The baseline workflow currently supports revenue investigations only"
+                "The baseline workflow supports revenue and explicit campaign KPI investigations"
             )
         return InvestigationPlan(
             question=request.question,
@@ -48,7 +70,7 @@ class ManagerAgent:
             primary_metric="revenue",
             current_period=PlanPeriod(start=request.current_start, end_exclusive=request.current_end),
             comparison_period=PlanPeriod(start=request.previous_start, end_exclusive=request.previous_end),
-            scope=_extract_scope(request.question),
+            scope=scope,
             investigations=[
                 "kpi_comparison", "dimension_decomposition", "funnel_analysis",
                 "statistical_validation", "incident_retrieval",
