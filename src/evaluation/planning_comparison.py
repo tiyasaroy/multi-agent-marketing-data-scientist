@@ -18,11 +18,18 @@ class _CachedProvider:
         self.provider = provider
         self.name = provider.name
         self.cache = {}
+        self.errors = {}
 
     def create_plan(self, request: InvestigationRequest):
         key = request.model_dump_json()
+        if key in self.errors:
+            raise self.errors[key]
         if key not in self.cache:
-            self.cache[key] = self.provider.create_plan(request)
+            try:
+                self.cache[key] = self.provider.create_plan(request)
+            except Exception as exc:
+                self.errors[key] = exc
+                raise
         return self.cache[key].model_copy(deep=True)
 
 
@@ -39,6 +46,8 @@ class PlanAgreement(ComparisonModel):
     tools_match: bool = False
     scope_match: bool = False
     error: Optional[str] = None
+    baseline_plan: Optional[Dict[str, Any]] = None
+    candidate_plan: Optional[Dict[str, Any]] = None
 
 
 class PlanningComparisonReport(ComparisonModel):
@@ -53,6 +62,7 @@ class PlanningComparisonReport(ComparisonModel):
     scope_agreement_rate: float
     baseline_benchmark_metrics: Dict[str, Any]
     candidate_benchmark_metrics: Dict[str, Any]
+    candidate_benchmark_cases: List[Dict[str, Any]]
     cases: List[PlanAgreement]
 
 
@@ -81,11 +91,14 @@ def compare_planning_providers(
                 exact_match=question_type_match and primary_metric_match and tools_match and scope_match,
                 question_type_match=question_type_match, primary_metric_match=primary_metric_match,
                 tools_match=tools_match, scope_match=scope_match,
+                baseline_plan=baseline_plan.model_dump(mode="json"),
+                candidate_plan=candidate_plan.model_dump(mode="json"),
             ))
         except Exception as exc:
             agreements.append(PlanAgreement(
                 case_id=case.case_id, valid=False, exact_match=False,
                 error=f"{type(exc).__name__}: {exc}",
+                baseline_plan=baseline_plan.model_dump(mode="json"),
             ))
 
     baseline_report = EvaluationRunner(InvestigationWorkflow(baseline)).run(benchmark_path)
@@ -103,4 +116,5 @@ def compare_planning_providers(
         tool_agreement_rate=rate("tools_match"), scope_agreement_rate=rate("scope_match"),
         baseline_benchmark_metrics=baseline_report.metrics.model_dump(),
         candidate_benchmark_metrics=candidate_report.metrics.model_dump(), cases=agreements,
+        candidate_benchmark_cases=[case.model_dump() for case in candidate_report.cases],
     )

@@ -4,14 +4,17 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
-from typing import Any, Callable, Mapping, Optional, Protocol
+from typing import Any, Callable, Literal, Mapping, Optional, Protocol
 
-from src.agents.manager_agent import ManagerAgent
+from pydantic import BaseModel, ConfigDict, Field
+
+from src.agents.manager_agent import ManagerAgent, SCOPE_VALUES
 from src.api.schemas import InvestigationRequest
-from src.orchestration.state import InvestigationPlan
+from src.orchestration.state import InvestigationPlan, InvestigationScope, PlanPeriod
 
 
 class PlanValidationError(ValueError):
@@ -47,6 +50,84 @@ METRICS_BY_QUESTION_TYPE = {
     "sentiment_analysis": {"negative_review_rate"},
     "experiment_analysis": {"conversion_rate"},
 }
+INVESTIGATIONS_BY_QUESTION_TYPE = {
+    "root_cause_analysis": [
+        "kpi_comparison", "dimension_decomposition", "funnel_analysis",
+        "statistical_validation", "incident_retrieval",
+    ],
+    "campaign_performance_analysis": [
+        "campaign_kpi_comparison", "campaign_driver_analysis", "incident_retrieval",
+    ],
+    "traffic_analysis": ["traffic_kpi_comparison", "traffic_driver_analysis", "incident_retrieval"],
+    "data_quality_analysis": [
+        "attribution_completeness", "missing_attribution_analysis", "incident_retrieval",
+    ],
+    "sentiment_analysis": [
+        "review_sentiment_comparison", "negative_topic_analysis", "incident_retrieval",
+    ],
+    "experiment_analysis": ["variant_comparison", "conversion_lift", "revenue_lift", "power_check"],
+}
+
+
+class PlanningDecision(BaseModel):
+    """The only fields an LLM may decide; execution facts are materialized locally."""
+
+    model_config = ConfigDict(extra="forbid")
+    question_type: Literal[
+        "root_cause_analysis", "campaign_performance_analysis", "traffic_analysis",
+        "data_quality_analysis", "sentiment_analysis", "experiment_analysis",
+    ]
+    primary_metric: Literal[
+        "revenue", "cpc", "ctr", "cpa", "roas", "conversion_rate", "sessions", "users",
+        "attribution_completeness", "negative_review_rate",
+    ]
+    scope: InvestigationScope = Field(default_factory=InvestigationScope)
+
+
+def materialize_plan(decision: PlanningDecision, request: InvestigationRequest) -> InvestigationPlan:
+    """Build immutable dates and allowlisted execution steps from a small LLM decision."""
+    normalized_question = re.sub(r"[_-]+", " ", request.question).casefold()
+    normalized_scope = {}
+    placeholders = {"all", "any", "none", "none specified", "not specified", "n/a", "null"}
+    for dimension, value in decision.scope.active_filters().items():
+        normalized_value = re.sub(r"[_-]+", " ", value).casefold()
+        if normalized_value in placeholders or normalized_value == dimension.replace("_", " "):
+            continue
+        canonical_value = next(
+            (
+                candidate for candidate in SCOPE_VALUES.get(dimension, ())
+                if candidate.replace("_", " ").casefold() == normalized_value
+            ),
+            None,
+        )
+        if dimension == "channel" and normalized_value == "organic":
+            canonical_value = "Organic Search"
+        value = canonical_value or value
+        normalized_value = re.sub(r"[_-]+", " ", value).casefold()
+        explicitly_stated = re.search(
+            rf"(?<!\w){re.escape(normalized_value)}(?!\w)", normalized_question
+        )
+        organic_alias = dimension == "channel" and value == "Organic Search" and re.search(
+            r"(?<!\w)organic(?!\w)", normalized_question
+        )
+        if not explicitly_stated and not organic_alias:
+            raise PlanValidationError(
+                f"Scope {dimension}={value!r} was not explicitly stated in the question"
+            )
+        normalized_scope[dimension] = value
+    decision = decision.model_copy(update={"scope": InvestigationScope(**normalized_scope)})
+    expected_tool = TOOL_BY_QUESTION_TYPE[decision.question_type]
+    plan = InvestigationPlan(
+        question=request.question,
+        question_type=decision.question_type,
+        primary_metric=decision.primary_metric,
+        current_period=PlanPeriod(start=request.current_start, end_exclusive=request.current_end),
+        comparison_period=PlanPeriod(start=request.previous_start, end_exclusive=request.previous_end),
+        scope=decision.scope,
+        investigations=INVESTIGATIONS_BY_QUESTION_TYPE[decision.question_type],
+        tools=[expected_tool],
+    )
+    return validate_plan_for_request(plan, request)
 
 
 def validate_plan_for_request(
@@ -92,6 +173,47 @@ class DeterministicPlanningProvider:
         return validate_plan_for_request(ManagerAgent().create_plan(request), request)
 
 
+@dataclass
+class ConsensusPlanningProvider:
+    """Use an LLM decision only when it agrees with the deterministic safety baseline."""
+
+    candidate: PlanningProvider
+    baseline: PlanningProvider = None  # type: ignore[assignment]
+    accepted: int = 0
+    fallbacks: int = 0
+
+    def __post_init__(self) -> None:
+        if self.baseline is None:
+            self.baseline = DeterministicPlanningProvider()
+
+    @property
+    def name(self) -> str:
+        return f"consensus:{self.candidate.name}"
+
+    def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
+        baseline_plan = self.baseline.create_plan(request)
+        try:
+            candidate_plan = self.candidate.create_plan(request)
+        except (PlanValidationError, PlanningProviderUnavailableError):
+            self.fallbacks += 1
+            return baseline_plan
+        candidate_signature = (
+            candidate_plan.question_type,
+            candidate_plan.primary_metric,
+            candidate_plan.scope.model_dump(),
+        )
+        baseline_signature = (
+            baseline_plan.question_type,
+            baseline_plan.primary_metric,
+            baseline_plan.scope.model_dump(),
+        )
+        if candidate_signature != baseline_signature:
+            self.fallbacks += 1
+            return baseline_plan
+        self.accepted += 1
+        return candidate_plan
+
+
 LLMCompletion = Callable[[str, Mapping[str, Any], Mapping[str, Any]], Mapping[str, Any]]
 
 
@@ -103,27 +225,28 @@ class StructuredLLMPlanningProvider:
     name: str = "llm"
 
     SYSTEM_POLICY = (
-        "You are a planning component for a marketing analytics system. Return only a plan matching "
-        "the supplied JSON schema. Never calculate metrics, statistics, evidence, or business results. "
-        "Never change the question or dates. Select only deterministic tools represented by the schema."
+        "You are a classification component for a marketing analytics system. Return only a decision "
+        "matching the supplied JSON schema. Never calculate metrics, statistics, evidence, or business "
+        "results. Select the question type, primary metric, and only scope values explicitly stated in "
+        "the question. Dates and execution tools are constructed by deterministic code."
     )
 
     def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
         request_payload = request.model_dump(mode="json")
-        schema = InvestigationPlan.model_json_schema()
+        schema = PlanningDecision.model_json_schema()
         raw = self.complete(self.SYSTEM_POLICY, request_payload, schema)
         if not isinstance(raw, Mapping):
             raise PlanValidationError("Structured planning provider must return a mapping")
         try:
-            plan = InvestigationPlan.model_validate(dict(raw))
+            decision = PlanningDecision.model_validate(dict(raw))
         except Exception as exc:
-            raise PlanValidationError(f"Provider returned an invalid plan: {exc}") from exc
-        return validate_plan_for_request(plan, request)
+            raise PlanValidationError(f"Provider returned an invalid planning decision: {exc}") from exc
+        return materialize_plan(decision, request)
 
     def prompt_preview(self, request: InvestigationRequest) -> str:
         """Return a reproducible prompt preview for logs and offline evaluation."""
         return json.dumps({"policy": self.SYSTEM_POLICY, "request": request.model_dump(mode="json"),
-                           "schema": InvestigationPlan.model_json_schema()}, sort_keys=True)
+                           "schema": PlanningDecision.model_json_schema()}, sort_keys=True)
 
 
 @dataclass
@@ -172,14 +295,18 @@ class OllamaPlanningProvider:
         return f"ollama:{self.model}"
 
     def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
-        schema = InvestigationPlan.model_json_schema()
+        schema = PlanningDecision.model_json_schema()
         user_content = json.dumps({
             "request": request.model_dump(mode="json"),
-            "instruction": "Classify the question and return the execution plan. Copy question and dates exactly.",
+            "instruction": "Return only question_type, primary_metric, and explicit scope values.",
             "allowed_question_type_tools": TOOL_BY_QUESTION_TYPE,
             "allowed_metrics_by_question_type": {
                 key: sorted(values) for key, values in METRICS_BY_QUESTION_TYPE.items()
             },
+            "allowed_scope_values": {
+                key: list(values) for key, values in SCOPE_VALUES.items()
+            },
+            "scope_rule": "Use null for every scope field not explicitly stated in the question.",
         }, sort_keys=True)
         payload = {
             "model": self.model,
@@ -188,6 +315,7 @@ class OllamaPlanningProvider:
                 {"role": "user", "content": user_content},
             ],
             "stream": False,
+            "think": False,
             "format": schema,
             "options": {"temperature": 0},
         }
@@ -202,10 +330,10 @@ class OllamaPlanningProvider:
         try:
             content = response["message"]["content"]
             raw_plan = json.loads(content)
-            plan = InvestigationPlan.model_validate(raw_plan)
+            decision = PlanningDecision.model_validate(raw_plan)
         except Exception as exc:
-            raise PlanValidationError(f"Ollama returned an invalid structured plan: {exc}") from exc
-        return validate_plan_for_request(plan, request)
+            raise PlanValidationError(f"Ollama returned an invalid structured decision: {exc}") from exc
+        return materialize_plan(decision, request)
 
 
 def planning_provider_from_env() -> PlanningProvider:
@@ -215,12 +343,12 @@ def planning_provider_from_env() -> PlanningProvider:
         return DeterministicPlanningProvider()
     if provider != "ollama":
         raise ValueError("PLANNING_PROVIDER must be 'deterministic' or 'ollama'")
-    fallback_enabled = os.getenv("OLLAMA_DETERMINISTIC_FALLBACK", "false").casefold() in {
-        "1", "true", "yes",
-    }
-    return OllamaPlanningProvider(
+    ollama = OllamaPlanningProvider(
         model=os.getenv("OLLAMA_MODEL", "qwen3:8b"),
         host=os.getenv("OLLAMA_HOST", "http://127.0.0.1:11434"),
         timeout_seconds=float(os.getenv("OLLAMA_TIMEOUT_SECONDS", "120")),
-        fallback=DeterministicPlanningProvider() if fallback_enabled else None,
     )
+    consensus_enabled = os.getenv("OLLAMA_REQUIRE_CONSENSUS", "true").casefold() in {
+        "1", "true", "yes",
+    }
+    return ConsensusPlanningProvider(ollama) if consensus_enabled else ollama

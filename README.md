@@ -82,9 +82,10 @@ The initial results and case-level analysis are documented in
 
 The default workflow uses the deterministic Manager. A vendor SDK can be adapted through
 `StructuredLLMPlanningProvider` by supplying a structured-output callable. The provider may classify
-questions and propose validated plans, but it cannot change request dates, select unregistered tools,
-or calculate evidence. Analytics execution, report generation, and Critic validation remain
-deterministic.
+questions and extract explicit scope, but its schema contains no dates, tools, or investigation steps.
+Those fields are constructed by deterministic code, making date mutation and arbitrary-tool selection
+structurally impossible. Analytics execution, report generation, and Critic validation remain
+deterministic as well.
 
 Use `python scripts/compare_planners.py` for a baseline smoke comparison, or provide
 `--replay plans.json` to evaluate previously captured structured LLM plans without making paid API
@@ -100,16 +101,19 @@ ollama serve
 ollama pull qwen3:8b
 ```
 
-Enable it for the API while retaining deterministic analytics execution:
+Enable it for the API while retaining deterministic analytics execution and planning validation:
 
 ```bash
 PLANNING_PROVIDER=ollama OLLAMA_MODEL=qwen3:8b uvicorn src.api.main:app --reload
 ```
 
 `OLLAMA_HOST` defaults to `http://127.0.0.1:11434`, and `OLLAMA_TIMEOUT_SECONDS` defaults to `120`.
-Set `OLLAMA_DETERMINISTIC_FALLBACK=true` to fall back only when the Ollama service is unavailable;
-invalid model output is still rejected. Run a full comparison with:
+By default, Ollama is advisory: its classification is accepted only when question type, metric, and
+scope exactly match the deterministic planner. Invalid, unavailable, or disagreeing model output
+automatically uses the deterministic plan. Set `OLLAMA_REQUIRE_CONSENSUS=false` only for raw-model
+experiments. Run a raw comparison, or verify the guarded production configuration, with:
 
 ```bash
 python scripts/compare_ollama_planner.py --model qwen3:8b
+python scripts/compare_ollama_planner.py --model qwen3:8b --consensus
 ```

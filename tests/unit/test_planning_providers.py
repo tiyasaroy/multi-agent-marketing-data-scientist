@@ -9,6 +9,7 @@ from src.orchestration.workflow import InvestigationWorkflow
 from src.planning.providers import (
     DeterministicPlanningProvider,
     PlanValidationError,
+    PlanningDecision,
     StructuredLLMPlanningProvider,
 )
 
@@ -26,7 +27,10 @@ def test_structured_provider_can_plan_but_deterministic_tools_calculate():
 
     def complete(policy, payload, schema):
         captured.update(policy=policy, payload=payload, schema=schema)
-        return ManagerAgent().create_plan(request()).model_dump(mode="json")
+        plan = ManagerAgent().create_plan(request())
+        return PlanningDecision(
+            question_type=plan.question_type, primary_metric=plan.primary_metric, scope=plan.scope
+        ).model_dump(mode="json")
 
     provider = StructuredLLMPlanningProvider(complete=complete, name="fake_llm")
     result = InvestigationWorkflow(provider).run(request())
@@ -37,18 +41,53 @@ def test_structured_provider_can_plan_but_deterministic_tools_calculate():
     assert result.critic_review.approved is True
 
 
-@pytest.mark.parametrize("mutation", ["date", "tool", "metric"])
-def test_structured_provider_rejects_changed_facts_and_unallowlisted_tools(mutation):
-    plan = ManagerAgent().create_plan(request()).model_dump(mode="json")
-    if mutation == "date":
-        plan["current_period"]["start"] = "2026-07-21"
-    elif mutation == "tool":
-        plan["tools"] = ["arbitrary_sql"]
+@pytest.mark.parametrize("mutation", ["extra_field", "metric"])
+def test_structured_provider_rejects_extra_execution_fields_and_invalid_metrics(mutation):
+    plan = ManagerAgent().create_plan(request())
+    decision = PlanningDecision(
+        question_type=plan.question_type, primary_metric=plan.primary_metric, scope=plan.scope
+    ).model_dump(mode="json")
+    if mutation == "extra_field":
+        decision["tools"] = ["arbitrary_sql"]
     else:
-        plan["primary_metric"] = "cpc"
-    provider = StructuredLLMPlanningProvider(complete=lambda *_: plan)
+        decision["primary_metric"] = "cpc"
+    provider = StructuredLLMPlanningProvider(complete=lambda *_: decision)
     with pytest.raises(PlanValidationError):
         provider.create_plan(request())
+
+
+def test_llm_decision_cannot_supply_or_change_dates():
+    plan = ManagerAgent().create_plan(request())
+    decision = PlanningDecision(
+        question_type=plan.question_type, primary_metric=plan.primary_metric, scope=plan.scope
+    ).model_dump(mode="json")
+    provider = StructuredLLMPlanningProvider(complete=lambda *_: decision)
+    materialized = provider.create_plan(request())
+    assert materialized.current_period.start == request().current_start
+    assert materialized.current_period.end_exclusive == request().current_end
+    assert materialized.tools == ["run_revenue_investigation"]
+
+
+def test_llm_decision_cannot_invent_scope_values():
+    plan = ManagerAgent().create_plan(request())
+    decision = PlanningDecision(
+        question_type=plan.question_type, primary_metric=plan.primary_metric,
+        scope={"country": "Canada"},
+    ).model_dump(mode="json")
+    provider = StructuredLLMPlanningProvider(complete=lambda *_: decision)
+    with pytest.raises(PlanValidationError, match="not explicitly stated"):
+        provider.create_plan(request())
+
+
+def test_llm_scope_is_canonicalized_and_placeholders_are_removed():
+    decision = PlanningDecision(
+        question_type="root_cause_analysis", primary_metric="revenue",
+        scope={"country": "india", "device": "none specified"},
+    )
+    provider = StructuredLLMPlanningProvider(
+        complete=lambda *_: decision.model_dump(mode="json")
+    )
+    assert provider.create_plan(request()).scope.active_filters() == {"country": "India"}
 
 
 def test_deterministic_candidate_has_full_plan_and_benchmark_agreement():
