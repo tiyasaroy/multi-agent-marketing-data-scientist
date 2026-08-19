@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 from datetime import date
 from typing import Any
 
@@ -30,6 +31,12 @@ def investigate_revenue_decline(
 ) -> dict[str, Any]:
     """Investigate a revenue change and return traceable, ranked evidence."""
     kpis = compare_periods(connection, current_start, current_end, previous_start, previous_end)
+    for metric, values in kpis.items():
+        evidence_key = "|".join([
+            "kpi", metric, current_start.isoformat(), current_end.isoformat(),
+            previous_start.isoformat(), previous_end.isoformat(),
+        ])
+        values["evidence_id"] = f"kpi_{hashlib.sha256(evidence_key.encode()).hexdigest()[:12]}"
     decompositions = {
         dimension: decompose_metric(
             connection, dimension, current_start, current_end, previous_start, previous_end
@@ -91,7 +98,11 @@ def investigate_revenue_decline(
         [current_start, current_end],
     )
     incident_columns = [column[0] for column in incidents.description]
-    incident_rows = [dict(zip(incident_columns, row)) for row in incidents.fetchall()]
+    incident_rows = []
+    for row in incidents.fetchall():
+        incident = dict(zip(incident_columns, row))
+        incident["evidence_id"] = f"inc_{incident['incident_id']}"
+        incident_rows.append(incident)
     return {
         "question_type": "root_cause_analysis",
         "metric": "revenue",

@@ -1,0 +1,42 @@
+"""Allowlisted deterministic analytics tool registry."""
+
+from typing import Callable, Dict
+
+from src.analytics.root_cause_analysis import investigate_revenue_decline
+from src.api.schemas import InvestigationReport
+from src.database.connection import connect
+from src.orchestration.state import InvestigationPlan
+
+
+class UnknownToolError(ValueError):
+    """Raised when an agent requests a tool outside the allowlist."""
+
+
+class AnalyticsToolRegistry:
+    """Execute only explicitly registered read-only analytics operations."""
+
+    def __init__(self) -> None:
+        self._tools: Dict[str, Callable[[InvestigationPlan], InvestigationReport]] = {
+            "run_revenue_investigation": self._run_revenue_investigation,
+        }
+
+    @property
+    def registered_names(self) -> set:
+        return set(self._tools)
+
+    def execute(self, name: str, plan: InvestigationPlan) -> InvestigationReport:
+        if name not in self._tools:
+            raise UnknownToolError(f"Tool {name!r} is not registered")
+        return self._tools[name](plan)
+
+    @staticmethod
+    def _run_revenue_investigation(plan: InvestigationPlan) -> InvestigationReport:
+        with connect(read_only=True) as connection:
+            result = investigate_revenue_decline(
+                connection,
+                plan.current_period.start,
+                plan.current_period.end_exclusive,
+                plan.comparison_period.start,
+                plan.comparison_period.end_exclusive,
+            )
+        return InvestigationReport.model_validate(result)

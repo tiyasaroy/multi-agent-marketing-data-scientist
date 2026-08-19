@@ -1,0 +1,66 @@
+"""Validated state shared by the Manager, tools, reporter, and Critic."""
+
+from datetime import date
+from typing import List, Literal, Optional
+
+from pydantic import BaseModel, ConfigDict, Field
+
+from src.api.schemas import InvestigationReport
+
+
+class WorkflowModel(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+
+class PlanPeriod(WorkflowModel):
+    start: date
+    end_exclusive: date
+
+
+class InvestigationPlan(WorkflowModel):
+    question: str
+    question_type: Literal["root_cause_analysis"]
+    primary_metric: Literal["revenue"]
+    current_period: PlanPeriod
+    comparison_period: PlanPeriod
+    investigations: List[str]
+    tools: List[str]
+
+
+class EvidenceClaim(WorkflowModel):
+    claim_id: str
+    text: str
+    evidence_ids: List[str] = Field(min_length=1)
+
+
+class ExecutiveReport(WorkflowModel):
+    title: str
+    summary: List[EvidenceClaim]
+    primary_driver: EvidenceClaim
+    contributing_factors: List[EvidenceClaim]
+    recommendations: List[EvidenceClaim]
+    limitations: List[str]
+
+
+class CriticReview(WorkflowModel):
+    approved: bool
+    errors: List[str]
+    unsupported_evidence_ids: List[str]
+
+
+class WorkflowState(WorkflowModel):
+    question: str
+    plan: Optional[InvestigationPlan] = None
+    executed_tools: List[str] = Field(default_factory=list)
+    evidence: Optional[InvestigationReport] = None
+    executive_report: Optional[ExecutiveReport] = None
+    critic_review: Optional[CriticReview] = None
+    errors: List[str] = Field(default_factory=list)
+
+
+class WorkflowResponse(WorkflowModel):
+    plan: InvestigationPlan
+    executed_tools: List[str]
+    executive_report: ExecutiveReport
+    critic_review: CriticReview
+    evidence: InvestigationReport

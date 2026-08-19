@@ -1,5 +1,1 @@
-"""FastAPI application package."""
-
-from .main import app
-
-__all__ = ["app"]
+"""FastAPI application package; import the application from ``src.api.main``."""

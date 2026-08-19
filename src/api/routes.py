@@ -6,8 +6,11 @@ from typing import List
 
 from fastapi import APIRouter, HTTPException
 
+from src.agents.manager_agent import UnsupportedQuestionError
 from src.analytics.root_cause_analysis import investigate_revenue_decline
 from src.database.connection import connect
+from src.orchestration.state import WorkflowResponse
+from src.orchestration.workflow import InvestigationWorkflow
 
 from .schemas import (
     HealthResponse,
@@ -42,7 +45,8 @@ def list_metrics() -> List[MetricDefinition]:
 def list_incidents() -> List[IncidentEvidence]:
     with connect(read_only=True) as connection:
         result = connection.execute(
-            """SELECT incident_id, incident_date, title, root_cause, resolution, impact
+            """SELECT 'inc_' || incident_id AS evidence_id,
+                      incident_id, incident_date, title, root_cause, resolution, impact
                FROM marketing_incidents ORDER BY incident_date"""
         )
         columns = [column[0] for column in result.description]
@@ -64,3 +68,15 @@ def investigate_revenue(request: InvestigationRequest) -> InvestigationReport:
             request.previous_end,
         )
     return InvestigationReport.model_validate(report)
+
+
+@router.post(
+    "/investigations/ask",
+    response_model=WorkflowResponse,
+    tags=["investigations"],
+)
+def ask(request: InvestigationRequest) -> WorkflowResponse:
+    try:
+        return InvestigationWorkflow().run(request)
+    except UnsupportedQuestionError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc

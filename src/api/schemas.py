@@ -38,6 +38,7 @@ class Period(StrictModel):
 
 
 class MetricComparison(StrictModel):
+    evidence_id: str
     current: float
     previous: float
     absolute_change: float
@@ -95,6 +96,7 @@ class RootCauseCandidate(StrictModel):
 
 
 class IncidentEvidence(StrictModel):
+    evidence_id: str
     incident_id: str
     incident_date: date
     title: str

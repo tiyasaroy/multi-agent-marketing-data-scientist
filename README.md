@@ -13,6 +13,7 @@ This initial foundation includes:
 - root-cause decomposition by device, country, channel, campaign, and customer segment;
 - sequential funnel-drop analysis and ranked evidence candidates; and
 - a FastAPI service with validated Pydantic request and evidence contracts; and
+- a deterministic Manager, controlled tool registry, executive reporter, and evidence Critic; and
 - automated tests for KPI correctness and the known checkout incident.
 
 ## Quick start
@@ -49,5 +50,9 @@ because they can be reproduced from the committed data.
 ## API
 
 After starting Uvicorn, open `http://127.0.0.1:8000/docs` for interactive API documentation.
-Available endpoints include `GET /health`, `GET /metrics`, `GET /incidents`, and
-`POST /investigations/revenue`.
+Available endpoints include `GET /health`, `GET /metrics`, `GET /incidents`,
+`POST /investigations/revenue`, and `POST /investigations/ask`.
+
+The `/investigations/ask` workflow is API-key-free: the Manager creates a validated plan, an
+allowlisted read-only tool executes the analysis, the reporter attaches evidence IDs to every claim,
+and the Critic rejects unsupported references before a response is returned.
