@@ -10,6 +10,8 @@ def build_executive_report(evidence: InvestigationReport) -> ExecutiveReport:
         return _build_campaign_report(evidence)
     if evidence.question_type == "traffic_analysis":
         return _build_traffic_report(evidence)
+    if evidence.question_type == "data_quality_analysis":
+        return _build_attribution_report(evidence)
     revenue = evidence.kpis["revenue"]
     conversion_rate = evidence.kpis["conversion_rate"]
     primary = evidence.ranked_candidates[0]
@@ -146,4 +148,49 @@ def _build_traffic_report(evidence: InvestigationReport) -> ExecutiveReport:
         contributing_factors=[], recommendations=recommendations,
         limitations=["Traffic comparisons are observational and do not establish causality.",
                      f"Applied traffic scope: {scope_label or 'none'}."],
+    )
+
+
+def _build_attribution_report(evidence: InvestigationReport) -> ExecutiveReport:
+    completeness = evidence.kpis["attribution_completeness"]
+    unattributed = evidence.kpis["unattributed_sessions"]
+    primary = evidence.ranked_candidates[0]
+    incident = evidence.related_incidents[0] if evidence.related_incidents else None
+    recommendations = [EvidenceClaim(
+        claim_id="attribution_recommendation",
+        text="Audit campaign-ID collection and preserve raw attribution parameters through session creation.",
+        evidence_ids=[primary.evidence_id],
+    )]
+    if incident:
+        recommendations.append(EvidenceClaim(
+            claim_id="attribution_incident",
+            text=f"Investigate the documented cause: {incident.root_cause}.",
+            evidence_ids=[incident.evidence_id],
+        ))
+    return ExecutiveReport(
+        title="Campaign attribution quality investigation",
+        summary=[
+            EvidenceClaim(
+                claim_id="attribution_completeness_change",
+                text=f"Attribution completeness changed by {completeness.percent_change:.1%}.",
+                evidence_ids=[completeness.evidence_id],
+            ),
+                EvidenceClaim(
+                    claim_id="unattributed_session_change",
+                    text=(
+                        f"Unattributed sessions changed by {unattributed.percent_change:.1%}."
+                        if unattributed.percent_change is not None else
+                        f"Unattributed sessions increased from {unattributed.previous:.0f} "
+                        f"to {unattributed.current:.0f}."
+                    ),
+                evidence_ids=[unattributed.evidence_id],
+            ),
+        ],
+        primary_driver=EvidenceClaim(
+            claim_id="primary_driver",
+            text=f"The leading data-quality driver was {primary.dimension}={primary.segment}.",
+            evidence_ids=[primary.evidence_id],
+        ),
+        contributing_factors=[], recommendations=recommendations,
+        limitations=["Missing campaign IDs identify an instrumentation gap but not the point of failure."],
     )

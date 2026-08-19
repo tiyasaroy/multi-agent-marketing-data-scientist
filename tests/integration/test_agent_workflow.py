@@ -90,6 +90,25 @@ def test_organic_traffic_question_uses_traffic_tool_and_validated_report():
     assert response.json()["evidence"]["metric"] == "sessions"
 
 
+def test_attribution_question_uses_quality_tool_and_validated_report():
+    attribution_request = InvestigationRequest(
+        question="Why did campaign attribution completeness decline from May 10 to May 16?",
+        current_start=date(2026, 5, 10), current_end=date(2026, 5, 17),
+        previous_start=date(2026, 5, 3), previous_end=date(2026, 5, 10),
+    )
+    result = InvestigationWorkflow().run(attribution_request)
+    assert result.plan.question_type == "data_quality_analysis"
+    assert result.executed_tools == ["run_attribution_quality_investigation"]
+    assert result.executive_report.primary_driver.text.endswith("campaign=Unattributed.")
+    assert result.critic_review.approved is True
+
+    response = TestClient(app).post(
+        "/investigations/ask", json=attribution_request.model_dump(mode="json")
+    )
+    assert response.status_code == 200
+    assert response.json()["evidence"]["metric"] == "attribution_completeness"
+
+
 def test_scoped_and_global_evidence_ids_are_distinct():
     global_result = InvestigationWorkflow().run(request())
     scoped_result = InvestigationWorkflow().run(

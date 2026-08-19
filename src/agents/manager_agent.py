@@ -42,6 +42,17 @@ class ManagerAgent:
     def create_plan(self, request: InvestigationRequest) -> InvestigationPlan:
         question = request.question.casefold()
         scope = _extract_scope(request.question)
+        if "attribution" in question or "unattributed" in question:
+            return InvestigationPlan(
+                question=request.question,
+                question_type="data_quality_analysis",
+                primary_metric="attribution_completeness",
+                current_period=PlanPeriod(start=request.current_start, end_exclusive=request.current_end),
+                comparison_period=PlanPeriod(start=request.previous_start, end_exclusive=request.previous_end),
+                scope=scope,
+                investigations=["attribution_completeness", "missing_attribution_analysis", "incident_retrieval"],
+                tools=["run_attribution_quality_investigation"],
+            )
         if "session" in question or "traffic" in question:
             return InvestigationPlan(
                 question=request.question,

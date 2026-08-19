@@ -12,8 +12,8 @@ def test_benchmark_contains_all_injected_scenario_families():
 def test_baseline_metrics_expose_supported_and_unsupported_cases():
     report = EvaluationRunner().run()
     assert report.metrics.total_cases == 7
-    assert report.metrics.completed_cases == 5
-    assert report.metrics.unsupported_cases == 2
+    assert report.metrics.completed_cases == 6
+    assert report.metrics.unsupported_cases == 1
     assert report.metrics.failed_cases == 0
     assert report.metrics.evidence_validity_rate == 1.0
     android = next(case for case in report.cases if case.case_id == "android_checkout_regression")
@@ -33,6 +33,9 @@ def test_baseline_metrics_expose_supported_and_unsupported_cases():
     organic = next(case for case in report.cases if case.case_id == "organic_traffic_decline")
     assert organic.primary_driver_correct is True
     assert organic.root_cause_correct is True
+    attribution = next(case for case in report.cases if case.case_id == "attribution_tracking_failure")
+    assert attribution.primary_driver_correct is True
+    assert attribution.root_cause_correct is True
 
 
 def test_evaluation_report_is_serializable(tmp_path: Path):
